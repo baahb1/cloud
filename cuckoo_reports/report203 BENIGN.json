@@ -1,0 +1,1162 @@
+{
+    "info": {
+        "added": 1612094621.933938, 
+        "started": 1612094622.66579, 
+        "duration": 12, 
+        "ended": 1612094635.166915, 
+        "owner": "", 
+        "score": 0.2, 
+        "id": 203, 
+        "category": "file", 
+        "git": {
+            "head": "13cbe0d9e457be3673304533043e992ead1ea9b2", 
+            "fetch_head": "13cbe0d9e457be3673304533043e992ead1ea9b2"
+        }, 
+        "monitor": "2deb9ccd75d5a7a3fe05b2625b03a8639d6ee36b", 
+        "package": "", 
+        "route": "none", 
+        "custom": "", 
+        "machine": {
+            "status": "stopped", 
+            "name": "192.168.56.1011", 
+            "label": "192.168.56.1011", 
+            "manager": "VirtualBox", 
+            "started_on": "2021-01-31 12:03:42", 
+            "shutdown_on": "2021-01-31 12:03:55"
+        }, 
+        "platform": "", 
+        "version": "2.0.7", 
+        "options": ""
+    }, 
+    "signatures": [
+        {
+            "families": [], 
+            "description": "The file contains an unknown PE resource name possibly indicative of a packer", 
+            "severity": 1, 
+            "ttp": {
+                "T1045": {
+                    "short": "Software Packing", 
+                    "long": "Software packing is a method of compressing or encrypting an executable. Packing an executable changes the file signature in an attempt to avoid signature-based detection. Most decompression techniques decompress the executable code in memory."
+                }
+            }, 
+            "markcount": 1, 
+            "references": [], 
+            "marks": [
+                {
+                    "category": "resource name", 
+                    "ioc": "MUI", 
+                    "type": "ioc", 
+                    "description": null
+                }
+            ], 
+            "name": "pe_unknown_resource_name"
+        }
+    ], 
+    "target": {
+        "category": "file", 
+        "file": {
+            "yara": [], 
+            "sha1": "bd695df2515f2c7a82301106a7b4f138f6c46df4", 
+            "name": "Sample 40", 
+            "type": "PE32+ executable (DLL) (GUI) x86-64, for MS Windows", 
+            "sha256": "3f1ccbe4aca4fae79ea583edbda85dd8fba0139d8434e682dc6c494d8f57139f", 
+            "urls": [], 
+            "crc32": "B827D574", 
+            "path": "/home/eric/.cuckoo/storage/binaries/3f1ccbe4aca4fae79ea583edbda85dd8fba0139d8434e682dc6c494d8f57139f", 
+            "ssdeep": null, 
+            "size": 4608, 
+            "sha512": "96e2d847bc71d1ed9ac38697a827e75a4d61f0e255e12cc97407f4f41a8373990dede71e5fced0ae91a7b7394ff18037c4649f03d97970913ccf7bbff2e06ffc", 
+            "md5": "3bd3d4c2c285e1ec3d52496653eb3348"
+        }
+    }, 
+    "network": {
+        "tls": [], 
+        "udp": [
+            {
+                "src": "192.168.56.101", 
+                "dst": "192.168.56.255", 
+                "offset": 1068, 
+                "time": 5.9326560497283936, 
+                "dport": 137, 
+                "sport": 137
+            }, 
+            {
+                "src": "192.168.56.101", 
+                "dst": "224.0.0.252", 
+                "offset": 2740, 
+                "time": 5.873747110366821, 
+                "dport": 5355, 
+                "sport": 55385
+            }, 
+            {
+                "src": "192.168.56.101", 
+                "dst": "224.0.0.252", 
+                "offset": 3068, 
+                "time": 3.869431972503662, 
+                "dport": 5355, 
+                "sport": 56682
+            }, 
+            {
+                "src": "192.168.56.101", 
+                "dst": "224.0.0.252", 
+                "offset": 3388, 
+                "time": 3.09848690032959, 
+                "dport": 5355, 
+                "sport": 62007
+            }, 
+            {
+                "src": "192.168.56.101", 
+                "dst": "224.0.0.252", 
+                "offset": 3716, 
+                "time": 4.450553894042969, 
+                "dport": 5355, 
+                "sport": 62121
+            }, 
+            {
+                "src": "192.168.56.101", 
+                "dst": "224.0.0.252", 
+                "offset": 4036, 
+                "time": 4.098773956298828, 
+                "dport": 5355, 
+                "sport": 62726
+            }, 
+            {
+                "src": "192.168.56.101", 
+                "dst": "224.0.0.252", 
+                "offset": 4364, 
+                "time": 5.876344919204712, 
+                "dport": 5355, 
+                "sport": 65295
+            }, 
+            {
+                "src": "192.168.56.101", 
+                "dst": "8.8.8.8", 
+                "offset": 5684, 
+                "time": 4.779850959777832, 
+                "dport": 53, 
+                "sport": 49955
+            }, 
+            {
+                "src": "192.168.56.101", 
+                "dst": "8.8.8.8", 
+                "offset": 5958, 
+                "time": 3.8681271076202393, 
+                "dport": 53, 
+                "sport": 63207
+            }
+        ], 
+        "dns_servers": [
+            "8.8.8.8"
+        ], 
+        "http": [
+            {
+                "count": 1, 
+                "body": "", 
+                "uri": "http://www.msftncsi.com/ncsi.txt", 
+                "user-agent": "Microsoft NCSI", 
+                "method": "GET", 
+                "host": "www.msftncsi.com", 
+                "version": "1.1", 
+                "path": "/ncsi.txt", 
+                "data": "GET /ncsi.txt HTTP/1.1\r\nConnection: Close\r\nUser-Agent: Microsoft NCSI\r\nHost: www.msftncsi.com\r\n\r\n", 
+                "port": 80
+            }
+        ], 
+        "icmp": [], 
+        "smtp": [], 
+        "tcp": [
+            {
+                "src": "192.168.56.101", 
+                "dst": "23.197.193.16", 
+                "offset": 4918, 
+                "time": 4.831167936325073, 
+                "dport": 80, 
+                "sport": 49159
+            }
+        ], 
+        "smtp_ex": [], 
+        "mitm": [], 
+        "hosts": [
+            "23.197.193.16", 
+            "8.8.8.8"
+        ], 
+        "pcap_sha256": "92f0dc5cb5eac8b16f242a6ea36ae0c3c9c58c95881528ff920cbe55534f4232", 
+        "dns": [
+            {
+                "type": "A", 
+                "request": "www.msftncsi.com", 
+                "answers": [
+                    {
+                        "data": "www.msftncsi.com.edgesuite.net", 
+                        "type": "CNAME"
+                    }, 
+                    {
+                        "data": "23.197.193.16", 
+                        "type": "A"
+                    }, 
+                    {
+                        "data": "a1961.g2.akamai.net", 
+                        "type": "CNAME"
+                    }
+                ]
+            }, 
+            {
+                "type": "A", 
+                "request": "teredo.ipv6.microsoft.com", 
+                "answers": []
+            }
+        ], 
+        "http_ex": [
+            {
+                "status": 200, 
+                "src": "192.168.56.101", 
+                "resp": {
+                    "path": "/home/eric/.cuckoo/storage/analyses/203/network/33bf88d5b82df3723d5863c7d23445e345828904", 
+                    "sha1": "33bf88d5b82df3723d5863c7d23445e345828904", 
+                    "md5": "cd5a4d3fdd5bffc16bf959ef75cf37bc"
+                }, 
+                "sha1": "33bf88d5b82df3723d5863c7d23445e345828904", 
+                "protocol": "http", 
+                "dst": "23.197.193.16", 
+                "req": {
+                    "path": "/home/eric/.cuckoo/storage/analyses/203/network/da39a3ee5e6b4b0d3255bfef95601890afd80709", 
+                    "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709", 
+                    "md5": "d41d8cd98f00b204e9800998ecf8427e"
+                }, 
+                "request": "GET /ncsi.txt HTTP/1.1\r\nConnection: Close\r\nUser-Agent: Microsoft NCSI\r\nHost: www.msftncsi.com", 
+                "uri": "/ncsi.txt", 
+                "response": "HTTP/1.1 200 OK\r\nContent-Length: 14\r\nDate: Sun, 31 Jan 2021 17:03:51 GMT\r\nConnection: close\r\nContent-Type: text/plain\r\nCache-Control: max-age=30, must-revalidate", 
+                "host": "www.msftncsi.com", 
+                "dport": 80, 
+                "path": "/home/eric/.cuckoo/storage/analyses/203/network/33bf88d5b82df3723d5863c7d23445e345828904", 
+                "sport": 49159, 
+                "method": "GET", 
+                "md5": "cd5a4d3fdd5bffc16bf959ef75cf37bc"
+            }
+        ], 
+        "domains": [
+            {
+                "ip": "104.123.65.49", 
+                "domain": "www.msftncsi.com"
+            }, 
+            {
+                "ip": "", 
+                "domain": "teredo.ipv6.microsoft.com"
+            }
+        ], 
+        "dead_hosts": [], 
+        "sorted_pcap_sha256": "90f2c1c8175cac13206c1505189a840b644f75071f8ef6b5c9d80b16b1aca000", 
+        "irc": [], 
+        "https_ex": []
+    }, 
+    "static": {
+        "pdb_path": null, 
+        "pe_imports": [], 
+        "peid_signatures": null, 
+        "keys": [], 
+        "signature": [], 
+        "pe_timestamp": "2009-07-13 19:50:17", 
+        "pe_exports": [], 
+        "imported_dll_count": 0, 
+        "pe_imphash": "", 
+        "pe_resources": [
+            {
+                "name": "MUI", 
+                "language": "LANG_DANISH", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x000010f0", 
+                "size": "0x000000b0"
+            }, 
+            {
+                "name": "RT_MESSAGETABLE", 
+                "language": "LANG_DANISH", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x000011a0", 
+                "size": "0x00000998"
+            }, 
+            {
+                "name": "RT_VERSION", 
+                "language": "LANG_DANISH", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x00001b38", 
+                "size": "0x000003cc"
+            }
+        ], 
+        "pe_versioninfo": [
+            {
+                "name": "LegalCopyright", 
+                "value": "\\xa9 Microsoft Corporation. Alle rettigheder forbeholdes."
+            }, 
+            {
+                "name": "InternalName", 
+                "value": "mspriv.dll"
+            }, 
+            {
+                "name": "FileVersion", 
+                "value": "6.1.7600.16385 (win7_rtm.090713-1255)"
+            }, 
+            {
+                "name": "CompanyName", 
+                "value": "Microsoft Corporation"
+            }, 
+            {
+                "name": "ProductName", 
+                "value": "Microsoft\\xae Windows\\xae Operativsystem"
+            }, 
+            {
+                "name": "ProductVersion", 
+                "value": "6.1.7600.16385"
+            }, 
+            {
+                "name": "FileDescription", 
+                "value": "Overs\\xe6ttelser af Microsoft-rettigheder"
+            }, 
+            {
+                "name": "OriginalFilename", 
+                "value": "mspriv.dll.mui"
+            }, 
+            {
+                "name": "Translation", 
+                "value": "0x0406 0x04b0"
+            }
+        ], 
+        "pe_sections": [
+            {
+                "size_of_data": "0x00001000", 
+                "virtual_address": "0x00001000", 
+                "entropy": 3.710387695893036, 
+                "name": ".rsrc", 
+                "virtual_size": "0x00001000"
+            }
+        ]
+    }, 
+    "behavior": {
+        "generic": [
+            {
+                "process_path": "C:\\Windows\\System32\\lsass.exe", 
+                "process_name": "lsass.exe", 
+                "pid": 484, 
+                "summary": {}, 
+                "first_seen": 1612073021.515625, 
+                "ppid": 376
+            }, 
+            {
+                "process_path": "C:\\Windows\\System32\\rundll32.exe", 
+                "process_name": "rundll32.exe", 
+                "pid": 2340, 
+                "summary": {
+                    "regkey_read": [
+                        "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\GRE_Initialize\\DisableMetaFiles"
+                    ]
+                }, 
+                "first_seen": 1612073021.84375, 
+                "ppid": 2316
+            }
+        ], 
+        "apistats": {
+            "2340": {
+                "LdrUnloadDll": 1, 
+                "NtOpenKey": 1, 
+                "SetUnhandledExceptionFilter": 1, 
+                "NtTerminateProcess": 3, 
+                "NtClose": 2, 
+                "GetSystemTimeAsFileTime": 1, 
+                "NtQueryValueKey": 1
+            }
+        }, 
+        "processes": [
+            {
+                "process_path": "C:\\Windows\\System32\\lsass.exe", 
+                "calls": [], 
+                "track": false, 
+                "pid": 484, 
+                "process_name": "lsass.exe", 
+                "command_line": "C:\\Windows\\system32\\lsass.exe", 
+                "modules": [
+                    {
+                        "basename": "lsass.exe", 
+                        "imgsize": 49152, 
+                        "baseaddr": "0xff3b0000", 
+                        "filepath": "C:\\Windows\\system32\\lsass.exe"
+                    }, 
+                    {
+                        "basename": "ntdll.dll", 
+                        "imgsize": 1740800, 
+                        "baseaddr": "0x773d0000", 
+                        "filepath": "C:\\Windows\\SYSTEM32\\ntdll.dll"
+                    }, 
+                    {
+                        "basename": "kernel32.dll", 
+                        "imgsize": 1175552, 
+                        "baseaddr": "0x771b0000", 
+                        "filepath": "C:\\Windows\\system32\\kernel32.dll"
+                    }, 
+                    {
+                        "basename": "KERNELBASE.dll", 
+                        "imgsize": 438272, 
+                        "baseaddr": "0x7fefd490000", 
+                        "filepath": "C:\\Windows\\system32\\KERNELBASE.dll"
+                    }, 
+                    {
+                        "basename": "msvcrt.dll", 
+                        "imgsize": 651264, 
+                        "baseaddr": "0x7feff1f0000", 
+                        "filepath": "C:\\Windows\\system32\\msvcrt.dll"
+                    }, 
+                    {
+                        "basename": "RPCRT4.dll", 
+                        "imgsize": 1232896, 
+                        "baseaddr": "0x7feff4b0000", 
+                        "filepath": "C:\\Windows\\system32\\RPCRT4.dll"
+                    }, 
+                    {
+                        "basename": "SspiSrv.dll", 
+                        "imgsize": 45056, 
+                        "baseaddr": "0x7fefd170000", 
+                        "filepath": "C:\\Windows\\system32\\SspiSrv.dll"
+                    }, 
+                    {
+                        "basename": "lsasrv.dll", 
+                        "imgsize": 1470464, 
+                        "baseaddr": "0x7fefd000000", 
+                        "filepath": "C:\\Windows\\system32\\lsasrv.dll"
+                    }, 
+                    {
+                        "basename": "sechost.dll", 
+                        "imgsize": 126976, 
+                        "baseaddr": "0x7feff310000", 
+                        "filepath": "C:\\Windows\\SYSTEM32\\sechost.dll"
+                    }, 
+                    {
+                        "basename": "SspiCli.dll", 
+                        "imgsize": 151552, 
+                        "baseaddr": "0x7fefd180000", 
+                        "filepath": "C:\\Windows\\system32\\SspiCli.dll"
+                    }, 
+                    {
+                        "basename": "ADVAPI32.dll", 
+                        "imgsize": 897024, 
+                        "baseaddr": "0x7fefed00000", 
+                        "filepath": "C:\\Windows\\system32\\ADVAPI32.dll"
+                    }, 
+                    {
+                        "basename": "USER32.dll", 
+                        "imgsize": 1024000, 
+                        "baseaddr": "0x772d0000", 
+                        "filepath": "C:\\Windows\\system32\\USER32.dll"
+                    }, 
+                    {
+                        "basename": "GDI32.dll", 
+                        "imgsize": 421888, 
+                        "baseaddr": "0x7fefee40000", 
+                        "filepath": "C:\\Windows\\system32\\GDI32.dll"
+                    }, 
+                    {
+                        "basename": "LPK.dll", 
+                        "imgsize": 57344, 
+                        "baseaddr": "0x7fefef30000", 
+                        "filepath": "C:\\Windows\\system32\\LPK.dll"
+                    }, 
+                    {
+                        "basename": "USP10.dll", 
+                        "imgsize": 823296, 
+                        "baseaddr": "0x7feff610000", 
+                        "filepath": "C:\\Windows\\system32\\USP10.dll"
+                    }, 
+                    {
+                        "basename": "SAMSRV.dll", 
+                        "imgsize": 774144, 
+                        "baseaddr": "0x7fefcf00000", 
+                        "filepath": "C:\\Windows\\system32\\SAMSRV.dll"
+                    }, 
+                    {
+                        "basename": "cryptdll.dll", 
+                        "imgsize": 81920, 
+                        "baseaddr": "0x7fefce60000", 
+                        "filepath": "C:\\Windows\\system32\\cryptdll.dll"
+                    }, 
+                    {
+                        "basename": "MSASN1.dll", 
+                        "imgsize": 61440, 
+                        "baseaddr": "0x7fefd3c0000", 
+                        "filepath": "C:\\Windows\\system32\\MSASN1.dll"
+                    }, 
+                    {
+                        "basename": "wevtapi.dll", 
+                        "imgsize": 446464, 
+                        "baseaddr": "0x7fefcdc0000", 
+                        "filepath": "C:\\Windows\\system32\\wevtapi.dll"
+                    }, 
+                    {
+                        "basename": "IMM32.DLL", 
+                        "imgsize": 188416, 
+                        "baseaddr": "0x7fefdab0000", 
+                        "filepath": "C:\\Windows\\system32\\IMM32.DLL"
+                    }, 
+                    {
+                        "basename": "MSCTF.dll", 
+                        "imgsize": 1085440, 
+                        "baseaddr": "0x7fefd9a0000", 
+                        "filepath": "C:\\Windows\\system32\\MSCTF.dll"
+                    }, 
+                    {
+                        "basename": "cngaudit.dll", 
+                        "imgsize": 36864, 
+                        "baseaddr": "0x7fefcdb0000", 
+                        "filepath": "C:\\Windows\\system32\\cngaudit.dll"
+                    }, 
+                    {
+                        "basename": "AUTHZ.dll", 
+                        "imgsize": 192512, 
+                        "baseaddr": "0x7fefcd80000", 
+                        "filepath": "C:\\Windows\\system32\\AUTHZ.dll"
+                    }, 
+                    {
+                        "basename": "ncrypt.dll", 
+                        "imgsize": 319488, 
+                        "baseaddr": "0x7fefcd30000", 
+                        "filepath": "C:\\Windows\\system32\\ncrypt.dll"
+                    }, 
+                    {
+                        "basename": "bcrypt.dll", 
+                        "imgsize": 139264, 
+                        "baseaddr": "0x7fefcd00000", 
+                        "filepath": "C:\\Windows\\system32\\bcrypt.dll"
+                    }, 
+                    {
+                        "basename": "msprivs.DLL", 
+                        "imgsize": 8192, 
+                        "baseaddr": "0x750f0000", 
+                        "filepath": "C:\\Windows\\system32\\msprivs.DLL"
+                    }, 
+                    {
+                        "basename": "netjoin.dll", 
+                        "imgsize": 204800, 
+                        "baseaddr": "0x7fefccc0000", 
+                        "filepath": "C:\\Windows\\system32\\netjoin.dll"
+                    }, 
+                    {
+                        "basename": "negoexts.DLL", 
+                        "imgsize": 147456, 
+                        "baseaddr": "0x7fefcc90000", 
+                        "filepath": "C:\\Windows\\system32\\negoexts.DLL"
+                    }, 
+                    {
+                        "basename": "Secur32.dll", 
+                        "imgsize": 45056, 
+                        "baseaddr": "0x7fefcfc0000", 
+                        "filepath": "C:\\Windows\\system32\\Secur32.dll"
+                    }, 
+                    {
+                        "basename": "cryptbase.dll", 
+                        "imgsize": 61440, 
+                        "baseaddr": "0x7fefd210000", 
+                        "filepath": "C:\\Windows\\system32\\cryptbase.dll"
+                    }, 
+                    {
+                        "basename": "kerberos.DLL", 
+                        "imgsize": 737280, 
+                        "baseaddr": "0x7fefcbd0000", 
+                        "filepath": "C:\\Windows\\system32\\kerberos.DLL"
+                    }, 
+                    {
+                        "basename": "CRYPTSP.dll", 
+                        "imgsize": 94208, 
+                        "baseaddr": "0x7fefcbb0000", 
+                        "filepath": "C:\\Windows\\system32\\CRYPTSP.dll"
+                    }, 
+                    {
+                        "basename": "WS2_32.dll", 
+                        "imgsize": 315392, 
+                        "baseaddr": "0x7fefd950000", 
+                        "filepath": "C:\\Windows\\system32\\WS2_32.dll"
+                    }, 
+                    {
+                        "basename": "NSI.dll", 
+                        "imgsize": 32768, 
+                        "baseaddr": "0x7feff5e0000", 
+                        "filepath": "C:\\Windows\\system32\\NSI.dll"
+                    }, 
+                    {
+                        "basename": "mswsock.dll", 
+                        "imgsize": 348160, 
+                        "baseaddr": "0x7fefcb50000", 
+                        "filepath": "C:\\Windows\\system32\\mswsock.dll"
+                    }, 
+                    {
+                        "basename": "wship6.dll", 
+                        "imgsize": 28672, 
+                        "baseaddr": "0x7fefcb40000", 
+                        "filepath": "C:\\Windows\\System32\\wship6.dll"
+                    }, 
+                    {
+                        "basename": "msv1_0.DLL", 
+                        "imgsize": 331776, 
+                        "baseaddr": "0x7fefcae0000", 
+                        "filepath": "C:\\Windows\\system32\\msv1_0.DLL"
+                    }, 
+                    {
+                        "basename": "netlogon.DLL", 
+                        "imgsize": 712704, 
+                        "baseaddr": "0x7fefca30000", 
+                        "filepath": "C:\\Windows\\system32\\netlogon.DLL"
+                    }, 
+                    {
+                        "basename": "DNSAPI.dll", 
+                        "imgsize": 372736, 
+                        "baseaddr": "0x7fefc9d0000", 
+                        "filepath": "C:\\Windows\\system32\\DNSAPI.dll"
+                    }, 
+                    {
+                        "basename": "logoncli.dll", 
+                        "imgsize": 196608, 
+                        "baseaddr": "0x7fefc9a0000", 
+                        "filepath": "C:\\Windows\\system32\\logoncli.dll"
+                    }, 
+                    {
+                        "basename": "schannel.DLL", 
+                        "imgsize": 356352, 
+                        "baseaddr": "0x7fefc940000", 
+                        "filepath": "C:\\Windows\\system32\\schannel.DLL"
+                    }, 
+                    {
+                        "basename": "CRYPT32.dll", 
+                        "imgsize": 1470464, 
+                        "baseaddr": "0x7fefd540000", 
+                        "filepath": "C:\\Windows\\system32\\CRYPT32.dll"
+                    }, 
+                    {
+                        "basename": "wdigest.DLL", 
+                        "imgsize": 221184, 
+                        "baseaddr": "0x7fefc900000", 
+                        "filepath": "C:\\Windows\\system32\\wdigest.DLL"
+                    }, 
+                    {
+                        "basename": "rsaenh.dll", 
+                        "imgsize": 290816, 
+                        "baseaddr": "0x7fefc8b0000", 
+                        "filepath": "C:\\Windows\\system32\\rsaenh.dll"
+                    }, 
+                    {
+                        "basename": "tspkg.DLL", 
+                        "imgsize": 98304, 
+                        "baseaddr": "0x7fefc890000", 
+                        "filepath": "C:\\Windows\\system32\\tspkg.DLL"
+                    }, 
+                    {
+                        "basename": "pku2u.DLL", 
+                        "imgsize": 282624, 
+                        "baseaddr": "0x7fefc840000", 
+                        "filepath": "C:\\Windows\\system32\\pku2u.DLL"
+                    }, 
+                    {
+                        "basename": "bcryptprimitives.dll", 
+                        "imgsize": 311296, 
+                        "baseaddr": "0x7fefc7f0000", 
+                        "filepath": "C:\\Windows\\system32\\bcryptprimitives.dll"
+                    }, 
+                    {
+                        "basename": "RpcRtRemote.dll", 
+                        "imgsize": 81920, 
+                        "baseaddr": "0x7fefd300000", 
+                        "filepath": "C:\\Windows\\system32\\RpcRtRemote.dll"
+                    }, 
+                    {
+                        "basename": "efslsaext.dll", 
+                        "imgsize": 73728, 
+                        "baseaddr": "0x7fefc7d0000", 
+                        "filepath": "C:\\Windows\\system32\\efslsaext.dll"
+                    }, 
+                    {
+                        "basename": "scecli.DLL", 
+                        "imgsize": 253952, 
+                        "baseaddr": "0x7fefc770000", 
+                        "filepath": "C:\\Windows\\system32\\scecli.DLL"
+                    }, 
+                    {
+                        "basename": "credssp.dll", 
+                        "imgsize": 40960, 
+                        "baseaddr": "0x7fefc7b0000", 
+                        "filepath": "C:\\Windows\\system32\\credssp.dll"
+                    }, 
+                    {
+                        "basename": "WINSTA.dll", 
+                        "imgsize": 249856, 
+                        "baseaddr": "0x7fefd2c0000", 
+                        "filepath": "C:\\Windows\\system32\\WINSTA.dll"
+                    }, 
+                    {
+                        "basename": "IPHLPAPI.DLL", 
+                        "imgsize": 159744, 
+                        "baseaddr": "0x7fefac40000", 
+                        "filepath": "C:\\Windows\\system32\\IPHLPAPI.DLL"
+                    }, 
+                    {
+                        "basename": "WINNSI.DLL", 
+                        "imgsize": 45056, 
+                        "baseaddr": "0x7fefac30000", 
+                        "filepath": "C:\\Windows\\system32\\WINNSI.DLL"
+                    }, 
+                    {
+                        "basename": "netutils.dll", 
+                        "imgsize": 49152, 
+                        "baseaddr": "0x7fefae40000", 
+                        "filepath": "C:\\Windows\\system32\\netutils.dll"
+                    }, 
+                    {
+                        "basename": "USERENV.dll", 
+                        "imgsize": 122880, 
+                        "baseaddr": "0x7fefc660000", 
+                        "filepath": "C:\\Windows\\system32\\USERENV.dll"
+                    }, 
+                    {
+                        "basename": "profapi.dll", 
+                        "imgsize": 61440, 
+                        "baseaddr": "0x7fefd320000", 
+                        "filepath": "C:\\Windows\\system32\\profapi.dll"
+                    }, 
+                    {
+                        "basename": "wshtcpip.dll", 
+                        "imgsize": 28672, 
+                        "baseaddr": "0x7fefc550000", 
+                        "filepath": "C:\\Windows\\System32\\wshtcpip.dll"
+                    }, 
+                    {
+                        "basename": "monitor-x64.dll", 
+                        "imgsize": 2269184, 
+                        "baseaddr": "0x74a70000", 
+                        "filepath": "C:\\tmp_yfnpc\\bin\\monitor-x64.dll"
+                    }
+                ], 
+                "time": 0, 
+                "tid": 2292, 
+                "first_seen": 1612073021.515625, 
+                "ppid": 376, 
+                "type": "process"
+            }, 
+            {
+                "process_path": "C:\\Windows\\System32\\rundll32.exe", 
+                "calls": [
+                    {
+                        "category": "synchronisation", 
+                        "status": 1, 
+                        "stacktrace": [], 
+                        "api": "GetSystemTimeAsFileTime", 
+                        "return_value": 0, 
+                        "arguments": {}, 
+                        "time": 1612072592.472021, 
+                        "tid": 2344, 
+                        "flags": {}
+                    }, 
+                    {
+                        "category": "exception", 
+                        "status": 0, 
+                        "stacktrace": [], 
+                        "last_error": 0, 
+                        "nt_status": -1073741515, 
+                        "api": "SetUnhandledExceptionFilter", 
+                        "return_value": 0, 
+                        "arguments": {}, 
+                        "time": 1612072592.472021, 
+                        "tid": 2344, 
+                        "flags": {}
+                    }, 
+                    {
+                        "category": "process", 
+                        "status": 0, 
+                        "stacktrace": [], 
+                        "last_error": 0, 
+                        "nt_status": -1073741515, 
+                        "api": "NtTerminateProcess", 
+                        "return_value": 0, 
+                        "arguments": {
+                            "status_code": "0x00000000", 
+                            "process_identifier": 0, 
+                            "process_handle": "0x0000000000000000"
+                        }, 
+                        "time": 1612072592.472021, 
+                        "tid": 2344, 
+                        "flags": {}
+                    }, 
+                    {
+                        "category": "process", 
+                        "status": 1, 
+                        "stacktrace": [], 
+                        "api": "NtTerminateProcess", 
+                        "return_value": 0, 
+                        "arguments": {
+                            "status_code": "0x00000000", 
+                            "process_identifier": 0, 
+                            "process_handle": "0x0000000000000000"
+                        }, 
+                        "time": 1612072592.472021, 
+                        "tid": 2344, 
+                        "flags": {}
+                    }, 
+                    {
+                        "category": "system", 
+                        "status": 1, 
+                        "stacktrace": [], 
+                        "api": "NtClose", 
+                        "return_value": 0, 
+                        "arguments": {
+                            "handle": "0x000000000000001c"
+                        }, 
+                        "time": 1612072592.472021, 
+                        "tid": 2344, 
+                        "flags": {}
+                    }, 
+                    {
+                        "category": "system", 
+                        "status": 1, 
+                        "stacktrace": [], 
+                        "api": "LdrUnloadDll", 
+                        "return_value": 0, 
+                        "arguments": {
+                            "library": "IMM32", 
+                            "module_address": "0x000007fefdab0000"
+                        }, 
+                        "time": 1612072592.472021, 
+                        "tid": 2344, 
+                        "flags": {}
+                    }, 
+                    {
+                        "category": "registry", 
+                        "status": 1, 
+                        "stacktrace": [], 
+                        "api": "NtOpenKey", 
+                        "return_value": 0, 
+                        "arguments": {
+                            "key_handle": "0x000000000000001c", 
+                            "desired_access": "0x00020019", 
+                            "regkey": "HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows NT\\CurrentVersion\\GRE_Initialize"
+                        }, 
+                        "time": 1612072592.472021, 
+                        "tid": 2344, 
+                        "flags": {
+                            "desired_access": "READ_CONTROL"
+                        }
+                    }, 
+                    {
+                        "category": "registry", 
+                        "status": 0, 
+                        "stacktrace": [], 
+                        "last_error": 0, 
+                        "nt_status": -1073741515, 
+                        "api": "NtQueryValueKey", 
+                        "return_value": -1073741772, 
+                        "arguments": {
+                            "key_handle": "0x000000000000001c", 
+                            "key_name": "", 
+                            "value": "", 
+                            "reg_type": 0, 
+                            "information_class": 2, 
+                            "regkey": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\GRE_Initialize\\DisableMetaFiles"
+                        }, 
+                        "time": 1612072592.487021, 
+                        "tid": 2344, 
+                        "flags": {
+                            "reg_type": "REG_NONE", 
+                            "information_class": "KeyValuePartialInformation"
+                        }
+                    }, 
+                    {
+                        "category": "system", 
+                        "status": 1, 
+                        "stacktrace": [], 
+                        "api": "NtClose", 
+                        "return_value": 0, 
+                        "arguments": {
+                            "handle": "0x000000000000001c"
+                        }, 
+                        "time": 1612072592.487021, 
+                        "tid": 2344, 
+                        "flags": {}
+                    }, 
+                    {
+                        "category": "process", 
+                        "status": 0, 
+                        "stacktrace": [], 
+                        "last_error": 0, 
+                        "nt_status": -1073741515, 
+                        "api": "NtTerminateProcess", 
+                        "return_value": 0, 
+                        "arguments": {
+                            "status_code": "0x00000000", 
+                            "process_identifier": 2340, 
+                            "process_handle": "0xffffffffffffffff"
+                        }, 
+                        "time": 1612072592.487021, 
+                        "tid": 2344, 
+                        "flags": {}
+                    }
+                ], 
+                "track": true, 
+                "pid": 2340, 
+                "process_name": "rundll32.exe", 
+                "command_line": "\"C:\\Windows\\System32\\rundll32.exe\" \"C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\Sample 40.dll,DllMain\"", 
+                "modules": [
+                    {
+                        "basename": "rundll32.exe", 
+                        "imgsize": 61440, 
+                        "baseaddr": "0xfff00000", 
+                        "filepath": "C:\\Windows\\System32\\rundll32.exe"
+                    }, 
+                    {
+                        "basename": "ntdll.dll", 
+                        "imgsize": 1740800, 
+                        "baseaddr": "0x773d0000", 
+                        "filepath": "C:\\Windows\\SYSTEM32\\ntdll.dll"
+                    }, 
+                    {
+                        "basename": "kernel32.dll", 
+                        "imgsize": 1175552, 
+                        "baseaddr": "0x771b0000", 
+                        "filepath": "C:\\Windows\\system32\\kernel32.dll"
+                    }, 
+                    {
+                        "basename": "KERNELBASE.dll", 
+                        "imgsize": 438272, 
+                        "baseaddr": "0x7fefd490000", 
+                        "filepath": "C:\\Windows\\system32\\KERNELBASE.dll"
+                    }, 
+                    {
+                        "basename": "USER32.dll", 
+                        "imgsize": 1024000, 
+                        "baseaddr": "0x772d0000", 
+                        "filepath": "C:\\Windows\\system32\\USER32.dll"
+                    }, 
+                    {
+                        "basename": "GDI32.dll", 
+                        "imgsize": 421888, 
+                        "baseaddr": "0x7fefee40000", 
+                        "filepath": "C:\\Windows\\system32\\GDI32.dll"
+                    }, 
+                    {
+                        "basename": "LPK.dll", 
+                        "imgsize": 57344, 
+                        "baseaddr": "0x7fefef30000", 
+                        "filepath": "C:\\Windows\\system32\\LPK.dll"
+                    }, 
+                    {
+                        "basename": "USP10.dll", 
+                        "imgsize": 823296, 
+                        "baseaddr": "0x7feff610000", 
+                        "filepath": "C:\\Windows\\system32\\USP10.dll"
+                    }, 
+                    {
+                        "basename": "msvcrt.dll", 
+                        "imgsize": 651264, 
+                        "baseaddr": "0x7feff1f0000", 
+                        "filepath": "C:\\Windows\\system32\\msvcrt.dll"
+                    }, 
+                    {
+                        "basename": "imagehlp.dll", 
+                        "imgsize": 94208, 
+                        "baseaddr": "0x7feff5f0000", 
+                        "filepath": "C:\\Windows\\system32\\imagehlp.dll"
+                    }, 
+                    {
+                        "basename": "IMM32.DLL", 
+                        "imgsize": 188416, 
+                        "baseaddr": "0x7fefdab0000", 
+                        "filepath": "C:\\Windows\\system32\\IMM32.DLL"
+                    }, 
+                    {
+                        "basename": "MSCTF.dll", 
+                        "imgsize": 1085440, 
+                        "baseaddr": "0x7fefd9a0000", 
+                        "filepath": "C:\\Windows\\system32\\MSCTF.dll"
+                    }, 
+                    {
+                        "basename": "monitor-x64.dll", 
+                        "imgsize": 2269184, 
+                        "baseaddr": "0x74a70000", 
+                        "filepath": "C:\\tmp_yfnpc\\bin\\monitor-x64.dll"
+                    }
+                ], 
+                "time": 0, 
+                "tid": 2344, 
+                "first_seen": 1612073021.84375, 
+                "ppid": 2316, 
+                "type": "process"
+            }
+        ], 
+        "processtree": [
+            {
+                "track": false, 
+                "pid": 484, 
+                "process_name": "lsass.exe", 
+                "command_line": "C:\\Windows\\system32\\lsass.exe", 
+                "first_seen": 1612073021.515625, 
+                "ppid": 376, 
+                "children": []
+            }, 
+            {
+                "track": true, 
+                "pid": 2340, 
+                "process_name": "rundll32.exe", 
+                "command_line": "\"C:\\Windows\\System32\\rundll32.exe\" \"C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\Sample 40.dll,DllMain\"", 
+                "first_seen": 1612073021.84375, 
+                "ppid": 2316, 
+                "children": []
+            }
+        ], 
+        "summary": {
+            "regkey_read": [
+                "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\GRE_Initialize\\DisableMetaFiles"
+            ]
+        }
+    }, 
+    "debug": {
+        "action": [], 
+        "dbgview": [], 
+        "errors": [], 
+        "log": [
+            "2021-01-31 12:03:41,015 [analyzer] DEBUG: Starting analyzer from: C:\\tmp_yfnpc\n", 
+            "2021-01-31 12:03:41,015 [analyzer] DEBUG: Pipe server name: \\??\\PIPE\\VamVbWVQXuUXsfRPD\n", 
+            "2021-01-31 12:03:41,015 [analyzer] DEBUG: Log pipe server name: \\??\\PIPE\\fYCHypipkZjcGZBuiIHxGO\n", 
+            "2021-01-31 12:03:41,015 [analyzer] DEBUG: No analysis package specified, trying to detect it automagically.\n", 
+            "2021-01-31 12:03:41,015 [analyzer] INFO: Automatically selected analysis package \"dll\"\n", 
+            "2021-01-31 12:03:41,108 [analyzer] DEBUG: Started auxiliary module DbgView\n", 
+            "2021-01-31 12:03:41,421 [analyzer] DEBUG: Started auxiliary module Disguise\n", 
+            "2021-01-31 12:03:41,578 [analyzer] DEBUG: Loaded monitor into process with pid 484\n", 
+            "2021-01-31 12:03:41,578 [analyzer] DEBUG: Started auxiliary module DumpTLSMasterSecrets\n", 
+            "2021-01-31 12:03:41,578 [analyzer] DEBUG: Started auxiliary module Human\n", 
+            "2021-01-31 12:03:41,592 [analyzer] DEBUG: Started auxiliary module InstallCertificate\n", 
+            "2021-01-31 12:03:41,592 [analyzer] DEBUG: Started auxiliary module Reboot\n", 
+            "2021-01-31 12:03:41,765 [analyzer] DEBUG: Started auxiliary module RecentFiles\n", 
+            "2021-01-31 12:03:41,765 [modules.auxiliary.screenshots] INFO: Python Image Library (either PIL or Pillow) is not installed, screenshots are disabled.\n", 
+            "2021-01-31 12:03:41,765 [analyzer] DEBUG: Started auxiliary module Screenshots\n", 
+            "2021-01-31 12:03:41,765 [analyzer] DEBUG: Started auxiliary module LoadZer0m0n\n", 
+            "2021-01-31 12:03:41,780 [lib.api.process] INFO: Successfully executed process from path 'C:\\\\Windows\\\\System32\\\\rundll32.exe' with arguments [u'C:\\\\Users\\\\ADMINI~1\\\\AppData\\\\Local\\\\Temp\\\\Sample 40.dll,DllMain'] and pid 2340\n", 
+            "2021-01-31 12:03:41,967 [analyzer] DEBUG: Loaded monitor into process with pid 2340\n", 
+            "2021-01-31 12:03:42,780 [analyzer] INFO: Process with pid 2340 has terminated\n", 
+            "2021-01-31 12:03:42,780 [analyzer] INFO: Process list is empty, terminating analysis.\n", 
+            "2021-01-31 12:03:43,780 [analyzer] INFO: Analysis completed.\n"
+        ], 
+        "cuckoo": [
+            "2021-01-31 12:03:42,709 [cuckoo.core.scheduler] INFO: Task #203: acquired machine 192.168.56.1011 (label=192.168.56.1011)\n", 
+            "2021-01-31 12:03:42,709 [cuckoo.core.resultserver] DEBUG: Now tracking machine 192.168.56.101 for task #203\n", 
+            "2021-01-31 12:03:42,710 [cuckoo.core.plugins] DEBUG: Started auxiliary module: Replay\n", 
+            "2021-01-31 12:03:42,718 [cuckoo.auxiliary.sniffer] INFO: Started sniffer with PID 946418 (interface=vboxnet0, host=192.168.56.101)\n", 
+            "2021-01-31 12:03:42,719 [cuckoo.core.plugins] DEBUG: Started auxiliary module: Sniffer\n", 
+            "2021-01-31 12:03:42,740 [cuckoo.machinery.virtualbox] DEBUG: Starting vm 192.168.56.1011\n", 
+            "2021-01-31 12:03:43,028 [cuckoo.machinery.virtualbox] DEBUG: Restoring virtual machine 192.168.56.1011 to its current snapshot\n", 
+            "2021-01-31 12:03:46,347 [cuckoo.core.guest] INFO: Starting analysis #203 on guest (id=192.168.56.1011, ip=192.168.56.101)\n", 
+            "2021-01-31 12:03:47,350 [cuckoo.core.guest] DEBUG: 192.168.56.1011: not ready yet\n", 
+            "2021-01-31 12:03:48,357 [cuckoo.core.guest] DEBUG: 192.168.56.1011: not ready yet\n", 
+            "2021-01-31 12:03:49,364 [cuckoo.core.guest] DEBUG: 192.168.56.1011: not ready yet\n", 
+            "2021-01-31 12:03:49,410 [cuckoo.core.guest] DEBUG: 192.168.56.1011: not ready yet\n", 
+            "2021-01-31 12:03:50,435 [cuckoo.core.guest] INFO: Guest is running Cuckoo Agent 0.10 (id=192.168.56.1011, ip=192.168.56.101)\n", 
+            "2021-01-31 12:03:50,503 [cuckoo.core.guest] DEBUG: Uploading analyzer to guest (id=192.168.56.1011, ip=192.168.56.101, monitor=latest, size=3884763)\n", 
+            "2021-01-31 12:03:50,893 [cuckoo.core.resultserver] DEBUG: Task #203: live log analysis.log initialized.\n", 
+            "2021-01-31 12:03:51,422 [cuckoo.core.resultserver] DEBUG: Task #203 is sending a BSON stream\n", 
+            "2021-01-31 12:03:51,750 [cuckoo.core.resultserver] DEBUG: Task #203 is sending a BSON stream\n", 
+            "2021-01-31 12:03:53,774 [cuckoo.core.guest] INFO: 192.168.56.1011: analysis completed successfully\n", 
+            "2021-01-31 12:03:53,798 [cuckoo.core.plugins] DEBUG: Stopped auxiliary module: Replay\n", 
+            "2021-01-31 12:03:53,850 [cuckoo.core.plugins] DEBUG: Stopped auxiliary module: Sniffer\n", 
+            "2021-01-31 12:03:53,851 [cuckoo.machinery.virtualbox] DEBUG: Stopping vm 192.168.56.1011\n", 
+            "2021-01-31 12:03:55,111 [cuckoo.core.resultserver] DEBUG: Stopped tracking machine 192.168.56.101 for task #203\n", 
+            "2021-01-31 12:03:55,111 [cuckoo.core.resultserver] DEBUG: Cancel <Context for LOG> for task 203\n", 
+            "2021-01-31 12:03:55,133 [cuckoo.core.scheduler] DEBUG: Released database task #203\n", 
+            "2021-01-31 12:03:55,188 [cuckoo.core.plugins] DEBUG: Executed processing module \"AnalysisInfo\" for task #203\n", 
+            "2021-01-31 12:03:55,199 [cuckoo.core.plugins] DEBUG: Executed processing module \"BehaviorAnalysis\" for task #203\n", 
+            "2021-01-31 12:03:55,200 [cuckoo.core.plugins] DEBUG: Executed processing module \"Dropped\" for task #203\n", 
+            "2021-01-31 12:03:55,200 [cuckoo.core.plugins] DEBUG: Executed processing module \"DroppedBuffer\" for task #203\n", 
+            "2021-01-31 12:03:55,205 [cuckoo.core.plugins] DEBUG: Executed processing module \"MetaInfo\" for task #203\n", 
+            "2021-01-31 12:03:55,206 [cuckoo.core.plugins] DEBUG: Executed processing module \"ProcessMemory\" for task #203\n", 
+            "2021-01-31 12:03:55,209 [cuckoo.core.plugins] DEBUG: Executed processing module \"Procmon\" for task #203\n", 
+            "2021-01-31 12:03:55,209 [cuckoo.core.plugins] DEBUG: Executed processing module \"Screenshots\" for task #203\n", 
+            "2021-01-31 12:03:55,456 [cuckoo.core.plugins] DEBUG: Executed processing module \"Static\" for task #203\n", 
+            "2021-01-31 12:03:55,457 [cuckoo.core.plugins] DEBUG: Executed processing module \"Strings\" for task #203\n", 
+            "2021-01-31 12:03:55,459 [cuckoo.core.plugins] DEBUG: Executed processing module \"TargetInfo\" for task #203\n", 
+            "2021-01-31 12:03:55,570 [cuckoo.core.plugins] DEBUG: Executed processing module \"NetworkAnalysis\" for task #203\n", 
+            "2021-01-31 12:03:55,571 [cuckoo.core.plugins] DEBUG: Executed processing module \"Extracted\" for task #203\n", 
+            "2021-01-31 12:03:55,572 [cuckoo.core.plugins] DEBUG: Executed processing module \"TLSMasterSecrets\" for task #203\n", 
+            "2021-01-31 12:03:55,578 [cuckoo.core.plugins] DEBUG: Executed processing module \"Debug\" for task #203\n", 
+            "2021-01-31 12:03:55,616 [cuckoo.core.plugins] DEBUG: Running 542 signa"
+        ]
+    }, 
+    "strings": [
+        "!This program cannot be run in DOS mode.", 
+        "PADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPAD", 
+        "Opret et tokenobjekt", 
+        "Erstat en token p", 
+        " procesniveau", 
+        "s sider i hukommelsen", 
+        "Tilpas hukommelseskvoter til en proces", 
+        "j arbejdsstationer til dom", 
+        "d som en del af operativsystemet", 
+        "Administrer overv", 
+        "gning og sikkerhedslog", 
+        "Overtag ejerskab af filer eller andre objekter", 
+        "s og udl", 
+        "s enhedsdrivere", 
+        "Opret profil af systemydelse", 
+        "Skift systemtid", 
+        "Opret profil af enkelt proces", 
+        "g planl", 
+        "gningsprioritet", 
+        "Opret en sidefil", 
+        "Opret permanent delte objekter", 
+        "Sikkerhedskopier filer og mapper", 
+        "Gendan filer og mapper", 
+        "Luk systemet", 
+        "Fejlfindingsprogrammer", 
+        "Generer sikkerhedsoverv", 
+        "gninger", 
+        "Rediger milj", 
+        "rdier for firmware", 
+        "Spring krydscheck over", 
+        "Gennemtving nedlukning fra et eksternt system", 
+        "Fjern computeren fra dockingstationen", 
+        "Synkroniser katalogtjenestedata", 
+        "Aktiver computer- og brugerkonti, der skal v", 
+        "re betroet til delegering", 
+        "r opgaver til omr", 
+        "devedligeholdelse", 
+        "senter en klient efter godkendelse", 
+        "Opret globale objekter", 
+        " adgang til legitimationsstyring som en betroet kalder", 
+        "Modificer en objektetiket", 
+        "g et procesarbejdss", 
+        "Skift tidszone", 
+        "Opret symbollink", 
+        "VS_VERSION_INFO", 
+        "StringFileInfo", 
+        "040604B0", 
+        "CompanyName", 
+        "Microsoft Corporation", 
+        "FileDescription", 
+        "ttelser af Microsoft-rettigheder", 
+        "FileVersion", 
+        "6.1.7600.16385 (win7_rtm.090713-1255)", 
+        "InternalName", 
+        "mspriv.dll", 
+        "LegalCopyright", 
+        " Microsoft Corporation. Alle rettigheder forbeholdes.", 
+        "OriginalFilename", 
+        "mspriv.dll.mui", 
+        "ProductName", 
+        "Microsoft", 
+        " Windows", 
+        " Operativsystem", 
+        "ProductVersion", 
+        "6.1.7600.16385", 
+        "VarFileInfo", 
+        "Translation"
+    ], 
+    "metadata": {
+        "output": {
+            "pcap": {
+                "basename": "dump.pcap", 
+                "sha256": "92f0dc5cb5eac8b16f242a6ea36ae0c3c9c58c95881528ff920cbe55534f4232", 
+                "dirname": ""
+            }
+        }
+    }
+}

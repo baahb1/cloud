@@ -1,0 +1,789 @@
+{
+    "info": {
+        "added": 1612094351.271646, 
+        "started": 1612094352.10335, 
+        "duration": 11, 
+        "ended": 1612094363.643978, 
+        "owner": "", 
+        "score": 0.2, 
+        "id": 194, 
+        "category": "file", 
+        "git": {
+            "head": "13cbe0d9e457be3673304533043e992ead1ea9b2", 
+            "fetch_head": "13cbe0d9e457be3673304533043e992ead1ea9b2"
+        }, 
+        "monitor": "2deb9ccd75d5a7a3fe05b2625b03a8639d6ee36b", 
+        "package": "", 
+        "route": "none", 
+        "custom": "", 
+        "machine": {
+            "status": "stopped", 
+            "name": "192.168.56.1011", 
+            "label": "192.168.56.1011", 
+            "manager": "VirtualBox", 
+            "started_on": "2021-01-31 11:59:12", 
+            "shutdown_on": "2021-01-31 11:59:23"
+        }, 
+        "platform": "", 
+        "version": "2.0.7", 
+        "options": ""
+    }, 
+    "signatures": [
+        {
+            "families": [], 
+            "description": "The file contains an unknown PE resource name possibly indicative of a packer", 
+            "severity": 1, 
+            "ttp": {
+                "T1045": {
+                    "short": "Software Packing", 
+                    "long": "Software packing is a method of compressing or encrypting an executable. Packing an executable changes the file signature in an attempt to avoid signature-based detection. Most decompression techniques decompress the executable code in memory."
+                }
+            }, 
+            "markcount": 1, 
+            "references": [], 
+            "marks": [
+                {
+                    "category": "resource name", 
+                    "ioc": "MUI", 
+                    "type": "ioc", 
+                    "description": null
+                }
+            ], 
+            "name": "pe_unknown_resource_name"
+        }
+    ], 
+    "target": {
+        "category": "file", 
+        "file": {
+            "yara": [], 
+            "sha1": "b2e035d999b6d5d0b9787dd3c2e9b199796d85d2", 
+            "name": "Sample 31", 
+            "type": "PE32+ executable (DLL) (GUI) x86-64, for MS Windows", 
+            "sha256": "51a38cb96e8daaebd59b6b096fa191dc16cd7d4cc6958c1a9306499226e22cb6", 
+            "urls": [], 
+            "crc32": "47818E11", 
+            "path": "/home/eric/.cuckoo/storage/binaries/51a38cb96e8daaebd59b6b096fa191dc16cd7d4cc6958c1a9306499226e22cb6", 
+            "ssdeep": null, 
+            "size": 5632, 
+            "sha512": "a659b5cba914021bfc2cce1ed67ea98c9764eae8e50c842e898d3c080f7962d25b615d8496c20817591225ad8dafb8de5f19b00e4869b13ee529306f0676840a", 
+            "md5": "e7dc62c8d64e9cb3be85c51d414aeb9c"
+        }
+    }, 
+    "network": {
+        "tls": [], 
+        "udp": [
+            {
+                "src": "192.168.56.101", 
+                "dst": "224.0.0.252", 
+                "offset": 1174, 
+                "time": 1.0450959205627441, 
+                "dport": 5355, 
+                "sport": 56682
+            }, 
+            {
+                "src": "192.168.56.101", 
+                "dst": "224.0.0.252", 
+                "offset": 1494, 
+                "time": 0.2361128330230713, 
+                "dport": 5355, 
+                "sport": 62007
+            }, 
+            {
+                "src": "192.168.56.101", 
+                "dst": "224.0.0.252", 
+                "offset": 1822, 
+                "time": 1.598085880279541, 
+                "dport": 5355, 
+                "sport": 62121
+            }, 
+            {
+                "src": "192.168.56.101", 
+                "dst": "224.0.0.252", 
+                "offset": 2142, 
+                "time": 1.2217299938201904, 
+                "dport": 5355, 
+                "sport": 62726
+            }, 
+            {
+                "src": "192.168.56.101", 
+                "dst": "8.8.8.8", 
+                "offset": 3470, 
+                "time": 1.9264109134674072, 
+                "dport": 53, 
+                "sport": 49955
+            }, 
+            {
+                "src": "192.168.56.101", 
+                "dst": "8.8.8.8", 
+                "offset": 3760, 
+                "time": 1.047623872756958, 
+                "dport": 53, 
+                "sport": 63207
+            }
+        ], 
+        "dns_servers": [
+            "8.8.8.8"
+        ], 
+        "http": [
+            {
+                "count": 1, 
+                "body": "", 
+                "uri": "http://www.msftncsi.com/ncsi.txt", 
+                "user-agent": "Microsoft NCSI", 
+                "method": "GET", 
+                "host": "www.msftncsi.com", 
+                "version": "1.1", 
+                "path": "/ncsi.txt", 
+                "data": "GET /ncsi.txt HTTP/1.1\r\nConnection: Close\r\nUser-Agent: Microsoft NCSI\r\nHost: www.msftncsi.com\r\n\r\n", 
+                "port": 80
+            }
+        ], 
+        "icmp": [], 
+        "smtp": [], 
+        "tcp": [
+            {
+                "src": "192.168.56.101", 
+                "dst": "23.197.193.67", 
+                "offset": 2704, 
+                "time": 1.9807429313659668, 
+                "dport": 80, 
+                "sport": 49161
+            }
+        ], 
+        "smtp_ex": [], 
+        "mitm": [], 
+        "hosts": [
+            "23.197.193.67", 
+            "8.8.8.8"
+        ], 
+        "pcap_sha256": "e89b93c4223ff4f124b3631a561a7fbc8f5119cf5b43400883f4926fb4c2e50c", 
+        "dns": [
+            {
+                "type": "A", 
+                "request": "www.msftncsi.com", 
+                "answers": [
+                    {
+                        "data": "23.197.193.67", 
+                        "type": "A"
+                    }, 
+                    {
+                        "data": "www.msftncsi.com.edgesuite.net", 
+                        "type": "CNAME"
+                    }, 
+                    {
+                        "data": "23.197.193.16", 
+                        "type": "A"
+                    }, 
+                    {
+                        "data": "a1961.g2.akamai.net", 
+                        "type": "CNAME"
+                    }
+                ]
+            }, 
+            {
+                "type": "A", 
+                "request": "teredo.ipv6.microsoft.com", 
+                "answers": []
+            }
+        ], 
+        "http_ex": [
+            {
+                "status": 200, 
+                "src": "192.168.56.101", 
+                "resp": {
+                    "path": "/home/eric/.cuckoo/storage/analyses/194/network/33bf88d5b82df3723d5863c7d23445e345828904", 
+                    "sha1": "33bf88d5b82df3723d5863c7d23445e345828904", 
+                    "md5": "cd5a4d3fdd5bffc16bf959ef75cf37bc"
+                }, 
+                "sha1": "33bf88d5b82df3723d5863c7d23445e345828904", 
+                "protocol": "http", 
+                "dst": "23.197.193.67", 
+                "req": {
+                    "path": "/home/eric/.cuckoo/storage/analyses/194/network/da39a3ee5e6b4b0d3255bfef95601890afd80709", 
+                    "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709", 
+                    "md5": "d41d8cd98f00b204e9800998ecf8427e"
+                }, 
+                "request": "GET /ncsi.txt HTTP/1.1\r\nConnection: Close\r\nUser-Agent: Microsoft NCSI\r\nHost: www.msftncsi.com", 
+                "uri": "/ncsi.txt", 
+                "response": "HTTP/1.1 200 OK\r\nContent-Length: 14\r\nDate: Sun, 31 Jan 2021 16:59:20 GMT\r\nConnection: close\r\nContent-Type: text/plain\r\nCache-Control: max-age=30, must-revalidate", 
+                "host": "www.msftncsi.com", 
+                "dport": 80, 
+                "path": "/home/eric/.cuckoo/storage/analyses/194/network/33bf88d5b82df3723d5863c7d23445e345828904", 
+                "sport": 49161, 
+                "method": "GET", 
+                "md5": "cd5a4d3fdd5bffc16bf959ef75cf37bc"
+            }
+        ], 
+        "domains": [
+            {
+                "ip": "104.123.65.24", 
+                "domain": "www.msftncsi.com"
+            }, 
+            {
+                "ip": "", 
+                "domain": "teredo.ipv6.microsoft.com"
+            }
+        ], 
+        "dead_hosts": [], 
+        "sorted_pcap_sha256": "3f02a56629fafd60223e0760a4a5c4c3113913696782e4aa294f99288733781c", 
+        "irc": [], 
+        "https_ex": []
+    }, 
+    "static": {
+        "pdb_path": null, 
+        "pe_imports": [], 
+        "peid_signatures": null, 
+        "keys": [], 
+        "signature": [], 
+        "pe_timestamp": "2009-07-13 19:54:48", 
+        "pe_exports": [], 
+        "imported_dll_count": 0, 
+        "pe_imphash": "", 
+        "pe_resources": [
+            {
+                "name": "MUI", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x000013a8", 
+                "size": "0x000000b8"
+            }, 
+            {
+                "name": "RT_DIALOG", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x00001864", 
+                "size": "0x0000016a"
+            }, 
+            {
+                "name": "RT_DIALOG", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x00001864", 
+                "size": "0x0000016a"
+            }, 
+            {
+                "name": "RT_DIALOG", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x00001864", 
+                "size": "0x0000016a"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x00001df8", 
+                "size": "0x000001d8"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x00001df8", 
+                "size": "0x000001d8"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x00001df8", 
+                "size": "0x000001d8"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x00001df8", 
+                "size": "0x000001d8"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x00001df8", 
+                "size": "0x000001d8"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x00001df8", 
+                "size": "0x000001d8"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x00001df8", 
+                "size": "0x000001d8"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x00001df8", 
+                "size": "0x000001d8"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x00001df8", 
+                "size": "0x000001d8"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x00001df8", 
+                "size": "0x000001d8"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x00001df8", 
+                "size": "0x000001d8"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x00001df8", 
+                "size": "0x000001d8"
+            }, 
+            {
+                "name": "RT_VERSION", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x00001fd0", 
+                "size": "0x00000398"
+            }
+        ], 
+        "pe_versioninfo": [
+            {
+                "name": "LegalCopyright", 
+                "value": "\\xa9 Microsoft Corporation. \\x412\\x441\\x438\\x447\\x43a\\x438 \\x43f\\x440\\x430\\x432\\x430 \\x437\\x430\\x43f\\x430\\x437\\x435\\x43d\\x438."
+            }, 
+            {
+                "name": "InternalName", 
+                "value": "COMCTL32"
+            }, 
+            {
+                "name": "FileVersion", 
+                "value": "5.82 (win7_rtm.090713-1255)"
+            }, 
+            {
+                "name": "CompanyName", 
+                "value": "Microsoft Corporation"
+            }, 
+            {
+                "name": "ProductName", 
+                "value": "\\x41e\\x43f\\x435\\x440\\x430\\x446\\x438\\x43e\\x43d\\x43d\\x430 \\x441\\x438\\x441\\x442\\x435\\x43c\\x430 Microsoft\\xae Windows\\xae"
+            }, 
+            {
+                "name": "ProductVersion", 
+                "value": "6.1.7600.16385"
+            }, 
+            {
+                "name": "FileDescription", 
+                "value": "\\x411\\x438\\x431\\x43b\\x438\\x43e\\x442\\x435\\x43a\\x430 \\x441 \\x43e\\x431\\x449\\x438 \\x43a\\x43e\\x43d\\x442\\x440\\x43e\\x43b\\x438"
+            }, 
+            {
+                "name": "OriginalFilename", 
+                "value": "COMCTL32.DLL.MUI"
+            }, 
+            {
+                "name": "Translation", 
+                "value": "0x0402 0x04b0"
+            }
+        ], 
+        "pe_sections": [
+            {
+                "size_of_data": "0x00001400", 
+                "virtual_address": "0x00001000", 
+                "entropy": 4.02481338722319, 
+                "name": ".rsrc", 
+                "virtual_size": "0x00002000"
+            }
+        ]
+    }, 
+    "behavior": {
+        "generic": [
+            {
+                "process_path": "C:\\Windows\\System32\\rundll32.exe", 
+                "process_name": "rundll32.exe", 
+                "pid": 2296, 
+                "summary": {
+                    "regkey_read": [
+                        "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\GRE_Initialize\\DisableMetaFiles"
+                    ]
+                }, 
+                "first_seen": 1612072751.828125, 
+                "ppid": 2272
+            }
+        ], 
+        "apistats": {
+            "2296": {
+                "LdrUnloadDll": 1, 
+                "NtOpenKey": 1, 
+                "SetUnhandledExceptionFilter": 1, 
+                "NtTerminateProcess": 3, 
+                "NtClose": 2, 
+                "GetSystemTimeAsFileTime": 1, 
+                "NtQueryValueKey": 1
+            }
+        }, 
+        "processes": [
+            {
+                "process_path": "C:\\Windows\\System32\\rundll32.exe", 
+                "calls": [
+                    {
+                        "category": "synchronisation", 
+                        "status": 1, 
+                        "stacktrace": [], 
+                        "api": "GetSystemTimeAsFileTime", 
+                        "return_value": 0, 
+                        "arguments": {}, 
+                        "time": 1612072751.921125, 
+                        "tid": 2300, 
+                        "flags": {}
+                    }, 
+                    {
+                        "category": "exception", 
+                        "status": 0, 
+                        "stacktrace": [], 
+                        "last_error": 0, 
+                        "nt_status": -1073741515, 
+                        "api": "SetUnhandledExceptionFilter", 
+                        "return_value": 0, 
+                        "arguments": {}, 
+                        "time": 1612072751.921125, 
+                        "tid": 2300, 
+                        "flags": {}
+                    }, 
+                    {
+                        "category": "process", 
+                        "status": 0, 
+                        "stacktrace": [], 
+                        "last_error": 0, 
+                        "nt_status": -1073741515, 
+                        "api": "NtTerminateProcess", 
+                        "return_value": 0, 
+                        "arguments": {
+                            "status_code": "0x00000000", 
+                            "process_identifier": 0, 
+                            "process_handle": "0x0000000000000000"
+                        }, 
+                        "time": 1612072751.921125, 
+                        "tid": 2300, 
+                        "flags": {}
+                    }, 
+                    {
+                        "category": "process", 
+                        "status": 1, 
+                        "stacktrace": [], 
+                        "api": "NtTerminateProcess", 
+                        "return_value": 0, 
+                        "arguments": {
+                            "status_code": "0x00000000", 
+                            "process_identifier": 0, 
+                            "process_handle": "0x0000000000000000"
+                        }, 
+                        "time": 1612072751.921125, 
+                        "tid": 2300, 
+                        "flags": {}
+                    }, 
+                    {
+                        "category": "system", 
+                        "status": 1, 
+                        "stacktrace": [], 
+                        "api": "NtClose", 
+                        "return_value": 0, 
+                        "arguments": {
+                            "handle": "0x000000000000001c"
+                        }, 
+                        "time": 1612072751.921125, 
+                        "tid": 2300, 
+                        "flags": {}
+                    }, 
+                    {
+                        "category": "system", 
+                        "status": 1, 
+                        "stacktrace": [], 
+                        "api": "LdrUnloadDll", 
+                        "return_value": 0, 
+                        "arguments": {
+                            "library": "IMM32", 
+                            "module_address": "0x000007fefdab0000"
+                        }, 
+                        "time": 1612072751.921125, 
+                        "tid": 2300, 
+                        "flags": {}
+                    }, 
+                    {
+                        "category": "registry", 
+                        "status": 1, 
+                        "stacktrace": [], 
+                        "api": "NtOpenKey", 
+                        "return_value": 0, 
+                        "arguments": {
+                            "key_handle": "0x000000000000001c", 
+                            "desired_access": "0x00020019", 
+                            "regkey": "HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows NT\\CurrentVersion\\GRE_Initialize"
+                        }, 
+                        "time": 1612072751.921125, 
+                        "tid": 2300, 
+                        "flags": {
+                            "desired_access": "READ_CONTROL"
+                        }
+                    }, 
+                    {
+                        "category": "registry", 
+                        "status": 0, 
+                        "stacktrace": [], 
+                        "last_error": 0, 
+                        "nt_status": -1073741515, 
+                        "api": "NtQueryValueKey", 
+                        "return_value": -1073741772, 
+                        "arguments": {
+                            "key_handle": "0x000000000000001c", 
+                            "key_name": "", 
+                            "value": "", 
+                            "reg_type": 0, 
+                            "information_class": 2, 
+                            "regkey": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\GRE_Initialize\\DisableMetaFiles"
+                        }, 
+                        "time": 1612072751.921125, 
+                        "tid": 2300, 
+                        "flags": {
+                            "reg_type": "REG_NONE", 
+                            "information_class": "KeyValuePartialInformation"
+                        }
+                    }, 
+                    {
+                        "category": "system", 
+                        "status": 1, 
+                        "stacktrace": [], 
+                        "api": "NtClose", 
+                        "return_value": 0, 
+                        "arguments": {
+                            "handle": "0x000000000000001c"
+                        }, 
+                        "time": 1612072751.921125, 
+                        "tid": 2300, 
+                        "flags": {}
+                    }, 
+                    {
+                        "category": "process", 
+                        "status": 0, 
+                        "stacktrace": [], 
+                        "last_error": 0, 
+                        "nt_status": -1073741515, 
+                        "api": "NtTerminateProcess", 
+                        "return_value": 0, 
+                        "arguments": {
+                            "status_code": "0x00000000", 
+                            "process_identifier": 2296, 
+                            "process_handle": "0xffffffffffffffff"
+                        }, 
+                        "time": 1612072751.921125, 
+                        "tid": 2300, 
+                        "flags": {}
+                    }
+                ], 
+                "track": true, 
+                "pid": 2296, 
+                "process_name": "rundll32.exe", 
+                "command_line": "\"C:\\Windows\\System32\\rundll32.exe\" \"C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\Sample 31.dll,DllMain\"", 
+                "modules": [
+                    {
+                        "basename": "rundll32.exe", 
+                        "imgsize": 61440, 
+                        "baseaddr": "0xff110000", 
+                        "filepath": "C:\\Windows\\System32\\rundll32.exe"
+                    }, 
+                    {
+                        "basename": "ntdll.dll", 
+                        "imgsize": 1740800, 
+                        "baseaddr": "0x773d0000", 
+                        "filepath": "C:\\Windows\\SYSTEM32\\ntdll.dll"
+                    }, 
+                    {
+                        "basename": "kernel32.dll", 
+                        "imgsize": 1175552, 
+                        "baseaddr": "0x771b0000", 
+                        "filepath": "C:\\Windows\\system32\\kernel32.dll"
+                    }, 
+                    {
+                        "basename": "KERNELBASE.dll", 
+                        "imgsize": 438272, 
+                        "baseaddr": "0x7fefd490000", 
+                        "filepath": "C:\\Windows\\system32\\KERNELBASE.dll"
+                    }, 
+                    {
+                        "basename": "USER32.dll", 
+                        "imgsize": 1024000, 
+                        "baseaddr": "0x772d0000", 
+                        "filepath": "C:\\Windows\\system32\\USER32.dll"
+                    }, 
+                    {
+                        "basename": "GDI32.dll", 
+                        "imgsize": 421888, 
+                        "baseaddr": "0x7fefee40000", 
+                        "filepath": "C:\\Windows\\system32\\GDI32.dll"
+                    }, 
+                    {
+                        "basename": "LPK.dll", 
+                        "imgsize": 57344, 
+                        "baseaddr": "0x7fefef30000", 
+                        "filepath": "C:\\Windows\\system32\\LPK.dll"
+                    }, 
+                    {
+                        "basename": "USP10.dll", 
+                        "imgsize": 823296, 
+                        "baseaddr": "0x7feff610000", 
+                        "filepath": "C:\\Windows\\system32\\USP10.dll"
+                    }, 
+                    {
+                        "basename": "msvcrt.dll", 
+                        "imgsize": 651264, 
+                        "baseaddr": "0x7feff1f0000", 
+                        "filepath": "C:\\Windows\\system32\\msvcrt.dll"
+                    }, 
+                    {
+                        "basename": "imagehlp.dll", 
+                        "imgsize": 94208, 
+                        "baseaddr": "0x7feff5f0000", 
+                        "filepath": "C:\\Windows\\system32\\imagehlp.dll"
+                    }, 
+                    {
+                        "basename": "IMM32.DLL", 
+                        "imgsize": 188416, 
+                        "baseaddr": "0x7fefdab0000", 
+                        "filepath": "C:\\Windows\\system32\\IMM32.DLL"
+                    }, 
+                    {
+                        "basename": "MSCTF.dll", 
+                        "imgsize": 1085440, 
+                        "baseaddr": "0x7fefd9a0000", 
+                        "filepath": "C:\\Windows\\system32\\MSCTF.dll"
+                    }, 
+                    {
+                        "basename": "monitor-x64.dll", 
+                        "imgsize": 2269184, 
+                        "baseaddr": "0x74a70000", 
+                        "filepath": "C:\\tmp_yfnpc\\bin\\monitor-x64.dll"
+                    }
+                ], 
+                "time": 0, 
+                "tid": 2300, 
+                "first_seen": 1612072751.828125, 
+                "ppid": 2272, 
+                "type": "process"
+            }
+        ], 
+        "processtree": [
+            {
+                "track": true, 
+                "pid": 2296, 
+                "process_name": "rundll32.exe", 
+                "command_line": "\"C:\\Windows\\System32\\rundll32.exe\" \"C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\Sample 31.dll,DllMain\"", 
+                "first_seen": 1612072751.828125, 
+                "ppid": 2272, 
+                "children": []
+            }
+        ], 
+        "summary": {
+            "regkey_read": [
+                "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\GRE_Initialize\\DisableMetaFiles"
+            ]
+        }
+    }, 
+    "debug": {
+        "action": [], 
+        "dbgview": [], 
+        "errors": [], 
+        "log": [
+            "2021-01-31 11:59:11,015 [analyzer] DEBUG: Starting analyzer from: C:\\tmp_yfnpc\n", 
+            "2021-01-31 11:59:11,015 [analyzer] DEBUG: Pipe server name: \\??\\PIPE\\iMLmJJrIYvhuzSbVA\n", 
+            "2021-01-31 11:59:11,015 [analyzer] DEBUG: Log pipe server name: \\??\\PIPE\\BTWpyTYimkiNPbUkpNxuQFefrby\n", 
+            "2021-01-31 11:59:11,015 [analyzer] DEBUG: No analysis package specified, trying to detect it automagically.\n", 
+            "2021-01-31 11:59:11,015 [analyzer] INFO: Automatically selected analysis package \"dll\"\n", 
+            "2021-01-31 11:59:11,140 [analyzer] DEBUG: Started auxiliary module DbgView\n", 
+            "2021-01-31 11:59:11,467 [analyzer] DEBUG: Started auxiliary module Disguise\n", 
+            "2021-01-31 11:59:11,687 [analyzer] DEBUG: Loaded monitor into process with pid 484\n", 
+            "2021-01-31 11:59:11,687 [analyzer] DEBUG: Started auxiliary module DumpTLSMasterSecrets\n", 
+            "2021-01-31 11:59:11,687 [analyzer] DEBUG: Started auxiliary module Human\n", 
+            "2021-01-31 11:59:11,687 [analyzer] DEBUG: Started auxiliary module InstallCertificate\n", 
+            "2021-01-31 11:59:11,687 [analyzer] DEBUG: Started auxiliary module Reboot\n", 
+            "2021-01-31 11:59:11,717 [analyzer] DEBUG: Started auxiliary module RecentFiles\n", 
+            "2021-01-31 11:59:11,717 [analyzer] DEBUG: Started auxiliary module Screenshots\n", 
+            "2021-01-31 11:59:11,717 [analyzer] DEBUG: Started auxiliary module LoadZer0m0n\n", 
+            "2021-01-31 11:59:11,717 [modules.auxiliary.screenshots] INFO: Python Image Library (either PIL or Pillow) is not installed, screenshots are disabled.\n", 
+            "2021-01-31 11:59:11,765 [lib.api.process] INFO: Successfully executed process from path 'C:\\\\Windows\\\\System32\\\\rundll32.exe' with arguments [u'C:\\\\Users\\\\ADMINI~1\\\\AppData\\\\Local\\\\Temp\\\\Sample 31.dll,DllMain'] and pid 2296\n", 
+            "2021-01-31 11:59:11,921 [analyzer] DEBUG: Loaded monitor into process with pid 2296\n", 
+            "2021-01-31 11:59:12,765 [analyzer] INFO: Process with pid 2296 has terminated\n", 
+            "2021-01-31 11:59:12,765 [analyzer] INFO: Process list is empty, terminating analysis.\n", 
+            "2021-01-31 11:59:13,765 [analyzer] INFO: Analysis completed.\n"
+        ], 
+        "cuckoo": []
+    }, 
+    "strings": [
+        "!This program cannot be run in DOS mode.", 
+        "PADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGX", 
+        "MS Shell Dlg", 
+        "MS Shell Dlg", 
+        "SysTabControl32", 
+        "MS Shell Dlg", 
+        "SysTabControl32", 
+        "MMMM yyyy", 
+        "VS_VERSION_INFO", 
+        "StringFileInfo", 
+        "040204B0", 
+        "CompanyName", 
+        "Microsoft Corporation", 
+        "FileDescription", 
+        "FileVersion", 
+        "5.82 (win7_rtm.090713-1255)", 
+        "InternalName", 
+        "COMCTL32", 
+        "LegalCopyright", 
+        " Microsoft Corporation. ", 
+        "OriginalFilename", 
+        "COMCTL32.DLL.MUI", 
+        "ProductName", 
+        " Microsoft", 
+        " Windows", 
+        "ProductVersion", 
+        "6.1.7600.16385", 
+        "VarFileInfo", 
+        "Translation"
+    ], 
+    "metadata": {
+        "output": {
+            "pcap": {
+                "basename": "dump.pcap", 
+                "sha256": "e89b93c4223ff4f124b3631a561a7fbc8f5119cf5b43400883f4926fb4c2e50c", 
+                "dirname": ""
+            }
+        }
+    }
+}

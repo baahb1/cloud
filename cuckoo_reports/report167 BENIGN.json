@@ -1,0 +1,1379 @@
+{
+    "info": {
+        "added": 1612093474.996145, 
+        "started": 1612093540.785308, 
+        "duration": 81, 
+        "ended": 1612093622.693382, 
+        "owner": "", 
+        "score": 0.2, 
+        "id": 167, 
+        "category": "file", 
+        "git": {
+            "head": "13cbe0d9e457be3673304533043e992ead1ea9b2", 
+            "fetch_head": "13cbe0d9e457be3673304533043e992ead1ea9b2"
+        }, 
+        "monitor": "2deb9ccd75d5a7a3fe05b2625b03a8639d6ee36b", 
+        "package": "", 
+        "route": "none", 
+        "custom": "", 
+        "machine": {
+            "status": "stopped", 
+            "name": "192.168.56.1014", 
+            "label": "192.168.56.1014", 
+            "manager": "VirtualBox", 
+            "started_on": "2021-01-31 11:46:38", 
+            "shutdown_on": "2021-01-31 11:47:02"
+        }, 
+        "platform": "", 
+        "version": "2.0.7", 
+        "options": ""
+    }, 
+    "signatures": [
+        {
+            "families": [], 
+            "description": "The file contains an unknown PE resource name possibly indicative of a packer", 
+            "severity": 1, 
+            "ttp": {
+                "T1045": {
+                    "short": "Software Packing", 
+                    "long": "Software packing is a method of compressing or encrypting an executable. Packing an executable changes the file signature in an attempt to avoid signature-based detection. Most decompression techniques decompress the executable code in memory."
+                }
+            }, 
+            "markcount": 1, 
+            "references": [], 
+            "marks": [
+                {
+                    "category": "resource name", 
+                    "ioc": "MUI", 
+                    "type": "ioc", 
+                    "description": null
+                }
+            ], 
+            "name": "pe_unknown_resource_name"
+        }
+    ], 
+    "target": {
+        "category": "file", 
+        "file": {
+            "yara": [], 
+            "sha1": "bd369bd8ff837489406920682ce15a4ec5881ef8", 
+            "name": "Sample 4", 
+            "type": "PE32+ executable (DLL) (GUI) x86-64, for MS Windows", 
+            "sha256": "a395898f0148f5a6079a17327c841c6ac08df3ceaa4419b786d0c0c51d1a4c08", 
+            "urls": [], 
+            "crc32": "D7B276D2", 
+            "path": "/home/eric/.cuckoo/storage/binaries/a395898f0148f5a6079a17327c841c6ac08df3ceaa4419b786d0c0c51d1a4c08", 
+            "ssdeep": null, 
+            "size": 48128, 
+            "sha512": "cc0a7823ba77b59cda790cdc027cf2e1aa8d4f0fbce9d33cf09d4ea93e59b5a2fd7822d342d50cbe245a9e73293c00b3d4ef848a4d4abc520d850404646e2eb2", 
+            "md5": "e983d36619f40642754cfbdf074db36a"
+        }
+    }, 
+    "network": {
+        "tls": [], 
+        "udp": [
+            {
+                "src": "192.168.56.104", 
+                "dst": "192.168.56.255", 
+                "offset": 1068, 
+                "time": 5.766157150268555, 
+                "dport": 137, 
+                "sport": 137
+            }, 
+            {
+                "src": "192.168.56.104", 
+                "dst": "224.0.0.252", 
+                "offset": 4684, 
+                "time": 5.713618040084839, 
+                "dport": 5355, 
+                "sport": 50643
+            }, 
+            {
+                "src": "192.168.56.104", 
+                "dst": "224.0.0.252", 
+                "offset": 5012, 
+                "time": 3.6645050048828125, 
+                "dport": 5355, 
+                "sport": 55972
+            }, 
+            {
+                "src": "192.168.56.104", 
+                "dst": "224.0.0.252", 
+                "offset": 5352, 
+                "time": 4.01308012008667, 
+                "dport": 5355, 
+                "sport": 56225
+            }, 
+            {
+                "src": "192.168.56.104", 
+                "dst": "224.0.0.252", 
+                "offset": 5680, 
+                "time": 5.7290730476379395, 
+                "dport": 5355, 
+                "sport": 57891
+            }, 
+            {
+                "src": "192.168.56.104", 
+                "dst": "224.0.0.252", 
+                "offset": 6020, 
+                "time": 3.0037779808044434, 
+                "dport": 5355, 
+                "sport": 58587
+            }, 
+            {
+                "src": "192.168.56.104", 
+                "dst": "8.8.8.8", 
+                "offset": 6348, 
+                "time": 4.29737401008606, 
+                "dport": 53, 
+                "sport": 54856
+            }
+        ], 
+        "dns_servers": [
+            "8.8.8.8"
+        ], 
+        "http": [], 
+        "icmp": [], 
+        "smtp": [], 
+        "tcp": [], 
+        "smtp_ex": [], 
+        "mitm": [], 
+        "hosts": [
+            "8.8.8.8"
+        ], 
+        "pcap_sha256": "40a52192938ed57d2f361be0c5682133ca31bb803cdc36934a89d3837f06a393", 
+        "dns": [
+            {
+                "type": "A", 
+                "request": "teredo.ipv6.microsoft.com", 
+                "answers": []
+            }
+        ], 
+        "http_ex": [], 
+        "domains": [
+            {
+                "ip": "", 
+                "domain": "teredo.ipv6.microsoft.com"
+            }
+        ], 
+        "dead_hosts": [], 
+        "sorted_pcap_sha256": "e863d24342f372401f8ee0d07261aba77af2a3586c185817be3e5d48a15d625c", 
+        "irc": [], 
+        "https_ex": []
+    }, 
+    "static": {
+        "pdb_path": null, 
+        "pe_imports": [], 
+        "peid_signatures": null, 
+        "keys": [], 
+        "signature": [], 
+        "pe_timestamp": "2009-07-13 20:28:46", 
+        "pe_exports": [], 
+        "imported_dll_count": 0, 
+        "pe_imphash": "", 
+        "pe_resources": [
+            {
+                "name": "MUI", 
+                "language": "LANG_DANISH", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x000010f0", 
+                "size": "0x000000b0"
+            }, 
+            {
+                "name": "RT_MESSAGETABLE", 
+                "language": "LANG_DANISH", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x000011a0", 
+                "size": "0x0000b444"
+            }, 
+            {
+                "name": "RT_VERSION", 
+                "language": "LANG_DANISH", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x0000c5e4", 
+                "size": "0x000003d8"
+            }
+        ], 
+        "pe_versioninfo": [
+            {
+                "name": "LegalCopyright", 
+                "value": "\\xa9 Microsoft Corporation. All rights reserved."
+            }, 
+            {
+                "name": "InternalName", 
+                "value": "CDOSYS.DLL"
+            }, 
+            {
+                "name": "FileVersion", 
+                "value": "6.6.7600.16385 (win7_rtm.090713-1255)"
+            }, 
+            {
+                "name": "CompanyName", 
+                "value": "Microsoft Corporation"
+            }, 
+            {
+                "name": "ProductName", 
+                "value": "Microsoft\\xae Windows\\xae Operating System"
+            }, 
+            {
+                "name": "OleSelfRegister", 
+                "value": ""
+            }, 
+            {
+                "name": "ProductVersion", 
+                "value": "6.6.7600.16385"
+            }, 
+            {
+                "name": "FileDescription", 
+                "value": "Microsoft CDO for Windows Library"
+            }, 
+            {
+                "name": "OriginalFilename", 
+                "value": "CDOSYS.DLL.MUI"
+            }, 
+            {
+                "name": "Translation", 
+                "value": "0x0406 0x04b0"
+            }
+        ], 
+        "pe_sections": [
+            {
+                "size_of_data": "0x0000ba00", 
+                "virtual_address": "0x00001000", 
+                "entropy": 3.5530728523455073, 
+                "name": ".rsrc", 
+                "virtual_size": "0x0000c000"
+            }
+        ]
+    }, 
+    "behavior": {
+        "generic": [
+            {
+                "process_path": "C:\\Windows\\System32\\lsass.exe", 
+                "process_name": "lsass.exe", 
+                "pid": 480, 
+                "summary": {}, 
+                "first_seen": 1612071875.546875, 
+                "ppid": 372
+            }, 
+            {
+                "process_path": "C:\\Windows\\System32\\rundll32.exe", 
+                "process_name": "rundll32.exe", 
+                "pid": 2380, 
+                "summary": {
+                    "regkey_read": [
+                        "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\GRE_Initialize\\DisableMetaFiles"
+                    ]
+                }, 
+                "first_seen": 1612071876.046875, 
+                "ppid": 2356
+            }
+        ], 
+        "apistats": {
+            "2380": {
+                "LdrUnloadDll": 1, 
+                "NtOpenKey": 1, 
+                "SetUnhandledExceptionFilter": 1, 
+                "NtTerminateProcess": 3, 
+                "NtClose": 2, 
+                "GetSystemTimeAsFileTime": 1, 
+                "NtQueryValueKey": 1
+            }
+        }, 
+        "processes": [
+            {
+                "process_path": "C:\\Windows\\System32\\lsass.exe", 
+                "calls": [], 
+                "track": false, 
+                "pid": 480, 
+                "process_name": "lsass.exe", 
+                "command_line": "C:\\Windows\\system32\\lsass.exe", 
+                "modules": [
+                    {
+                        "basename": "lsass.exe", 
+                        "imgsize": 49152, 
+                        "baseaddr": "0xff1d0000", 
+                        "filepath": "C:\\Windows\\system32\\lsass.exe"
+                    }, 
+                    {
+                        "basename": "ntdll.dll", 
+                        "imgsize": 1740800, 
+                        "baseaddr": "0x76e90000", 
+                        "filepath": "C:\\Windows\\SYSTEM32\\ntdll.dll"
+                    }, 
+                    {
+                        "basename": "kernel32.dll", 
+                        "imgsize": 1175552, 
+                        "baseaddr": "0x76c70000", 
+                        "filepath": "C:\\Windows\\system32\\kernel32.dll"
+                    }, 
+                    {
+                        "basename": "KERNELBASE.dll", 
+                        "imgsize": 438272, 
+                        "baseaddr": "0x7fefd0e0000", 
+                        "filepath": "C:\\Windows\\system32\\KERNELBASE.dll"
+                    }, 
+                    {
+                        "basename": "msvcrt.dll", 
+                        "imgsize": 651264, 
+                        "baseaddr": "0x7fefe040000", 
+                        "filepath": "C:\\Windows\\system32\\msvcrt.dll"
+                    }, 
+                    {
+                        "basename": "RPCRT4.dll", 
+                        "imgsize": 1232896, 
+                        "baseaddr": "0x7feff070000", 
+                        "filepath": "C:\\Windows\\system32\\RPCRT4.dll"
+                    }, 
+                    {
+                        "basename": "SspiSrv.dll", 
+                        "imgsize": 45056, 
+                        "baseaddr": "0x7fefcc30000", 
+                        "filepath": "C:\\Windows\\system32\\SspiSrv.dll"
+                    }, 
+                    {
+                        "basename": "lsasrv.dll", 
+                        "imgsize": 1470464, 
+                        "baseaddr": "0x7fefcab0000", 
+                        "filepath": "C:\\Windows\\system32\\lsasrv.dll"
+                    }, 
+                    {
+                        "basename": "sechost.dll", 
+                        "imgsize": 126976, 
+                        "baseaddr": "0x7fefd590000", 
+                        "filepath": "C:\\Windows\\SYSTEM32\\sechost.dll"
+                    }, 
+                    {
+                        "basename": "SspiCli.dll", 
+                        "imgsize": 151552, 
+                        "baseaddr": "0x7fefcc40000", 
+                        "filepath": "C:\\Windows\\system32\\SspiCli.dll"
+                    }, 
+                    {
+                        "basename": "ADVAPI32.dll", 
+                        "imgsize": 897024, 
+                        "baseaddr": "0x7fefdc40000", 
+                        "filepath": "C:\\Windows\\system32\\ADVAPI32.dll"
+                    }, 
+                    {
+                        "basename": "USER32.dll", 
+                        "imgsize": 1024000, 
+                        "baseaddr": "0x76d90000", 
+                        "filepath": "C:\\Windows\\system32\\USER32.dll"
+                    }, 
+                    {
+                        "basename": "GDI32.dll", 
+                        "imgsize": 421888, 
+                        "baseaddr": "0x7fefd1b0000", 
+                        "filepath": "C:\\Windows\\system32\\GDI32.dll"
+                    }, 
+                    {
+                        "basename": "LPK.dll", 
+                        "imgsize": 57344, 
+                        "baseaddr": "0x7fefd3a0000", 
+                        "filepath": "C:\\Windows\\system32\\LPK.dll"
+                    }, 
+                    {
+                        "basename": "USP10.dll", 
+                        "imgsize": 823296, 
+                        "baseaddr": "0x7fefd830000", 
+                        "filepath": "C:\\Windows\\system32\\USP10.dll"
+                    }, 
+                    {
+                        "basename": "SAMSRV.dll", 
+                        "imgsize": 774144, 
+                        "baseaddr": "0x7fefc9e0000", 
+                        "filepath": "C:\\Windows\\system32\\SAMSRV.dll"
+                    }, 
+                    {
+                        "basename": "cryptdll.dll", 
+                        "imgsize": 81920, 
+                        "baseaddr": "0x7fefc9c0000", 
+                        "filepath": "C:\\Windows\\system32\\cryptdll.dll"
+                    }, 
+                    {
+                        "basename": "MSASN1.dll", 
+                        "imgsize": 61440, 
+                        "baseaddr": "0x7fefce80000", 
+                        "filepath": "C:\\Windows\\system32\\MSASN1.dll"
+                    }, 
+                    {
+                        "basename": "wevtapi.dll", 
+                        "imgsize": 446464, 
+                        "baseaddr": "0x7fefc930000", 
+                        "filepath": "C:\\Windows\\system32\\wevtapi.dll"
+                    }, 
+                    {
+                        "basename": "IMM32.DLL", 
+                        "imgsize": 188416, 
+                        "baseaddr": "0x7fefd220000", 
+                        "filepath": "C:\\Windows\\system32\\IMM32.DLL"
+                    }, 
+                    {
+                        "basename": "MSCTF.dll", 
+                        "imgsize": 1085440, 
+                        "baseaddr": "0x7fefdf30000", 
+                        "filepath": "C:\\Windows\\system32\\MSCTF.dll"
+                    }, 
+                    {
+                        "basename": "cngaudit.dll", 
+                        "imgsize": 36864, 
+                        "baseaddr": "0x7fefc870000", 
+                        "filepath": "C:\\Windows\\system32\\cngaudit.dll"
+                    }, 
+                    {
+                        "basename": "AUTHZ.dll", 
+                        "imgsize": 192512, 
+                        "baseaddr": "0x7fefc840000", 
+                        "filepath": "C:\\Windows\\system32\\AUTHZ.dll"
+                    }, 
+                    {
+                        "basename": "ncrypt.dll", 
+                        "imgsize": 319488, 
+                        "baseaddr": "0x7fefc7f0000", 
+                        "filepath": "C:\\Windows\\system32\\ncrypt.dll"
+                    }, 
+                    {
+                        "basename": "bcrypt.dll", 
+                        "imgsize": 139264, 
+                        "baseaddr": "0x7fefc7c0000", 
+                        "filepath": "C:\\Windows\\system32\\bcrypt.dll"
+                    }, 
+                    {
+                        "basename": "msprivs.DLL", 
+                        "imgsize": 8192, 
+                        "baseaddr": "0x74bb0000", 
+                        "filepath": "C:\\Windows\\system32\\msprivs.DLL"
+                    }, 
+                    {
+                        "basename": "netjoin.dll", 
+                        "imgsize": 204800, 
+                        "baseaddr": "0x7fefc780000", 
+                        "filepath": "C:\\Windows\\system32\\netjoin.dll"
+                    }, 
+                    {
+                        "basename": "negoexts.DLL", 
+                        "imgsize": 147456, 
+                        "baseaddr": "0x7fefc750000", 
+                        "filepath": "C:\\Windows\\system32\\negoexts.DLL"
+                    }, 
+                    {
+                        "basename": "Secur32.dll", 
+                        "imgsize": 45056, 
+                        "baseaddr": "0x7fefc920000", 
+                        "filepath": "C:\\Windows\\system32\\Secur32.dll"
+                    }, 
+                    {
+                        "basename": "cryptbase.dll", 
+                        "imgsize": 61440, 
+                        "baseaddr": "0x7fefccd0000", 
+                        "filepath": "C:\\Windows\\system32\\cryptbase.dll"
+                    }, 
+                    {
+                        "basename": "kerberos.DLL", 
+                        "imgsize": 737280, 
+                        "baseaddr": "0x7fefc690000", 
+                        "filepath": "C:\\Windows\\system32\\kerberos.DLL"
+                    }, 
+                    {
+                        "basename": "CRYPTSP.dll", 
+                        "imgsize": 94208, 
+                        "baseaddr": "0x7fefc670000", 
+                        "filepath": "C:\\Windows\\system32\\CRYPTSP.dll"
+                    }, 
+                    {
+                        "basename": "WS2_32.dll", 
+                        "imgsize": 315392, 
+                        "baseaddr": "0x7fefd740000", 
+                        "filepath": "C:\\Windows\\system32\\WS2_32.dll"
+                    }, 
+                    {
+                        "basename": "NSI.dll", 
+                        "imgsize": 32768, 
+                        "baseaddr": "0x7fefd730000", 
+                        "filepath": "C:\\Windows\\system32\\NSI.dll"
+                    }, 
+                    {
+                        "basename": "mswsock.dll", 
+                        "imgsize": 348160, 
+                        "baseaddr": "0x7fefc610000", 
+                        "filepath": "C:\\Windows\\system32\\mswsock.dll"
+                    }, 
+                    {
+                        "basename": "wship6.dll", 
+                        "imgsize": 28672, 
+                        "baseaddr": "0x7fefc600000", 
+                        "filepath": "C:\\Windows\\System32\\wship6.dll"
+                    }, 
+                    {
+                        "basename": "msv1_0.DLL", 
+                        "imgsize": 331776, 
+                        "baseaddr": "0x7fefc5a0000", 
+                        "filepath": "C:\\Windows\\system32\\msv1_0.DLL"
+                    }, 
+                    {
+                        "basename": "netlogon.DLL", 
+                        "imgsize": 712704, 
+                        "baseaddr": "0x7fefc4f0000", 
+                        "filepath": "C:\\Windows\\system32\\netlogon.DLL"
+                    }, 
+                    {
+                        "basename": "DNSAPI.dll", 
+                        "imgsize": 372736, 
+                        "baseaddr": "0x7fefc490000", 
+                        "filepath": "C:\\Windows\\system32\\DNSAPI.dll"
+                    }, 
+                    {
+                        "basename": "logoncli.dll", 
+                        "imgsize": 196608, 
+                        "baseaddr": "0x7fefc460000", 
+                        "filepath": "C:\\Windows\\system32\\logoncli.dll"
+                    }, 
+                    {
+                        "basename": "schannel.DLL", 
+                        "imgsize": 356352, 
+                        "baseaddr": "0x7fefc400000", 
+                        "filepath": "C:\\Windows\\system32\\schannel.DLL"
+                    }, 
+                    {
+                        "basename": "CRYPT32.dll", 
+                        "imgsize": 1470464, 
+                        "baseaddr": "0x7fefce90000", 
+                        "filepath": "C:\\Windows\\system32\\CRYPT32.dll"
+                    }, 
+                    {
+                        "basename": "wdigest.DLL", 
+                        "imgsize": 221184, 
+                        "baseaddr": "0x7fefc3c0000", 
+                        "filepath": "C:\\Windows\\system32\\wdigest.DLL"
+                    }, 
+                    {
+                        "basename": "rsaenh.dll", 
+                        "imgsize": 290816, 
+                        "baseaddr": "0x7fefc370000", 
+                        "filepath": "C:\\Windows\\system32\\rsaenh.dll"
+                    }, 
+                    {
+                        "basename": "tspkg.DLL", 
+                        "imgsize": 98304, 
+                        "baseaddr": "0x7fefc350000", 
+                        "filepath": "C:\\Windows\\system32\\tspkg.DLL"
+                    }, 
+                    {
+                        "basename": "pku2u.DLL", 
+                        "imgsize": 282624, 
+                        "baseaddr": "0x7fefc300000", 
+                        "filepath": "C:\\Windows\\system32\\pku2u.DLL"
+                    }, 
+                    {
+                        "basename": "bcryptprimitives.dll", 
+                        "imgsize": 311296, 
+                        "baseaddr": "0x7fefc2b0000", 
+                        "filepath": "C:\\Windows\\system32\\bcryptprimitives.dll"
+                    }, 
+                    {
+                        "basename": "RpcRtRemote.dll", 
+                        "imgsize": 81920, 
+                        "baseaddr": "0x7fefcdc0000", 
+                        "filepath": "C:\\Windows\\system32\\RpcRtRemote.dll"
+                    }, 
+                    {
+                        "basename": "efslsaext.dll", 
+                        "imgsize": 73728, 
+                        "baseaddr": "0x7fefc290000", 
+                        "filepath": "C:\\Windows\\system32\\efslsaext.dll"
+                    }, 
+                    {
+                        "basename": "scecli.DLL", 
+                        "imgsize": 253952, 
+                        "baseaddr": "0x7fefc230000", 
+                        "filepath": "C:\\Windows\\system32\\scecli.DLL"
+                    }, 
+                    {
+                        "basename": "credssp.dll", 
+                        "imgsize": 40960, 
+                        "baseaddr": "0x7fefc270000", 
+                        "filepath": "C:\\Windows\\system32\\credssp.dll"
+                    }, 
+                    {
+                        "basename": "WINSTA.dll", 
+                        "imgsize": 249856, 
+                        "baseaddr": "0x7fefcd80000", 
+                        "filepath": "C:\\Windows\\system32\\WINSTA.dll"
+                    }, 
+                    {
+                        "basename": "IPHLPAPI.DLL", 
+                        "imgsize": 159744, 
+                        "baseaddr": "0x7fefa700000", 
+                        "filepath": "C:\\Windows\\system32\\IPHLPAPI.DLL"
+                    }, 
+                    {
+                        "basename": "WINNSI.DLL", 
+                        "imgsize": 45056, 
+                        "baseaddr": "0x7fefa6e0000", 
+                        "filepath": "C:\\Windows\\system32\\WINNSI.DLL"
+                    }, 
+                    {
+                        "basename": "netutils.dll", 
+                        "imgsize": 49152, 
+                        "baseaddr": "0x7fefa900000", 
+                        "filepath": "C:\\Windows\\system32\\netutils.dll"
+                    }, 
+                    {
+                        "basename": "USERENV.dll", 
+                        "imgsize": 122880, 
+                        "baseaddr": "0x7fefc120000", 
+                        "filepath": "C:\\Windows\\system32\\USERENV.dll"
+                    }, 
+                    {
+                        "basename": "profapi.dll", 
+                        "imgsize": 61440, 
+                        "baseaddr": "0x7fefcde0000", 
+                        "filepath": "C:\\Windows\\system32\\profapi.dll"
+                    }, 
+                    {
+                        "basename": "wshtcpip.dll", 
+                        "imgsize": 28672, 
+                        "baseaddr": "0x7fefc010000", 
+                        "filepath": "C:\\Windows\\System32\\wshtcpip.dll"
+                    }, 
+                    {
+                        "basename": "monitor-x64.dll", 
+                        "imgsize": 2269184, 
+                        "baseaddr": "0x74530000", 
+                        "filepath": "C:\\tmpz4ztq7\\bin\\monitor-x64.dll"
+                    }
+                ], 
+                "time": 0, 
+                "tid": 2320, 
+                "first_seen": 1612071875.546875, 
+                "ppid": 372, 
+                "type": "process"
+            }, 
+            {
+                "process_path": "C:\\Windows\\System32\\rundll32.exe", 
+                "calls": [
+                    {
+                        "category": "synchronisation", 
+                        "status": 1, 
+                        "stacktrace": [], 
+                        "api": "GetSystemTimeAsFileTime", 
+                        "return_value": 0, 
+                        "arguments": {}, 
+                        "time": 1612071876.186875, 
+                        "tid": 2384, 
+                        "flags": {}
+                    }, 
+                    {
+                        "category": "exception", 
+                        "status": 0, 
+                        "stacktrace": [], 
+                        "last_error": 0, 
+                        "nt_status": -1073741515, 
+                        "api": "SetUnhandledExceptionFilter", 
+                        "return_value": 0, 
+                        "arguments": {}, 
+                        "time": 1612071876.186875, 
+                        "tid": 2384, 
+                        "flags": {}
+                    }, 
+                    {
+                        "category": "process", 
+                        "status": 0, 
+                        "stacktrace": [], 
+                        "last_error": 0, 
+                        "nt_status": -1073741515, 
+                        "api": "NtTerminateProcess", 
+                        "return_value": 0, 
+                        "arguments": {
+                            "status_code": "0x00000000", 
+                            "process_identifier": 0, 
+                            "process_handle": "0x0000000000000000"
+                        }, 
+                        "time": 1612071876.186875, 
+                        "tid": 2384, 
+                        "flags": {}
+                    }, 
+                    {
+                        "category": "process", 
+                        "status": 1, 
+                        "stacktrace": [], 
+                        "api": "NtTerminateProcess", 
+                        "return_value": 0, 
+                        "arguments": {
+                            "status_code": "0x00000000", 
+                            "process_identifier": 0, 
+                            "process_handle": "0x0000000000000000"
+                        }, 
+                        "time": 1612071876.186875, 
+                        "tid": 2384, 
+                        "flags": {}
+                    }, 
+                    {
+                        "category": "system", 
+                        "status": 1, 
+                        "stacktrace": [], 
+                        "api": "NtClose", 
+                        "return_value": 0, 
+                        "arguments": {
+                            "handle": "0x000000000000001c"
+                        }, 
+                        "time": 1612071876.186875, 
+                        "tid": 2384, 
+                        "flags": {}
+                    }, 
+                    {
+                        "category": "system", 
+                        "status": 1, 
+                        "stacktrace": [], 
+                        "api": "LdrUnloadDll", 
+                        "return_value": 0, 
+                        "arguments": {
+                            "library": "IMM32", 
+                            "module_address": "0x000007fefd220000"
+                        }, 
+                        "time": 1612071876.186875, 
+                        "tid": 2384, 
+                        "flags": {}
+                    }, 
+                    {
+                        "category": "registry", 
+                        "status": 1, 
+                        "stacktrace": [], 
+                        "api": "NtOpenKey", 
+                        "return_value": 0, 
+                        "arguments": {
+                            "key_handle": "0x000000000000001c", 
+                            "desired_access": "0x00020019", 
+                            "regkey": "HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows NT\\CurrentVersion\\GRE_Initialize"
+                        }, 
+                        "time": 1612071876.186875, 
+                        "tid": 2384, 
+                        "flags": {
+                            "desired_access": "READ_CONTROL"
+                        }
+                    }, 
+                    {
+                        "category": "registry", 
+                        "status": 0, 
+                        "stacktrace": [], 
+                        "last_error": 0, 
+                        "nt_status": -1073741515, 
+                        "api": "NtQueryValueKey", 
+                        "return_value": -1073741772, 
+                        "arguments": {
+                            "key_handle": "0x000000000000001c", 
+                            "key_name": "", 
+                            "value": "", 
+                            "reg_type": 0, 
+                            "information_class": 2, 
+                            "regkey": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\GRE_Initialize\\DisableMetaFiles"
+                        }, 
+                        "time": 1612071876.186875, 
+                        "tid": 2384, 
+                        "flags": {
+                            "reg_type": "REG_NONE", 
+                            "information_class": "KeyValuePartialInformation"
+                        }
+                    }, 
+                    {
+                        "category": "system", 
+                        "status": 1, 
+                        "stacktrace": [], 
+                        "api": "NtClose", 
+                        "return_value": 0, 
+                        "arguments": {
+                            "handle": "0x000000000000001c"
+                        }, 
+                        "time": 1612071876.186875, 
+                        "tid": 2384, 
+                        "flags": {}
+                    }, 
+                    {
+                        "category": "process", 
+                        "status": 0, 
+                        "stacktrace": [], 
+                        "last_error": 0, 
+                        "nt_status": -1073741515, 
+                        "api": "NtTerminateProcess", 
+                        "return_value": 0, 
+                        "arguments": {
+                            "status_code": "0x00000000", 
+                            "process_identifier": 2380, 
+                            "process_handle": "0xffffffffffffffff"
+                        }, 
+                        "time": 1612071876.186875, 
+                        "tid": 2384, 
+                        "flags": {}
+                    }
+                ], 
+                "track": true, 
+                "pid": 2380, 
+                "process_name": "rundll32.exe", 
+                "command_line": "\"C:\\Windows\\System32\\rundll32.exe\" \"C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\Sample 4.dll,DllMain\"", 
+                "modules": [
+                    {
+                        "basename": "rundll32.exe", 
+                        "imgsize": 61440, 
+                        "baseaddr": "0xffc40000", 
+                        "filepath": "C:\\Windows\\System32\\rundll32.exe"
+                    }, 
+                    {
+                        "basename": "ntdll.dll", 
+                        "imgsize": 1740800, 
+                        "baseaddr": "0x76e90000", 
+                        "filepath": "C:\\Windows\\SYSTEM32\\ntdll.dll"
+                    }, 
+                    {
+                        "basename": "kernel32.dll", 
+                        "imgsize": 1175552, 
+                        "baseaddr": "0x76c70000", 
+                        "filepath": "C:\\Windows\\system32\\kernel32.dll"
+                    }, 
+                    {
+                        "basename": "KERNELBASE.dll", 
+                        "imgsize": 438272, 
+                        "baseaddr": "0x7fefd0e0000", 
+                        "filepath": "C:\\Windows\\system32\\KERNELBASE.dll"
+                    }, 
+                    {
+                        "basename": "USER32.dll", 
+                        "imgsize": 1024000, 
+                        "baseaddr": "0x76d90000", 
+                        "filepath": "C:\\Windows\\system32\\USER32.dll"
+                    }, 
+                    {
+                        "basename": "GDI32.dll", 
+                        "imgsize": 421888, 
+                        "baseaddr": "0x7fefd1b0000", 
+                        "filepath": "C:\\Windows\\system32\\GDI32.dll"
+                    }, 
+                    {
+                        "basename": "LPK.dll", 
+                        "imgsize": 57344, 
+                        "baseaddr": "0x7fefd3a0000", 
+                        "filepath": "C:\\Windows\\system32\\LPK.dll"
+                    }, 
+                    {
+                        "basename": "USP10.dll", 
+                        "imgsize": 823296, 
+                        "baseaddr": "0x7fefd830000", 
+                        "filepath": "C:\\Windows\\system32\\USP10.dll"
+                    }, 
+                    {
+                        "basename": "msvcrt.dll", 
+                        "imgsize": 651264, 
+                        "baseaddr": "0x7fefe040000", 
+                        "filepath": "C:\\Windows\\system32\\msvcrt.dll"
+                    }, 
+                    {
+                        "basename": "imagehlp.dll", 
+                        "imgsize": 94208, 
+                        "baseaddr": "0x7fefd380000", 
+                        "filepath": "C:\\Windows\\system32\\imagehlp.dll"
+                    }, 
+                    {
+                        "basename": "IMM32.DLL", 
+                        "imgsize": 188416, 
+                        "baseaddr": "0x7fefd220000", 
+                        "filepath": "C:\\Windows\\system32\\IMM32.DLL"
+                    }, 
+                    {
+                        "basename": "MSCTF.dll", 
+                        "imgsize": 1085440, 
+                        "baseaddr": "0x7fefdf30000", 
+                        "filepath": "C:\\Windows\\system32\\MSCTF.dll"
+                    }, 
+                    {
+                        "basename": "monitor-x64.dll", 
+                        "imgsize": 2269184, 
+                        "baseaddr": "0x74530000", 
+                        "filepath": "C:\\tmpz4ztq7\\bin\\monitor-x64.dll"
+                    }
+                ], 
+                "time": 0, 
+                "tid": 2384, 
+                "first_seen": 1612071876.046875, 
+                "ppid": 2356, 
+                "type": "process"
+            }
+        ], 
+        "processtree": [
+            {
+                "track": false, 
+                "pid": 480, 
+                "process_name": "lsass.exe", 
+                "command_line": "C:\\Windows\\system32\\lsass.exe", 
+                "first_seen": 1612071875.546875, 
+                "ppid": 372, 
+                "children": []
+            }, 
+            {
+                "track": true, 
+                "pid": 2380, 
+                "process_name": "rundll32.exe", 
+                "command_line": "\"C:\\Windows\\System32\\rundll32.exe\" \"C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\Sample 4.dll,DllMain\"", 
+                "first_seen": 1612071876.046875, 
+                "ppid": 2356, 
+                "children": []
+            }
+        ], 
+        "summary": {
+            "regkey_read": [
+                "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\GRE_Initialize\\DisableMetaFiles"
+            ]
+        }
+    }, 
+    "debug": {
+        "action": [], 
+        "dbgview": [], 
+        "errors": [], 
+        "log": [
+            "2021-01-31 11:44:34,015 [analyzer] DEBUG: Starting analyzer from: C:\\tmpz4ztq7\n", 
+            "2021-01-31 11:44:34,015 [analyzer] DEBUG: Pipe server name: \\??\\PIPE\\gSTBGRsDmbkfZJquwuuTsHYs\n", 
+            "2021-01-31 11:44:34,015 [analyzer] DEBUG: Log pipe server name: \\??\\PIPE\\IkhClVXvmypxoWCONHeOHPnwd\n", 
+            "2021-01-31 11:44:34,015 [analyzer] DEBUG: No analysis package specified, trying to detect it automagically.\n", 
+            "2021-01-31 11:44:34,015 [analyzer] INFO: Automatically selected analysis package \"dll\"\n", 
+            "2021-01-31 11:44:34,375 [analyzer] DEBUG: Started auxiliary module DbgView\n", 
+            "2021-01-31 11:44:35,405 [analyzer] DEBUG: Started auxiliary module Disguise\n", 
+            "2021-01-31 11:44:35,608 [analyzer] DEBUG: Loaded monitor into process with pid 480\n", 
+            "2021-01-31 11:44:35,640 [analyzer] DEBUG: Started auxiliary module DumpTLSMasterSecrets\n", 
+            "2021-01-31 11:44:35,640 [analyzer] DEBUG: Started auxiliary module Human\n", 
+            "2021-01-31 11:44:35,640 [analyzer] DEBUG: Started auxiliary module InstallCertificate\n", 
+            "2021-01-31 11:44:35,655 [analyzer] DEBUG: Started auxiliary module Reboot\n", 
+            "2021-01-31 11:44:35,842 [analyzer] DEBUG: Started auxiliary module RecentFiles\n", 
+            "2021-01-31 11:44:35,842 [analyzer] DEBUG: Started auxiliary module Screenshots\n", 
+            "2021-01-31 11:44:35,842 [analyzer] DEBUG: Started auxiliary module LoadZer0m0n\n", 
+            "2021-01-31 11:44:35,858 [modules.auxiliary.screenshots] INFO: Python Image Library (either PIL or Pillow) is not installed, screenshots are disabled.\n", 
+            "2021-01-31 11:44:35,967 [lib.api.process] INFO: Successfully executed process from path 'C:\\\\Windows\\\\System32\\\\rundll32.exe' with arguments [u'C:\\\\Users\\\\ADMINI~1\\\\AppData\\\\Local\\\\Temp\\\\Sample 4.dll,DllMain'] and pid 2380\n", 
+            "2021-01-31 11:44:36,187 [analyzer] DEBUG: Loaded monitor into process with pid 2380\n", 
+            "2021-01-31 11:44:36,983 [analyzer] INFO: Process with pid 2380 has terminated\n", 
+            "2021-01-31 11:44:36,983 [analyzer] INFO: Process list is empty, terminating analysis.\n", 
+            "2021-01-31 11:44:37,983 [analyzer] INFO: Analysis completed.\n"
+        ], 
+        "cuckoo": []
+    }, 
+    "strings": [
+        "!This program cannot be run in DOS mode.", 
+        "PADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADD", 
+        "Header", 
+        "General", 
+        "-----Oprindelig meddelelse-----%0", 
+        "Fra:%0", 
+        "Sendt:%0", 
+        "Sendt:%0", 
+        "Til:%0", 
+        "Sendt til:%0", 
+        "Samtale:%0", 
+        "Emne:%0", 
+        "Prioritet:%0", 
+        " vegne af%0", 
+        "1252%0", 
+        "Kalender%0", 
+        "Kontaktpersoner%0", 
+        "Kladder%0", 
+        "Journal%0", 
+        "Noter%0", 
+        "Opgaver%0", 
+        "Ny mappe%0", 
+        "Placering:%0", 
+        "Starttidspunkt:%0", 
+        "Sluttidspunkt:%0", 
+        "Tidszone:%0", 
+        "Lokaltid%0", 
+        "Arrang", 
+        "Type:%0", 
+        "Enkelt aftale%0", 
+        "Enkelt m", 
+        "Tilbagevendende aftale%0", 
+        "Tilbagevendende m", 
+        "UTC-tid [Universal Coordinated Time]%0", 
+        "GMT (Greenwich Mean Time): Dublin, Edinburgh, Lissabon, London%0", 
+        "(GMT+01:00) Sarajevo, Skopje, Sofia, Vilnius, Warszawa, Zagreb%0", 
+        "(GMT+01:00) Bruxelles, K", 
+        "benhavn, Madrid, Paris%0", 
+        "(GMT+01:00) Amsterdam, Berlin, Bern, Rom, Stockholm, Wien%0", 
+        "(GMT+02:00) Bukarest%0", 
+        "(GMT+01:00) Beograd, Bratislava, Budapest, Ljubljana, Prag%0", 
+        "(GMT+02:00) Athen, Istanbul, Minsk%0", 
+        "(GMT-03:00) Brasilia%0", 
+        "(GMT-04:00) Atlantic Time (Canada)%0", 
+        "(GMT-05:00) Eastern time (USA og Canada)%0", 
+        "(GMT-06:00) Central time (USA og Canada)%0", 
+        "(GMT-07:00) Mountain Time (USA og Canada)%0", 
+        "(GMT-08:00) Pacific Time (USA og Canada)%0", 
+        "(GMT-09:00) Alaska%0", 
+        "(GMT-10:00) Hawaii%0", 
+        "(GMT-11:00) Midway", 
+        "erne, Samoa", 
+        "erne%0", 
+        "(GMT+12:00) Auckland, Wellington%0", 
+        "(GMT+10:00) Brisbane%0", 
+        "(GMT+09:30) Adelaide%0", 
+        "(GMT+09:00) Osaka, Sapporo, Tokyo%0", 
+        "(GMT+08:00) Kuala Lumpur, Singapore%0", 
+        "(GMT+07:00) Bangkok, Hanoi, Djakarta%0", 
+        "(GMT+05:30) Kolkata, Chennai, Mumbai, New Delhi%0", 
+        "(GMT+04:00) Abu Dhabi, Muscat%0", 
+        "(GMT+03:30) Teheran%0", 
+        "(GMT+03:00) Baghdad%0", 
+        "(GMT+02:00) Jerusalem%0", 
+        "(GMT-03:30) Newfoundland%0", 
+        "(GMT-01:00) Azorerne%0", 
+        "(GMT-02:00) Mid-Atlantic%0", 
+        "(GMT) Casablanca, Monrovia%0", 
+        "(GMT-03:00) Buenos Aires, Georgetown%0", 
+        "(GMT-04:00) Caracas, La Paz%0", 
+        "(GMT-05:00) Indiana (", 
+        "(GMT-05:00) Bogota, Lima, Quito%0", 
+        "(GMT-06:00) Saskatchewan%0", 
+        "(GMT-06:00) Mexico City%0", 
+        "(GMT-07:00) Arizona%0", 
+        "(GMT-12:00) Eniwetok, Kwajalein%0", 
+        "(GMT+12:00) Fiji-", 
+        "erne, Kamtjatka, Marshall", 
+        "erne%0", 
+        "(GMT+11:00) Magadan, Solomon", 
+        "erne, Ny Caledonien%0", 
+        "(GMT+10:00) Hobart%0", 
+        "(GMT+10:00) Guam, Port Moresby%0", 
+        "(GMT+09:30) Darwin%0", 
+        "(GMT+08:00) Beijing, Chongjin, Hongkong SAR, Urumqi%0", 
+        "(GMT+06:00) Almaty, Novosibirsk%0", 
+        "(GMT+05:00) Islamabad, Karachi, Tasjkent%0", 
+        "(GMT+04:30) Kabul%0", 
+        "(GMT+02:00) Kairo%0", 
+        "(GMT+02:00) Harare, Pretoria%0", 
+        "(GMT+03:00) Moskva, St. Petersburg, Volgograd%0", 
+        "(GMT-01:00) Kap Verde%0", 
+        "(GMT+04:00) Baku, Tbilisi, Yerevan%0", 
+        "(GMT-06:00) Mellemamerika%0", 
+        "(GMT+03:00) Nairobi%0", 
+        "(GMT+10:00) Canberra, Melbourne, Sydney%0", 
+        "(GMT+05:00) Ekaterinburg%0", 
+        "(GMT+02:00) Helsinki, Riga, Tallinn%0", 
+        "(GMT-03:00) Gr", 
+        "nland%0", 
+        "(GMT+06:30) Yangon (Rangun)%0", 
+        "(GMT+05:45) Katmandu%0", 
+        "(GMT+08:00) Irkutsk, Ulaanbataar%0", 
+        "(GMT+07:00) Krasnoyarsk%0", 
+        "(GMT-04:00) Santiago%0", 
+        "(GMT+06:00) Sri Jayawardenepura%0", 
+        "(GMT+13:00) Nuku'alofa%0", 
+        "(GMT+10:00) Vladivostok%0", 
+        "(GMT+01:00) V. Centralafrika%0", 
+        "(GMT+09:00) Jakutsk%0", 
+        "(GMT+06:00) Astana, Dhaka%0", 
+        "(GMT+09:00) Seoul%0", 
+        "(GMT+08:00) Perth%0", 
+        "(GMT+03:00) Kuwait, Riyadh%0", 
+        "(GMT+08:00) Taipei%0", 
+        "(GMT+10:00) Canberra, Melbourne, Sydney (Kun ", 
+        "r 2000)%0", 
+        "(GMT-07:00) Chihuahua, La Paz, Mazatlan%0", 
+        "(GMT+10:00) Canberra, Melbourne, Sydney (Commonwealth Games)%0", 
+        "(GMT+09:30) Adelaide (Commonwealth Games)%0", 
+        "(GMT+10:00) Hobart (Commonwealth Games)%0", 
+        "(GMT-08:00) Tijuana, Baja California%0", 
+        "%1 Event on %2 called with Flags %3", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "%1 Event Method is returning with HRESULT %2", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "Calendaring agent is initialized successfully.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "Calendaring agent is stopping successfully.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "The calendaring data message for %1: %2 has been sent to %3.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "The EXCDO logging level has been reloaded from the registry and is now set to 0x%1.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "Calendaring agent has successfully started the background thread.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "Background calendaring agent is processing the calendar (%1) in the mailbox (%2) in the MDB (%3).", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "Background calendaring agent did not find any more calendars to process.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "Background calendaring agent has finished processing the calendar (%1) in the mailbox (%2) in the MDB (%3).  The return code is %4.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "Background calendaring agent is awakened due to shutdown.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "Background calendaring agent is awakened due to calendars needing expansion.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "Background calendaring agent is terminating with return code %1.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "Background calendaring agent is sleeping until shutdown or a calendar is queued.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "The calendar (%1) in mailbox (%2) in the MDB (%3) has been queued for background expansion.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "Calendaring agent truncated expansion after %1 instances per day.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "Expiry of an instance for the recurring appointment with the subject \"%1\" in the folder \"%2\" was detected.  The master for that should be expired before this instance.  ", 
+        "This instance will no longer appear in the web clients until the master is updated manually or through replication.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "An inconsistency was detected in %2: %3.  The calendar is being repaired.  If other errors occur with this calendar, please view the calendar using Microsoft Outlook Web Access.  If a problem persists, please recreate the calendar or the containing mailbox.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "Calendar agent failed to determine the primary calendar for mailbox: %1.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "An inconsistency was detected in %1.  The calendar is being repaired.  If other errors occur with this calendar, please view the calendar using Microsoft Outlook Web Access.  If a problem persists, please recreate the public folder calendar.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "Clearing the calendar instances before a move failed for mailbox %1 with error %2.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "Calendaring agent failed with error %1 while attempting to retrieve the message class for a recurring appointment.  The message class for the instance", 
+        "when viewed with the Web Client will not be the same as the one in the series if it is not IPM.Appointment.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "Calendaring agent failed with error %1 while attempting to open the status message. If the user is a delegate, the access rights to the mailbox might", 
+        "not be set up correctly.  Otherwise, the calendar for this mailbox could be corrupted. This could be fixed", 
+        "by moving the mailbox to another Exchange server, or exporting the calendar to a Personal Folder File (.PST), and re-importing this into a new calendar.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "An appointment with the subject \"%1\" was saved to mailbox %2. The end time and duration are missing. For the purposes of publishing free/busy information, this appointment has a duration of zero minutes. To correct this, please delete the appointment and recreate it.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "An existing appointment with the subject \"%1\" in mailbox %2 was modified. The start time, or both the duration and end time of the existing appointment were missing.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "The existing appointment with the subject \"%1\" in mailbox %2 was deleted. The start time, or both the duration and end time were missing.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "The calendaring agent did bind to the appointment with the subject \"%1\" in mailbox %2, but the appointment is missing an end time and duration. For the purposes of publishing free/busy information, this appointment has a duration of zero minutes. To correct this, please delete the appointment and recreate it.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "Calendaring agent has failed to start the background thread due to %1.  ", 
+        "Rendering of large calendars with the Web client will be slower.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "An attempt was made to save an appointment with the subject \"%1\" to mailbox %2. The duration of the appointment was too large, so it was not saved.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "An existing appointment with the subject \"%1\" in mailbox %2 was modified. The duration of the existing appointment was too large. Free/busy publishing may not be accurate.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "The existing appointment with the subject \"%1\" in mailbox %2 was deleted. The duration of the existing appointment was too large. Free/busy publishing may not be accurate.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "Udvidelsen af den tilbagevendende aftale i postkassen %1 har taget for lang tid. Nogle forekomster af den tilbagevendende aftale vises muligvis ikke p", 
+        "rende tidspunkt. Hvis du vil sikre, at kalendervisningen er korrekt, skal du opdatere kalendervisningen i Microsoft Outlook Web Access.", 
+        "%n%nYderligere oplysninger finder du ved at klikke p", 
+        " http://www.microsoft.com/contentredirect.asp.", 
+        "Udvidelsen af den tilbagevendende aftale i postkassen %1 har taget for lang tid. Oplysningerne om ledig/optaget tid for denne kalender er muligvis ikke korrekte. Dette kan skyldes mange meget gamle tilbagevendende aftaler. Hvis du vil l", 
+        "se dette, skal du fjerne dem eller ", 
+        "ndre deres startdato til en nyere dato.", 
+        "%n%nYderligere oplysninger finder du ved at klikke p", 
+        " http://www.microsoft.com/contentredirect.asp.", 
+        "Undtagelse %1 blev oprettet ved adresse %2", 
+        "Der er ikke blevet ", 
+        "bnet nogen datakilde til objektet.", 
+        "Objektet underst", 
+        "tter ikke denne type datakilde.", 
+        "Objektet underst", 
+        "tter ikke det ", 
+        "nskede egenskabsnavn eller navneomr", 
+        "Objektet underst", 
+        "tter ikke den ", 
+        "nskede egenskab.", 
+        "Objektet er ikke aktivt. Det kan v", 
+        "re slettet, eller det er ikke blevet ", 
+        "Objektet underst", 
+        "tter ikke lagring af faste tilstandsoplysninger for objekter.", 
+        "nskede egenskab eller funktion underst", 
+        "ttes, men er ikke tilg", 
+        "ngelig p", 
+        " dette tidspunkt eller i denne kontekst.", 
+        "Der er ikke konfigureret nogen standardleveringsmappe for denne server.", 
+        "Der kr", 
+        "ves et  SMTP-servernavn, og dette blev ikke fundet i konfigurationskilden.", 
+        "Der kr", 
+        "ves et  NNTP-servernavn, og dette blev ikke fundet i konfigurationskilden.", 
+        "Der kr", 
+        "ves mindst ", 
+        "n modtager, men der blev ikke fundet nogen.", 
+        "Der kr", 
+        "ves mindst et af felterne Fra eller Afsender, og der blev ikke fundet nogen.", 
+        "Serveren afviste afsenderadressen. Serversvaret var: %1", 
+        "Serveren afviste en eller flere modtageradresser. Serversvaret var: %1", 
+        "Meddelelsen kunne ikke sendes til  NNTP-serveren. Transportfejlkoden var %2. Serversvaret var %1", 
+        "Meddelelsen kunne ikke sendes til SMTP-serveren. Transportfejlkoden var %2. Serversvaret var %1", 
+        "Transporten mistede forbindelsen til serveren.", 
+        "Transporten kunne ikke oprette forbindelse til serveren.", 
+        "Felterne Emne, Fra og Nyhedsgruppe er alle n", 
+        "dvendige, og et eller flere blev ikke fundet.", 
+        "Serveren afviste fors", 
+        " logon p", 
+        " grund af godkendelsesfejl. Serversvaret var: %1", 
+        "Indholdstypen var ikke gyldig i denne kontekst.  For eksempel skal roden for en  MHTML-meddelelse v", 
+        "re et HTML-dokument.", 
+        "Transporten kunne ikke logge p", 
+        " serveren.", 
+        "nskede ressource blev ikke fundet. Serversvaret var: %1.", 
+        "Adgang til den ", 
+        "nskede ressource blev n", 
+        "gtet. Serversvaret var: %1.", 
+        "HTTP-anmodningen lykkedes ikke. Serversvaret var: %1.", 
+        "Dette er en br", 
+        "dtekst i flere dele. Den har ikke noget andet indhold end br", 
+        "dteksten.", 
+        "dtekst i flere dele skal kodes som 7bit, 8bit eller bin", 
+        "Den anmodede handling er ikke tilladt i sikker tilstand.", 
+        "nskede egenskab blev ikke fundet.", 
+        "\"Send vha.\"-konfigurationsv", 
+        "rdien er ugyldig.", 
+        "\"SendSom\"-konfigurationsv", 
+        "rdien er ugyldig.", 
+        "Der kr", 
+        "ves en sti til mappen, og denne blev ikke angivet. ", 
+        "En eller flere meddelelser kunne ikke slettes.", 
+        "nskede handling er ikke tilg", 
+        "ngelig p", 
+        " det underliggende objekt.", 
+        "Egenskaben er skrivebeskyttet.", 
+        "Egenskaben kan ikke slettes.", 
+        "De data, som er skrevet til objektet, er inkonsistente eller ugyldige. ", 
+        "nskede egenskab findes ikke i brevhovedets navneomr", 
+        "nskede tegns", 
+        "t er ikke installeret p", 
+        " computeren.", 
+        "ADO-streamen er ikke blevet ", 
+        "Indholdsegenskaberne mangler.", 
+        "Indholdsegenskaber XML skal kodes ved hj", 
+        "lp af UTF-8.", 
+        "Det lykkedes ikke at analysere indholdsegenskaberne XML.", 
+        "Det lykkedes ikke at konvertere en egenskab fra XML til en ", 
+        "nsket type.", 
+        "Der blev ikke angivet nogle mapper til overs", 
+        "ttelse.", 
+        "Det lykkedes ikke at overs", 
+        "tte en eller flere af de angivne mapper.", 
+        "Kunne ikke finde Afsenders postkasse.", 
+        "Selv-binding er ikke tilladt.", 
+        "Deltagernes data i objektet er inkonsistente eller ugyldige. ", 
+        "Der er ikke flere tilg", 
+        "ngelige roller af den ", 
+        "nskede type. Alle er i brug.", 
+        "Opgaven tillader ikke et kald af Assign med den nuv", 
+        "rende opgavetype. Kald CreateUnassignedCopy i stedet for.", 
+        "Opgaven er ikke tildelt den aktuelle bruger.", 
+        "Det element, du har adgang til eller behandler, er for", 
+        "rste argument er ugyldigt.", 
+        "Det andet argument er ugyldigt.", 
+        "Det tredje argument er ugyldigt.", 
+        "Det fjerde argument er ugyldigt.", 
+        "Det femte argument er ugyldigt.", 
+        "nskede tekstdel blev ikke fundet i denne meddelelse.", 
+        "Indholdskodningstypen er ugyldig.", 
+        "%1 Event Method is halting, HRESULT %2", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "Calendaring agent failed to initialize with error %1.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "Calendaring recurring item expansion failed to register for notifications for MDB %1.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "Calendaring agent failed in message save notification with error %1 on %2: %3.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "Calendaring agent failed in message delete notification with error %1 on %2: %3.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "Calendaring agent failed in folder save notification with error %1 on %2: %3.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "The mailbox creation callback failed to create any folders in mailbox %1.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "The mailbox creation callback failed to create one or more folders in mailbox %1.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "Calendaring agent failed to uninitialize implied restriction with error %1 on %2: %3.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "Calendaring agent failed with error code %1 while saving appointment.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "Calendaring agent failed with error code %1 while deleting appointment.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "Calendaring agent failed with error code %1 while expanding recurring appointments.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "Calendaring agent failed with error code %1 while cleaning up the calendar.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "Calendaring agent failed to open registry with error code %1.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "Calendaring agent failed in the following function with error code: %1.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "Calendaring agent failed in the following function with error code %1.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "Calendaring agent failed to update the free/busy cache during an appointment save or delete operation.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "Calendaring agent failed to update the free/busy cache and internal data while processing a query.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "The mailbox creation callback failed to rename any folders in mailbox %1.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "The mailbox creation callback failed to rename one or more folders in mailbox %1.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "The processing of the recurring appointment with the subject \"%1\" in mailbox: %2 failed with error code %3.  This appointment will not be visible in the web client or other non-MAPI client.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "A transaction failed during initialization.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "The calendaring agent could not publish the free/busy information for \"%1\" because it failed reading the registry with error: %2.  ", 
+        "The save/delete calendar operation for \"%3\" will not be completed.", 
+        "Please ensure that MSExchangeFBPublish agent is started.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "Unhandled exception %1 caught during initialization of server agents.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "Unhandled exception %1 caught trying to stop server agents.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "Unhandled exception %1 caught during initialization of server agents while an MDB is mounted.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "Unhandled exception %1 caught trying to stop server agents while an MDB is unmounted.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "Unhandled exception %1 caught during message save changes notification.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "Unhandled exception %1 caught during deletion notification.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "Unhandled exception %1 caught during query processing.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "Unhandled exception %1 caught during folder save changes notification.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "The calendar for the mailbox %1 is corrupted.  This calendar needs to be recreated.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "The processing of the recurring appointment with the subject \"%1\" in public folder: %2 failed with error code %3.  This appointment will not be visible in the web client or other non-MAPI client.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "The public folder %1 is corrupted.  This calendar needs to be recreated.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "An appointment with the subject \"%1\" was saved to mailbox %2. The start time is missing, so the calendaring agent cannot publish the free/busy information for this appointment. To correct this, please delete the appointment and recreate it.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "The calendaring agent cannot bind to the appointment with the subject \"%1\" in mailbox %2 because the appointment is missing a start time. The calendaring agent will not publish free/busy information for this appointment. To correct this, please delete the appointment and recreate it.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "The background calendaring agent failed with error code %1 while registering task.  ", 
+        "The rendering of large calendars with the web client or Microsoft Internet Explorer will be slower.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "The background calendaring agent failed to logon to the MDB, or create a session object on the MDB:%1.  ", 
+        "The error code is %2.", 
+        "The rendering of large calendars with the web client or Microsoft Internet Explorer for the mailbox %3 with GUID:%4 will be slower.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "The background calendaring agent failed to retrieve the token required for logon on the MDB:%1.  ", 
+        "The error code is %2.", 
+        "The rendering of large calendars with the web client or Microsoft Internet Explorer on this MDB will be slower.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "The background calendaring agent failed in the following function with error code %1.", 
+        "%n%nFor more information, click http://www.microsoft.com/contentredirect.asp.", 
+        "VS_VERSION_INFO", 
+        "StringFileInfo", 
+        "040604B0", 
+        "CompanyName", 
+        "Microsoft Corporation", 
+        "FileDescription", 
+        "Microsoft CDO for Windows Library", 
+        "FileVersion", 
+        "6.6.7600.16385 (win7_rtm.090713-1255)", 
+        "InternalName", 
+        "CDOSYS.DLL", 
+        "LegalCopyright", 
+        " Microsoft Corporation. All rights reserved.", 
+        "OriginalFilename", 
+        "CDOSYS.DLL.MUI", 
+        "ProductName", 
+        "Microsoft", 
+        " Windows", 
+        " Operating System", 
+        "ProductVersion", 
+        "6.6.7600.16385", 
+        "OleSelfRegister", 
+        "VarFileInfo", 
+        "Translation"
+    ], 
+    "metadata": {
+        "output": {
+            "pcap": {
+                "basename": "dump.pcap", 
+                "sha256": "40a52192938ed57d2f361be0c5682133ca31bb803cdc36934a89d3837f06a393", 
+                "dirname": ""
+            }
+        }
+    }
+}

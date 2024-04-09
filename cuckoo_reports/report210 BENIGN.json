@@ -1,0 +1,1905 @@
+{
+    "info": {
+        "added": 1612094832.438077, 
+        "started": 1612094833.244685, 
+        "duration": 13, 
+        "ended": 1612094846.65357, 
+        "owner": "", 
+        "score": 0.2, 
+        "id": 210, 
+        "category": "file", 
+        "git": {
+            "head": "13cbe0d9e457be3673304533043e992ead1ea9b2", 
+            "fetch_head": "13cbe0d9e457be3673304533043e992ead1ea9b2"
+        }, 
+        "monitor": "2deb9ccd75d5a7a3fe05b2625b03a8639d6ee36b", 
+        "package": "", 
+        "route": "none", 
+        "custom": "", 
+        "machine": {
+            "status": "stopped", 
+            "name": "192.168.56.1012", 
+            "label": "192.168.56.1012", 
+            "manager": "VirtualBox", 
+            "started_on": "2021-01-31 12:07:13", 
+            "shutdown_on": "2021-01-31 12:07:26"
+        }, 
+        "platform": "", 
+        "version": "2.0.7", 
+        "options": ""
+    }, 
+    "signatures": [
+        {
+            "families": [], 
+            "description": "The file contains an unknown PE resource name possibly indicative of a packer", 
+            "severity": 1, 
+            "ttp": {
+                "T1045": {
+                    "short": "Software Packing", 
+                    "long": "Software packing is a method of compressing or encrypting an executable. Packing an executable changes the file signature in an attempt to avoid signature-based detection. Most decompression techniques decompress the executable code in memory."
+                }
+            }, 
+            "markcount": 1, 
+            "references": [], 
+            "marks": [
+                {
+                    "category": "resource name", 
+                    "ioc": "MUI", 
+                    "type": "ioc", 
+                    "description": null
+                }
+            ], 
+            "name": "pe_unknown_resource_name"
+        }
+    ], 
+    "target": {
+        "category": "file", 
+        "file": {
+            "yara": [], 
+            "sha1": "62e09c197903b43ab611e218d9f203e556b9a08f", 
+            "name": "Sample 47", 
+            "type": "PE32+ executable (DLL) (GUI) x86-64, for MS Windows", 
+            "sha256": "d3458b7b3299b336c568ba252a9cc10ffdf18c069d4e41d688bc231ae3e669c0", 
+            "urls": [], 
+            "crc32": "CF16B263", 
+            "path": "/home/eric/.cuckoo/storage/binaries/d3458b7b3299b336c568ba252a9cc10ffdf18c069d4e41d688bc231ae3e669c0", 
+            "ssdeep": null, 
+            "size": 53248, 
+            "sha512": "cac43b2c688699ff35b0fbb040be3e82cbbe3696ca2948e99ba994a29b19285a062a9b7520af77638f2d44b1d47c54e10300f647cb9196af8bd3f949c08018a3", 
+            "md5": "b8df31f958e4f22e4e20111a6d16d628"
+        }
+    }, 
+    "network": {
+        "tls": [], 
+        "udp": [
+            {
+                "src": "192.168.56.102", 
+                "dst": "192.168.56.255", 
+                "offset": 1068, 
+                "time": 6.198081016540527, 
+                "dport": 137, 
+                "sport": 137
+            }, 
+            {
+                "src": "192.168.56.102", 
+                "dst": "224.0.0.252", 
+                "offset": 3496, 
+                "time": 6.140931129455566, 
+                "dport": 5355, 
+                "sport": 49632
+            }, 
+            {
+                "src": "192.168.56.102", 
+                "dst": "224.0.0.252", 
+                "offset": 3848, 
+                "time": 4.5933051109313965, 
+                "dport": 5355, 
+                "sport": 57680
+            }, 
+            {
+                "src": "192.168.56.102", 
+                "dst": "224.0.0.252", 
+                "offset": 4176, 
+                "time": 3.0860681533813477, 
+                "dport": 5355, 
+                "sport": 60806
+            }, 
+            {
+                "src": "192.168.56.102", 
+                "dst": "224.0.0.252", 
+                "offset": 4504, 
+                "time": 4.134768962860107, 
+                "dport": 5355, 
+                "sport": 62903
+            }, 
+            {
+                "src": "192.168.56.102", 
+                "dst": "224.0.0.252", 
+                "offset": 4856, 
+                "time": 6.138374090194702, 
+                "dport": 5355, 
+                "sport": 63877
+            }, 
+            {
+                "src": "192.168.56.102", 
+                "dst": "8.8.8.8", 
+                "offset": 5184, 
+                "time": 5.307042121887207, 
+                "dport": 53, 
+                "sport": 49279
+            }
+        ], 
+        "dns_servers": [
+            "8.8.8.8"
+        ], 
+        "http": [], 
+        "icmp": [], 
+        "smtp": [], 
+        "tcp": [], 
+        "smtp_ex": [], 
+        "mitm": [], 
+        "hosts": [
+            "8.8.8.8"
+        ], 
+        "pcap_sha256": "ed9cb725a6a821e3cd6ec2a0dee07318d2cf8aaabfc26207e74203049ce28a67", 
+        "dns": [
+            {
+                "type": "A", 
+                "request": "teredo.ipv6.microsoft.com", 
+                "answers": []
+            }
+        ], 
+        "http_ex": [], 
+        "domains": [
+            {
+                "ip": "", 
+                "domain": "teredo.ipv6.microsoft.com"
+            }
+        ], 
+        "dead_hosts": [], 
+        "sorted_pcap_sha256": "f98ced2904f0eca4681d9b48a2c9a6046831716916cafac461e2ed665e0ec1a4", 
+        "irc": [], 
+        "https_ex": []
+    }, 
+    "static": {
+        "pdb_path": null, 
+        "pe_imports": [], 
+        "peid_signatures": null, 
+        "keys": [], 
+        "signature": [], 
+        "pe_timestamp": "2009-07-13 19:54:55", 
+        "pe_exports": [], 
+        "imported_dll_count": 0, 
+        "pe_imphash": "", 
+        "pe_resources": [
+            {
+                "name": "MUI", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x00001fe8", 
+                "size": "0x000000c8"
+            }, 
+            {
+                "name": "RT_DIALOG", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x000090ac", 
+                "size": "0x0000041c"
+            }, 
+            {
+                "name": "RT_DIALOG", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x000090ac", 
+                "size": "0x0000041c"
+            }, 
+            {
+                "name": "RT_DIALOG", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x000090ac", 
+                "size": "0x0000041c"
+            }, 
+            {
+                "name": "RT_DIALOG", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x000090ac", 
+                "size": "0x0000041c"
+            }, 
+            {
+                "name": "RT_DIALOG", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x000090ac", 
+                "size": "0x0000041c"
+            }, 
+            {
+                "name": "RT_DIALOG", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x000090ac", 
+                "size": "0x0000041c"
+            }, 
+            {
+                "name": "RT_DIALOG", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x000090ac", 
+                "size": "0x0000041c"
+            }, 
+            {
+                "name": "RT_DIALOG", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x000090ac", 
+                "size": "0x0000041c"
+            }, 
+            {
+                "name": "RT_DIALOG", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x000090ac", 
+                "size": "0x0000041c"
+            }, 
+            {
+                "name": "RT_DIALOG", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x000090ac", 
+                "size": "0x0000041c"
+            }, 
+            {
+                "name": "RT_DIALOG", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x000090ac", 
+                "size": "0x0000041c"
+            }, 
+            {
+                "name": "RT_DIALOG", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x000090ac", 
+                "size": "0x0000041c"
+            }, 
+            {
+                "name": "RT_DIALOG", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x000090ac", 
+                "size": "0x0000041c"
+            }, 
+            {
+                "name": "RT_DIALOG", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x000090ac", 
+                "size": "0x0000041c"
+            }, 
+            {
+                "name": "RT_DIALOG", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x000090ac", 
+                "size": "0x0000041c"
+            }, 
+            {
+                "name": "RT_DIALOG", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x000090ac", 
+                "size": "0x0000041c"
+            }, 
+            {
+                "name": "RT_DIALOG", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x000090ac", 
+                "size": "0x0000041c"
+            }, 
+            {
+                "name": "RT_DIALOG", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x000090ac", 
+                "size": "0x0000041c"
+            }, 
+            {
+                "name": "RT_DIALOG", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x000090ac", 
+                "size": "0x0000041c"
+            }, 
+            {
+                "name": "RT_DIALOG", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x000090ac", 
+                "size": "0x0000041c"
+            }, 
+            {
+                "name": "RT_DIALOG", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x000090ac", 
+                "size": "0x0000041c"
+            }, 
+            {
+                "name": "RT_DIALOG", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x000090ac", 
+                "size": "0x0000041c"
+            }, 
+            {
+                "name": "RT_DIALOG", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x000090ac", 
+                "size": "0x0000041c"
+            }, 
+            {
+                "name": "RT_DIALOG", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x000090ac", 
+                "size": "0x0000041c"
+            }, 
+            {
+                "name": "RT_DIALOG", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x000090ac", 
+                "size": "0x0000041c"
+            }, 
+            {
+                "name": "RT_DIALOG", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x000090ac", 
+                "size": "0x0000041c"
+            }, 
+            {
+                "name": "RT_DIALOG", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x000090ac", 
+                "size": "0x0000041c"
+            }, 
+            {
+                "name": "RT_DIALOG", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x000090ac", 
+                "size": "0x0000041c"
+            }, 
+            {
+                "name": "RT_DIALOG", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x000090ac", 
+                "size": "0x0000041c"
+            }, 
+            {
+                "name": "RT_DIALOG", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x000090ac", 
+                "size": "0x0000041c"
+            }, 
+            {
+                "name": "RT_DIALOG", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x000090ac", 
+                "size": "0x0000041c"
+            }, 
+            {
+                "name": "RT_DIALOG", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x000090ac", 
+                "size": "0x0000041c"
+            }, 
+            {
+                "name": "RT_DIALOG", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x000090ac", 
+                "size": "0x0000041c"
+            }, 
+            {
+                "name": "RT_DIALOG", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x000090ac", 
+                "size": "0x0000041c"
+            }, 
+            {
+                "name": "RT_DIALOG", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x000090ac", 
+                "size": "0x0000041c"
+            }, 
+            {
+                "name": "RT_DIALOG", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x000090ac", 
+                "size": "0x0000041c"
+            }, 
+            {
+                "name": "RT_DIALOG", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x000090ac", 
+                "size": "0x0000041c"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x0000d300", 
+                "size": "0x0000003c"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x0000d300", 
+                "size": "0x0000003c"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x0000d300", 
+                "size": "0x0000003c"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x0000d300", 
+                "size": "0x0000003c"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x0000d300", 
+                "size": "0x0000003c"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x0000d300", 
+                "size": "0x0000003c"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x0000d300", 
+                "size": "0x0000003c"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x0000d300", 
+                "size": "0x0000003c"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x0000d300", 
+                "size": "0x0000003c"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x0000d300", 
+                "size": "0x0000003c"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x0000d300", 
+                "size": "0x0000003c"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x0000d300", 
+                "size": "0x0000003c"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x0000d300", 
+                "size": "0x0000003c"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x0000d300", 
+                "size": "0x0000003c"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x0000d300", 
+                "size": "0x0000003c"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x0000d300", 
+                "size": "0x0000003c"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x0000d300", 
+                "size": "0x0000003c"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x0000d300", 
+                "size": "0x0000003c"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x0000d300", 
+                "size": "0x0000003c"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x0000d300", 
+                "size": "0x0000003c"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x0000d300", 
+                "size": "0x0000003c"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x0000d300", 
+                "size": "0x0000003c"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x0000d300", 
+                "size": "0x0000003c"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x0000d300", 
+                "size": "0x0000003c"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x0000d300", 
+                "size": "0x0000003c"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x0000d300", 
+                "size": "0x0000003c"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x0000d300", 
+                "size": "0x0000003c"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x0000d300", 
+                "size": "0x0000003c"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x0000d300", 
+                "size": "0x0000003c"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x0000d300", 
+                "size": "0x0000003c"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x0000d300", 
+                "size": "0x0000003c"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x0000d300", 
+                "size": "0x0000003c"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x0000d300", 
+                "size": "0x0000003c"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x0000d300", 
+                "size": "0x0000003c"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x0000d300", 
+                "size": "0x0000003c"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x0000d300", 
+                "size": "0x0000003c"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x0000d300", 
+                "size": "0x0000003c"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x0000d300", 
+                "size": "0x0000003c"
+            }, 
+            {
+                "name": "RT_ACCELERATOR", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x0000d37c", 
+                "size": "0x00000008"
+            }, 
+            {
+                "name": "RT_ACCELERATOR", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x0000d37c", 
+                "size": "0x00000008"
+            }, 
+            {
+                "name": "RT_MESSAGETABLE", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x0000d384", 
+                "size": "0x000005ec"
+            }, 
+            {
+                "name": "RT_VERSION", 
+                "language": "LANG_BULGARIAN", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_DEFAULT", 
+                "offset": "0x0000d970", 
+                "size": "0x000003d0"
+            }
+        ], 
+        "pe_versioninfo": [
+            {
+                "name": "LegalCopyright", 
+                "value": "\\xa9 Microsoft Corporation. \\x412\\x441\\x438\\x447\\x43a\\x438 \\x43f\\x440\\x430\\x432\\x430 \\x437\\x430\\x43f\\x430\\x437\\x435\\x43d\\x438."
+            }, 
+            {
+                "name": "InternalName", 
+                "value": "comdlg32"
+            }, 
+            {
+                "name": "FileVersion", 
+                "value": "6.1.7600.16385 (win7_rtm.090713-1255)"
+            }, 
+            {
+                "name": "CompanyName", 
+                "value": "Microsoft Corporation"
+            }, 
+            {
+                "name": "ProductName", 
+                "value": "\\x41e\\x43f\\x435\\x440\\x430\\x446\\x438\\x43e\\x43d\\x43d\\x430 \\x441\\x438\\x441\\x442\\x435\\x43c\\x430 Microsoft\\xae Windows\\xae"
+            }, 
+            {
+                "name": "ProductVersion", 
+                "value": "6.1.7600.16385"
+            }, 
+            {
+                "name": "FileDescription", 
+                "value": "DLL \\x43d\\x430 \\x434\\x438\\x430\\x43b\\x43e\\x433\\x43e\\x432\\x438\\x442\\x435 \\x43f\\x440\\x43e\\x437\\x43e\\x440\\x446\\x438 \\x437\\x430 \\x43e\\x431\\x449\\x43e \\x43f\\x43e\\x43b\\x437\\x432\\x430\\x43d\\x435"
+            }, 
+            {
+                "name": "OriginalFilename", 
+                "value": "comdlg32.dll.mui"
+            }, 
+            {
+                "name": "Translation", 
+                "value": "0x0402 0x04b0"
+            }
+        ], 
+        "pe_sections": [
+            {
+                "size_of_data": "0x0000ce00", 
+                "virtual_address": "0x00001000", 
+                "entropy": 4.068364166454407, 
+                "name": ".rsrc", 
+                "virtual_size": "0x0000d000"
+            }
+        ]
+    }, 
+    "behavior": {
+        "generic": [
+            {
+                "process_path": "C:\\Windows\\System32\\rundll32.exe", 
+                "process_name": "rundll32.exe", 
+                "pid": 2384, 
+                "summary": {
+                    "regkey_read": [
+                        "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\GRE_Initialize\\DisableMetaFiles"
+                    ]
+                }, 
+                "first_seen": 1612073232.8125, 
+                "ppid": 2360
+            }, 
+            {
+                "process_path": "C:\\Windows\\System32\\lsass.exe", 
+                "process_name": "lsass.exe", 
+                "pid": 476, 
+                "summary": {}, 
+                "first_seen": 1612073232.5625, 
+                "ppid": 372
+            }
+        ], 
+        "apistats": {
+            "2384": {
+                "LdrUnloadDll": 1, 
+                "NtOpenKey": 1, 
+                "SetUnhandledExceptionFilter": 1, 
+                "NtTerminateProcess": 3, 
+                "NtClose": 2, 
+                "GetSystemTimeAsFileTime": 1, 
+                "NtQueryValueKey": 1
+            }
+        }, 
+        "processes": [
+            {
+                "process_path": "C:\\Windows\\System32\\lsass.exe", 
+                "calls": [], 
+                "track": false, 
+                "pid": 476, 
+                "process_name": "lsass.exe", 
+                "command_line": "C:\\Windows\\system32\\lsass.exe", 
+                "modules": [
+                    {
+                        "basename": "lsass.exe", 
+                        "imgsize": 49152, 
+                        "baseaddr": "0xff570000", 
+                        "filepath": "C:\\Windows\\system32\\lsass.exe"
+                    }, 
+                    {
+                        "basename": "ntdll.dll", 
+                        "imgsize": 1740800, 
+                        "baseaddr": "0x77a80000", 
+                        "filepath": "C:\\Windows\\SYSTEM32\\ntdll.dll"
+                    }, 
+                    {
+                        "basename": "kernel32.dll", 
+                        "imgsize": 1175552, 
+                        "baseaddr": "0x77860000", 
+                        "filepath": "C:\\Windows\\system32\\kernel32.dll"
+                    }, 
+                    {
+                        "basename": "KERNELBASE.dll", 
+                        "imgsize": 438272, 
+                        "baseaddr": "0x7fefdae0000", 
+                        "filepath": "C:\\Windows\\system32\\KERNELBASE.dll"
+                    }, 
+                    {
+                        "basename": "msvcrt.dll", 
+                        "imgsize": 651264, 
+                        "baseaddr": "0x7feff3f0000", 
+                        "filepath": "C:\\Windows\\system32\\msvcrt.dll"
+                    }, 
+                    {
+                        "basename": "RPCRT4.dll", 
+                        "imgsize": 1232896, 
+                        "baseaddr": "0x7feffc60000", 
+                        "filepath": "C:\\Windows\\system32\\RPCRT4.dll"
+                    }, 
+                    {
+                        "basename": "SspiSrv.dll", 
+                        "imgsize": 45056, 
+                        "baseaddr": "0x7fefd820000", 
+                        "filepath": "C:\\Windows\\system32\\SspiSrv.dll"
+                    }, 
+                    {
+                        "basename": "lsasrv.dll", 
+                        "imgsize": 1470464, 
+                        "baseaddr": "0x7fefd6b0000", 
+                        "filepath": "C:\\Windows\\system32\\lsasrv.dll"
+                    }, 
+                    {
+                        "basename": "sechost.dll", 
+                        "imgsize": 126976, 
+                        "baseaddr": "0x7feff610000", 
+                        "filepath": "C:\\Windows\\SYSTEM32\\sechost.dll"
+                    }, 
+                    {
+                        "basename": "SspiCli.dll", 
+                        "imgsize": 151552, 
+                        "baseaddr": "0x7fefd830000", 
+                        "filepath": "C:\\Windows\\system32\\SspiCli.dll"
+                    }, 
+                    {
+                        "basename": "ADVAPI32.dll", 
+                        "imgsize": 897024, 
+                        "baseaddr": "0x7fefe410000", 
+                        "filepath": "C:\\Windows\\system32\\ADVAPI32.dll"
+                    }, 
+                    {
+                        "basename": "USER32.dll", 
+                        "imgsize": 1024000, 
+                        "baseaddr": "0x77980000", 
+                        "filepath": "C:\\Windows\\system32\\USER32.dll"
+                    }, 
+                    {
+                        "basename": "GDI32.dll", 
+                        "imgsize": 421888, 
+                        "baseaddr": "0x7feff6b0000", 
+                        "filepath": "C:\\Windows\\system32\\GDI32.dll"
+                    }, 
+                    {
+                        "basename": "LPK.dll", 
+                        "imgsize": 57344, 
+                        "baseaddr": "0x7feff490000", 
+                        "filepath": "C:\\Windows\\system32\\LPK.dll"
+                    }, 
+                    {
+                        "basename": "USP10.dll", 
+                        "imgsize": 823296, 
+                        "baseaddr": "0x7feff280000", 
+                        "filepath": "C:\\Windows\\system32\\USP10.dll"
+                    }, 
+                    {
+                        "basename": "SAMSRV.dll", 
+                        "imgsize": 774144, 
+                        "baseaddr": "0x7fefd5b0000", 
+                        "filepath": "C:\\Windows\\system32\\SAMSRV.dll"
+                    }, 
+                    {
+                        "basename": "cryptdll.dll", 
+                        "imgsize": 81920, 
+                        "baseaddr": "0x7fefd580000", 
+                        "filepath": "C:\\Windows\\system32\\cryptdll.dll"
+                    }, 
+                    {
+                        "basename": "MSASN1.dll", 
+                        "imgsize": 61440, 
+                        "baseaddr": "0x7fefda70000", 
+                        "filepath": "C:\\Windows\\system32\\MSASN1.dll"
+                    }, 
+                    {
+                        "basename": "wevtapi.dll", 
+                        "imgsize": 446464, 
+                        "baseaddr": "0x7fefd4a0000", 
+                        "filepath": "C:\\Windows\\system32\\wevtapi.dll"
+                    }, 
+                    {
+                        "basename": "IMM32.DLL", 
+                        "imgsize": 188416, 
+                        "baseaddr": "0x7fefdda0000", 
+                        "filepath": "C:\\Windows\\system32\\IMM32.DLL"
+                    }, 
+                    {
+                        "basename": "MSCTF.dll", 
+                        "imgsize": 1085440, 
+                        "baseaddr": "0x7feff500000", 
+                        "filepath": "C:\\Windows\\system32\\MSCTF.dll"
+                    }, 
+                    {
+                        "basename": "cngaudit.dll", 
+                        "imgsize": 36864, 
+                        "baseaddr": "0x7fefd460000", 
+                        "filepath": "C:\\Windows\\system32\\cngaudit.dll"
+                    }, 
+                    {
+                        "basename": "AUTHZ.dll", 
+                        "imgsize": 192512, 
+                        "baseaddr": "0x7fefd430000", 
+                        "filepath": "C:\\Windows\\system32\\AUTHZ.dll"
+                    }, 
+                    {
+                        "basename": "ncrypt.dll", 
+                        "imgsize": 319488, 
+                        "baseaddr": "0x7fefd3e0000", 
+                        "filepath": "C:\\Windows\\system32\\ncrypt.dll"
+                    }, 
+                    {
+                        "basename": "bcrypt.dll", 
+                        "imgsize": 139264, 
+                        "baseaddr": "0x7fefd3b0000", 
+                        "filepath": "C:\\Windows\\system32\\bcrypt.dll"
+                    }, 
+                    {
+                        "basename": "msprivs.DLL", 
+                        "imgsize": 8192, 
+                        "baseaddr": "0x757a0000", 
+                        "filepath": "C:\\Windows\\system32\\msprivs.DLL"
+                    }, 
+                    {
+                        "basename": "netjoin.dll", 
+                        "imgsize": 204800, 
+                        "baseaddr": "0x7fefd370000", 
+                        "filepath": "C:\\Windows\\system32\\netjoin.dll"
+                    }, 
+                    {
+                        "basename": "negoexts.DLL", 
+                        "imgsize": 147456, 
+                        "baseaddr": "0x7fefd340000", 
+                        "filepath": "C:\\Windows\\system32\\negoexts.DLL"
+                    }, 
+                    {
+                        "basename": "Secur32.dll", 
+                        "imgsize": 45056, 
+                        "baseaddr": "0x7fefd5a0000", 
+                        "filepath": "C:\\Windows\\system32\\Secur32.dll"
+                    }, 
+                    {
+                        "basename": "cryptbase.dll", 
+                        "imgsize": 61440, 
+                        "baseaddr": "0x7fefd8c0000", 
+                        "filepath": "C:\\Windows\\system32\\cryptbase.dll"
+                    }, 
+                    {
+                        "basename": "kerberos.DLL", 
+                        "imgsize": 737280, 
+                        "baseaddr": "0x7fefd280000", 
+                        "filepath": "C:\\Windows\\system32\\kerberos.DLL"
+                    }, 
+                    {
+                        "basename": "CRYPTSP.dll", 
+                        "imgsize": 94208, 
+                        "baseaddr": "0x7fefd260000", 
+                        "filepath": "C:\\Windows\\system32\\CRYPTSP.dll"
+                    }, 
+                    {
+                        "basename": "WS2_32.dll", 
+                        "imgsize": 315392, 
+                        "baseaddr": "0x7fefdfd0000", 
+                        "filepath": "C:\\Windows\\system32\\WS2_32.dll"
+                    }, 
+                    {
+                        "basename": "NSI.dll", 
+                        "imgsize": 32768, 
+                        "baseaddr": "0x7feffb00000", 
+                        "filepath": "C:\\Windows\\system32\\NSI.dll"
+                    }, 
+                    {
+                        "basename": "mswsock.dll", 
+                        "imgsize": 348160, 
+                        "baseaddr": "0x7fefd200000", 
+                        "filepath": "C:\\Windows\\system32\\mswsock.dll"
+                    }, 
+                    {
+                        "basename": "wship6.dll", 
+                        "imgsize": 28672, 
+                        "baseaddr": "0x7fefd1f0000", 
+                        "filepath": "C:\\Windows\\System32\\wship6.dll"
+                    }, 
+                    {
+                        "basename": "msv1_0.DLL", 
+                        "imgsize": 331776, 
+                        "baseaddr": "0x7fefd190000", 
+                        "filepath": "C:\\Windows\\system32\\msv1_0.DLL"
+                    }, 
+                    {
+                        "basename": "netlogon.DLL", 
+                        "imgsize": 712704, 
+                        "baseaddr": "0x7fefd0e0000", 
+                        "filepath": "C:\\Windows\\system32\\netlogon.DLL"
+                    }, 
+                    {
+                        "basename": "DNSAPI.dll", 
+                        "imgsize": 372736, 
+                        "baseaddr": "0x7fefd080000", 
+                        "filepath": "C:\\Windows\\system32\\DNSAPI.dll"
+                    }, 
+                    {
+                        "basename": "logoncli.dll", 
+                        "imgsize": 196608, 
+                        "baseaddr": "0x7fefd050000", 
+                        "filepath": "C:\\Windows\\system32\\logoncli.dll"
+                    }, 
+                    {
+                        "basename": "schannel.DLL", 
+                        "imgsize": 356352, 
+                        "baseaddr": "0x7fefcff0000", 
+                        "filepath": "C:\\Windows\\system32\\schannel.DLL"
+                    }, 
+                    {
+                        "basename": "CRYPT32.dll", 
+                        "imgsize": 1470464, 
+                        "baseaddr": "0x7fefdb90000", 
+                        "filepath": "C:\\Windows\\system32\\CRYPT32.dll"
+                    }, 
+                    {
+                        "basename": "wdigest.DLL", 
+                        "imgsize": 221184, 
+                        "baseaddr": "0x7fefcfb0000", 
+                        "filepath": "C:\\Windows\\system32\\wdigest.DLL"
+                    }, 
+                    {
+                        "basename": "rsaenh.dll", 
+                        "imgsize": 290816, 
+                        "baseaddr": "0x7fefcf60000", 
+                        "filepath": "C:\\Windows\\system32\\rsaenh.dll"
+                    }, 
+                    {
+                        "basename": "tspkg.DLL", 
+                        "imgsize": 98304, 
+                        "baseaddr": "0x7fefcf40000", 
+                        "filepath": "C:\\Windows\\system32\\tspkg.DLL"
+                    }, 
+                    {
+                        "basename": "pku2u.DLL", 
+                        "imgsize": 282624, 
+                        "baseaddr": "0x7fefcef0000", 
+                        "filepath": "C:\\Windows\\system32\\pku2u.DLL"
+                    }, 
+                    {
+                        "basename": "bcryptprimitives.dll", 
+                        "imgsize": 311296, 
+                        "baseaddr": "0x7fefcea0000", 
+                        "filepath": "C:\\Windows\\system32\\bcryptprimitives.dll"
+                    }, 
+                    {
+                        "basename": "RpcRtRemote.dll", 
+                        "imgsize": 81920, 
+                        "baseaddr": "0x7fefd9b0000", 
+                        "filepath": "C:\\Windows\\system32\\RpcRtRemote.dll"
+                    }, 
+                    {
+                        "basename": "efslsaext.dll", 
+                        "imgsize": 73728, 
+                        "baseaddr": "0x7fefce80000", 
+                        "filepath": "C:\\Windows\\system32\\efslsaext.dll"
+                    }, 
+                    {
+                        "basename": "scecli.DLL", 
+                        "imgsize": 253952, 
+                        "baseaddr": "0x7fefce20000", 
+                        "filepath": "C:\\Windows\\system32\\scecli.DLL"
+                    }, 
+                    {
+                        "basename": "credssp.dll", 
+                        "imgsize": 40960, 
+                        "baseaddr": "0x7fefce60000", 
+                        "filepath": "C:\\Windows\\system32\\credssp.dll"
+                    }, 
+                    {
+                        "basename": "WINSTA.dll", 
+                        "imgsize": 249856, 
+                        "baseaddr": "0x7fefd970000", 
+                        "filepath": "C:\\Windows\\system32\\WINSTA.dll"
+                    }, 
+                    {
+                        "basename": "IPHLPAPI.DLL", 
+                        "imgsize": 159744, 
+                        "baseaddr": "0x7fefb2e0000", 
+                        "filepath": "C:\\Windows\\system32\\IPHLPAPI.DLL"
+                    }, 
+                    {
+                        "basename": "WINNSI.DLL", 
+                        "imgsize": 45056, 
+                        "baseaddr": "0x7fefb2c0000", 
+                        "filepath": "C:\\Windows\\system32\\WINNSI.DLL"
+                    }, 
+                    {
+                        "basename": "netutils.dll", 
+                        "imgsize": 49152, 
+                        "baseaddr": "0x7fefb500000", 
+                        "filepath": "C:\\Windows\\system32\\netutils.dll"
+                    }, 
+                    {
+                        "basename": "USERENV.dll", 
+                        "imgsize": 122880, 
+                        "baseaddr": "0x7fefcd10000", 
+                        "filepath": "C:\\Windows\\system32\\USERENV.dll"
+                    }, 
+                    {
+                        "basename": "profapi.dll", 
+                        "imgsize": 61440, 
+                        "baseaddr": "0x7fefd9d0000", 
+                        "filepath": "C:\\Windows\\system32\\profapi.dll"
+                    }, 
+                    {
+                        "basename": "wshtcpip.dll", 
+                        "imgsize": 28672, 
+                        "baseaddr": "0x7fefcc00000", 
+                        "filepath": "C:\\Windows\\System32\\wshtcpip.dll"
+                    }, 
+                    {
+                        "basename": "monitor-x64.dll", 
+                        "imgsize": 2269184, 
+                        "baseaddr": "0x75120000", 
+                        "filepath": "C:\\tmppovkvg\\bin\\monitor-x64.dll"
+                    }
+                ], 
+                "time": 0, 
+                "tid": 2340, 
+                "first_seen": 1612073232.5625, 
+                "ppid": 372, 
+                "type": "process"
+            }, 
+            {
+                "process_path": "C:\\Windows\\System32\\rundll32.exe", 
+                "calls": [
+                    {
+                        "category": "synchronisation", 
+                        "status": 1, 
+                        "stacktrace": [], 
+                        "api": "GetSystemTimeAsFileTime", 
+                        "return_value": 0, 
+                        "arguments": {}, 
+                        "time": 1612073232.9055, 
+                        "tid": 2388, 
+                        "flags": {}
+                    }, 
+                    {
+                        "category": "exception", 
+                        "status": 0, 
+                        "stacktrace": [], 
+                        "last_error": 0, 
+                        "nt_status": -1073741515, 
+                        "api": "SetUnhandledExceptionFilter", 
+                        "return_value": 0, 
+                        "arguments": {}, 
+                        "time": 1612073232.9055, 
+                        "tid": 2388, 
+                        "flags": {}
+                    }, 
+                    {
+                        "category": "process", 
+                        "status": 0, 
+                        "stacktrace": [], 
+                        "last_error": 0, 
+                        "nt_status": -1073741515, 
+                        "api": "NtTerminateProcess", 
+                        "return_value": 0, 
+                        "arguments": {
+                            "status_code": "0x00000000", 
+                            "process_identifier": 0, 
+                            "process_handle": "0x0000000000000000"
+                        }, 
+                        "time": 1612073232.9055, 
+                        "tid": 2388, 
+                        "flags": {}
+                    }, 
+                    {
+                        "category": "process", 
+                        "status": 1, 
+                        "stacktrace": [], 
+                        "api": "NtTerminateProcess", 
+                        "return_value": 0, 
+                        "arguments": {
+                            "status_code": "0x00000000", 
+                            "process_identifier": 0, 
+                            "process_handle": "0x0000000000000000"
+                        }, 
+                        "time": 1612073232.9055, 
+                        "tid": 2388, 
+                        "flags": {}
+                    }, 
+                    {
+                        "category": "system", 
+                        "status": 1, 
+                        "stacktrace": [], 
+                        "api": "NtClose", 
+                        "return_value": 0, 
+                        "arguments": {
+                            "handle": "0x000000000000001c"
+                        }, 
+                        "time": 1612073232.9055, 
+                        "tid": 2388, 
+                        "flags": {}
+                    }, 
+                    {
+                        "category": "system", 
+                        "status": 1, 
+                        "stacktrace": [], 
+                        "api": "LdrUnloadDll", 
+                        "return_value": 0, 
+                        "arguments": {
+                            "library": "IMM32", 
+                            "module_address": "0x000007fefdda0000"
+                        }, 
+                        "time": 1612073232.9055, 
+                        "tid": 2388, 
+                        "flags": {}
+                    }, 
+                    {
+                        "category": "registry", 
+                        "status": 1, 
+                        "stacktrace": [], 
+                        "api": "NtOpenKey", 
+                        "return_value": 0, 
+                        "arguments": {
+                            "key_handle": "0x000000000000001c", 
+                            "desired_access": "0x00020019", 
+                            "regkey": "HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows NT\\CurrentVersion\\GRE_Initialize"
+                        }, 
+                        "time": 1612073232.9055, 
+                        "tid": 2388, 
+                        "flags": {
+                            "desired_access": "READ_CONTROL"
+                        }
+                    }, 
+                    {
+                        "category": "registry", 
+                        "status": 0, 
+                        "stacktrace": [], 
+                        "last_error": 0, 
+                        "nt_status": -1073741515, 
+                        "api": "NtQueryValueKey", 
+                        "return_value": -1073741772, 
+                        "arguments": {
+                            "key_handle": "0x000000000000001c", 
+                            "key_name": "", 
+                            "value": "", 
+                            "reg_type": 0, 
+                            "information_class": 2, 
+                            "regkey": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\GRE_Initialize\\DisableMetaFiles"
+                        }, 
+                        "time": 1612073232.9055, 
+                        "tid": 2388, 
+                        "flags": {
+                            "reg_type": "REG_NONE", 
+                            "information_class": "KeyValuePartialInformation"
+                        }
+                    }, 
+                    {
+                        "category": "system", 
+                        "status": 1, 
+                        "stacktrace": [], 
+                        "api": "NtClose", 
+                        "return_value": 0, 
+                        "arguments": {
+                            "handle": "0x000000000000001c"
+                        }, 
+                        "time": 1612073232.9055, 
+                        "tid": 2388, 
+                        "flags": {}
+                    }, 
+                    {
+                        "category": "process", 
+                        "status": 0, 
+                        "stacktrace": [], 
+                        "last_error": 0, 
+                        "nt_status": -1073741515, 
+                        "api": "NtTerminateProcess", 
+                        "return_value": 0, 
+                        "arguments": {
+                            "status_code": "0x00000000", 
+                            "process_identifier": 2384, 
+                            "process_handle": "0xffffffffffffffff"
+                        }, 
+                        "time": 1612073232.9055, 
+                        "tid": 2388, 
+                        "flags": {}
+                    }
+                ], 
+                "track": true, 
+                "pid": 2384, 
+                "process_name": "rundll32.exe", 
+                "command_line": "\"C:\\Windows\\System32\\rundll32.exe\" \"C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\Sample 47.dll,DllMain\"", 
+                "modules": [
+                    {
+                        "basename": "rundll32.exe", 
+                        "imgsize": 61440, 
+                        "baseaddr": "0xffe70000", 
+                        "filepath": "C:\\Windows\\System32\\rundll32.exe"
+                    }, 
+                    {
+                        "basename": "ntdll.dll", 
+                        "imgsize": 1740800, 
+                        "baseaddr": "0x77a80000", 
+                        "filepath": "C:\\Windows\\SYSTEM32\\ntdll.dll"
+                    }, 
+                    {
+                        "basename": "kernel32.dll", 
+                        "imgsize": 1175552, 
+                        "baseaddr": "0x77860000", 
+                        "filepath": "C:\\Windows\\system32\\kernel32.dll"
+                    }, 
+                    {
+                        "basename": "KERNELBASE.dll", 
+                        "imgsize": 438272, 
+                        "baseaddr": "0x7fefdae0000", 
+                        "filepath": "C:\\Windows\\system32\\KERNELBASE.dll"
+                    }, 
+                    {
+                        "basename": "USER32.dll", 
+                        "imgsize": 1024000, 
+                        "baseaddr": "0x77980000", 
+                        "filepath": "C:\\Windows\\system32\\USER32.dll"
+                    }, 
+                    {
+                        "basename": "GDI32.dll", 
+                        "imgsize": 421888, 
+                        "baseaddr": "0x7feff6b0000", 
+                        "filepath": "C:\\Windows\\system32\\GDI32.dll"
+                    }, 
+                    {
+                        "basename": "LPK.dll", 
+                        "imgsize": 57344, 
+                        "baseaddr": "0x7feff490000", 
+                        "filepath": "C:\\Windows\\system32\\LPK.dll"
+                    }, 
+                    {
+                        "basename": "USP10.dll", 
+                        "imgsize": 823296, 
+                        "baseaddr": "0x7feff280000", 
+                        "filepath": "C:\\Windows\\system32\\USP10.dll"
+                    }, 
+                    {
+                        "basename": "msvcrt.dll", 
+                        "imgsize": 651264, 
+                        "baseaddr": "0x7feff3f0000", 
+                        "filepath": "C:\\Windows\\system32\\msvcrt.dll"
+                    }, 
+                    {
+                        "basename": "imagehlp.dll", 
+                        "imgsize": 94208, 
+                        "baseaddr": "0x7feffc40000", 
+                        "filepath": "C:\\Windows\\system32\\imagehlp.dll"
+                    }, 
+                    {
+                        "basename": "IMM32.DLL", 
+                        "imgsize": 188416, 
+                        "baseaddr": "0x7fefdda0000", 
+                        "filepath": "C:\\Windows\\system32\\IMM32.DLL"
+                    }, 
+                    {
+                        "basename": "MSCTF.dll", 
+                        "imgsize": 1085440, 
+                        "baseaddr": "0x7feff500000", 
+                        "filepath": "C:\\Windows\\system32\\MSCTF.dll"
+                    }, 
+                    {
+                        "basename": "monitor-x64.dll", 
+                        "imgsize": 2269184, 
+                        "baseaddr": "0x75120000", 
+                        "filepath": "C:\\tmppovkvg\\bin\\monitor-x64.dll"
+                    }
+                ], 
+                "time": 0, 
+                "tid": 2388, 
+                "first_seen": 1612073232.8125, 
+                "ppid": 2360, 
+                "type": "process"
+            }
+        ], 
+        "processtree": [
+            {
+                "track": false, 
+                "pid": 476, 
+                "process_name": "lsass.exe", 
+                "command_line": "C:\\Windows\\system32\\lsass.exe", 
+                "first_seen": 1612073232.5625, 
+                "ppid": 372, 
+                "children": []
+            }, 
+            {
+                "track": true, 
+                "pid": 2384, 
+                "process_name": "rundll32.exe", 
+                "command_line": "\"C:\\Windows\\System32\\rundll32.exe\" \"C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\Sample 47.dll,DllMain\"", 
+                "first_seen": 1612073232.8125, 
+                "ppid": 2360, 
+                "children": []
+            }
+        ], 
+        "summary": {
+            "regkey_read": [
+                "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\GRE_Initialize\\DisableMetaFiles"
+            ]
+        }
+    }, 
+    "debug": {
+        "action": [], 
+        "dbgview": [], 
+        "errors": [], 
+        "log": [
+            "2021-01-31 12:07:12,015 [analyzer] DEBUG: Starting analyzer from: C:\\tmppovkvg\n", 
+            "2021-01-31 12:07:12,015 [analyzer] DEBUG: Pipe server name: \\??\\PIPE\\qyJaXEfjXYSvPast\n", 
+            "2021-01-31 12:07:12,015 [analyzer] DEBUG: Log pipe server name: \\??\\PIPE\\ogWrJmITqBdfKipxzznngcBMoaP\n", 
+            "2021-01-31 12:07:12,015 [analyzer] DEBUG: No analysis package specified, trying to detect it automagically.\n", 
+            "2021-01-31 12:07:12,015 [analyzer] INFO: Automatically selected analysis package \"dll\"\n", 
+            "2021-01-31 12:07:12,155 [analyzer] DEBUG: Started auxiliary module DbgView\n", 
+            "2021-01-31 12:07:12,467 [analyzer] DEBUG: Started auxiliary module Disguise\n", 
+            "2021-01-31 12:07:12,625 [analyzer] DEBUG: Loaded monitor into process with pid 476\n", 
+            "2021-01-31 12:07:12,625 [analyzer] DEBUG: Started auxiliary module DumpTLSMasterSecrets\n", 
+            "2021-01-31 12:07:12,625 [analyzer] DEBUG: Started auxiliary module Human\n", 
+            "2021-01-31 12:07:12,625 [analyzer] DEBUG: Started auxiliary module InstallCertificate\n", 
+            "2021-01-31 12:07:12,625 [analyzer] DEBUG: Started auxiliary module Reboot\n", 
+            "2021-01-31 12:07:12,671 [analyzer] DEBUG: Started auxiliary module RecentFiles\n", 
+            "2021-01-31 12:07:12,671 [analyzer] DEBUG: Started auxiliary module Screenshots\n", 
+            "2021-01-31 12:07:12,671 [analyzer] DEBUG: Started auxiliary module LoadZer0m0n\n", 
+            "2021-01-31 12:07:12,671 [modules.auxiliary.screenshots] INFO: Python Image Library (either PIL or Pillow) is not installed, screenshots are disabled.\n", 
+            "2021-01-31 12:07:12,765 [lib.api.process] INFO: Successfully executed process from path 'C:\\\\Windows\\\\System32\\\\rundll32.exe' with arguments [u'C:\\\\Users\\\\ADMINI~1\\\\AppData\\\\Local\\\\Temp\\\\Sample 47.dll,DllMain'] and pid 2384\n", 
+            "2021-01-31 12:07:12,905 [analyzer] DEBUG: Loaded monitor into process with pid 2384\n", 
+            "2021-01-31 12:07:13,765 [analyzer] INFO: Process with pid 2384 has terminated\n", 
+            "2021-01-31 12:07:13,765 [analyzer] INFO: Process list is empty, terminating analysis.\n", 
+            "2021-01-31 12:07:14,765 [analyzer] INFO: Analysis completed.\n"
+        ], 
+        "cuckoo": [
+            "2021-01-31 12:07:13,311 [cuckoo.core.scheduler] INFO: Task #210: acquired machine 192.168.56.1012 (label=192.168.56.1012)\n", 
+            "2021-01-31 12:07:13,311 [cuckoo.core.resultserver] DEBUG: Now tracking machine 192.168.56.102 for task #210\n", 
+            "2021-01-31 12:07:13,311 [cuckoo.core.plugins] DEBUG: Started auxiliary module: Replay\n", 
+            "2021-01-31 12:07:13,326 [cuckoo.auxiliary.sniffer] INFO: Started sniffer with PID 949915 (interface=vboxnet0, host=192.168.56.102)\n", 
+            "2021-01-31 12:07:13,327 [cuckoo.core.plugins] DEBUG: Started auxiliary module: Sniffer\n", 
+            "2021-01-31 12:07:13,384 [cuckoo.machinery.virtualbox] DEBUG: Starting vm 192.168.56.1012\n", 
+            "2021-01-31 12:07:13,519 [cuckoo.machinery.virtualbox] DEBUG: Restoring virtual machine 192.168.56.1012 to its current snapshot\n", 
+            "2021-01-31 12:07:17,887 [cuckoo.core.guest] INFO: Starting analysis #210 on guest (id=192.168.56.1012, ip=192.168.56.102)\n", 
+            "2021-01-31 12:07:18,891 [cuckoo.core.guest] DEBUG: 192.168.56.1012: not ready yet\n", 
+            "2021-01-31 12:07:19,894 [cuckoo.core.guest] DEBUG: 192.168.56.1012: not ready yet\n", 
+            "2021-01-31 12:07:20,897 [cuckoo.core.guest] DEBUG: 192.168.56.1012: not ready yet\n", 
+            "2021-01-31 12:07:20,963 [cuckoo.core.guest] DEBUG: 192.168.56.1012: not ready yet\n", 
+            "2021-01-31 12:07:21,988 [cuckoo.core.guest] INFO: Guest is running Cuckoo Agent 0.10 (id=192.168.56.1012, ip=192.168.56.102)\n", 
+            "2021-01-31 12:07:22,055 [cuckoo.core.guest] DEBUG: Uploading analyzer to guest (id=192.168.56.1012, ip=192.168.56.102, monitor=latest, size=3884763)\n", 
+            "2021-01-31 12:07:22,427 [cuckoo.core.resultserver] DEBUG: Task #210: live log analysis.log initialized.\n", 
+            "2021-01-31 12:07:22,994 [cuckoo.core.resultserver] DEBUG: Task #210 is sending a BSON stream\n", 
+            "2021-01-31 12:07:23,245 [cuckoo.core.resultserver] DEBUG: Task #210 is sending a BSON stream\n", 
+            "2021-01-31 12:07:25,284 [cuckoo.core.guest] INFO: 192.168.56.1012: analysis completed successfully\n", 
+            "2021-01-31 12:07:25,312 [cuckoo.core.plugins] DEBUG: Stopped auxiliary module: Replay\n", 
+            "2021-01-31 12:07:25,346 [cuckoo.core.plugins] DEBUG: Stopped auxiliary module: Sniffer\n", 
+            "2021-01-31 12:07:25,346 [cuckoo.machinery.virtualbox] DEBUG: Stopping vm 192.168.56.1012\n", 
+            "2021-01-31 12:07:26,630 [cuckoo.core.resultserver] DEBUG: Stopped tracking machine 192.168.56.102 for task #210\n", 
+            "2021-01-31 12:07:26,630 [cuckoo.core.resultserver] DEBUG: Cancel <Context for LOG> for task 210\n", 
+            "2021-01-31 12:07:26,640 [cuckoo.core.scheduler] DEBUG: Released database task #210\n", 
+            "2021-01-31 12:07:26,666 [cuckoo.core.plugins] DEBUG: Executed processing module \"AnalysisInfo\" for task #210\n", 
+            "2021-01-31 12:07:26,671 [cuckoo.core.plugins] DEBUG: Executed processing module \"BehaviorAnalysis\" for task #210\n", 
+            "2021-01-31 12:07:26,672 [cuckoo.core.plugins] DEBUG: Executed processing module \"Dropped\" for task #210\n", 
+            "2021-01-31 12:07:26,672 [cuckoo.core.plugins] DEBUG: Executed processing module \"DroppedBuffer\" for task #210\n", 
+            "2021-01-31 12:07:26,673 [cuckoo.core.plugins] DEBUG: Executed processing module \"MetaInfo\" for task #210\n", 
+            "2021-01-31 12:07:26,673 [cuckoo.core.plugins] DEBUG: Executed processing module \"ProcessMemory\" for task #210\n", 
+            "2021-01-31 12:07:26,673 [cuckoo.core.plugins] DEBUG: Executed processing module \"Procmon\" for task #210\n", 
+            "2021-01-31 12:07:26,673 [cuckoo.core.plugins] DEBUG: Executed processing module \"Screenshots\" for task #210\n", 
+            "2021-01-31 12:07:27,063 [cuckoo.core.plugins] DEBUG: Executed processing module \"Static\" for task #210\n", 
+            "2021-01-31 12:07:27,066 [cuckoo.core.plugins] DEBUG: Executed processing module \"Strings\" for task #210\n", 
+            "2021-01-31 12:07:27,069 [cuckoo.core.plugins] DEBUG: Executed processing module \"TargetInfo\" for task #210\n", 
+            "2021-01-31 12:07:27,141 [cuckoo.core.plugins] DEBUG: Executed processing module \"NetworkAnalysis\" for task #210\n", 
+            "2021-01-31 12:07:27,142 [cuckoo.core.plugins] DEBUG: Executed processing module \"Extracted\" for task #210\n", 
+            "2021-01-31 12:07:27,142 [cuckoo.core.plugins] DEBUG: Executed processing module \"TLSMasterSecrets\" for task #210\n", 
+            "2021-01-31 12:07:27,144 [cuckoo.core.plugins] DEBUG: Executed processing module \"Debug\" for task #210\n", 
+            "2021-01-31 12:07:27,215 [cuckoo.core.plugins] DEBUG: Running 542 signa"
+        ]
+    }, 
+    "strings": [
+        "!This program cannot be run in DOS mode.", 
+        "PADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDING", 
+        "CHOOSECOLOR", 
+        "CHOOSECOLORFLIPPED", 
+        "MS Shell Dlg", 
+        "MS Shell Dlg", 
+        "&Basic colors:", 
+        "&Custom colors:", 
+        "&Define Custom Colors >>", 
+        "Cancel", 
+        "|S&olid", 
+        "&Green:", 
+        "Bl&ue:", 
+        "&Add to Custom Colors", 
+        "MS Shell Dlg", 
+        "MS Shell Dlg", 
+        "General", 
+        "MS Shell Dlg", 
+        "Select Printer", 
+        "Status:", 
+        "Location:", 
+        "Comment:", 
+        "Print to &file", 
+        "P&references", 
+        "Fin&d Printer...", 
+        "Select Printer", 
+        "General", 
+        "MS Shell Dlg", 
+        "Select Printer", 
+        "Status:", 
+        "Location:", 
+        "Comment:", 
+        "Print to &file", 
+        "P&references", 
+        "Fin&d Printer...", 
+        "Select Printer", 
+        "MS Shell Dlg", 
+        "MS Shell Dlg", 
+        "MS Shell Dlg", 
+        "MS Shell Dlg", 
+        "MS Shell Dlg", 
+        "MS Shell Dlg", 
+        "MS Shell Dlg", 
+        "MS Shell Dlg", 
+        "MS Shell Dlg", 
+        "MS Shell Dlg", 
+        "MS Shell Dlg", 
+        "MS Shell Dlg", 
+        "ComboBoxEx32", 
+        "MS Shell Dlg", 
+        "Page range", 
+        " 1,5-12", 
+        "MS Shell Dlg", 
+        "ToolbarWindow32", 
+        "ComboBoxEx32", 
+        "Segoe UI", 
+        "ComboBoxEx32", 
+        "MS Shell Dlg", 
+        "File &name:", 
+        "&Folders:", 
+        "List files of &type:", 
+        "Dri&ves:", 
+        "Cancel", 
+        "&Read only", 
+        "MS Shell Dlg", 
+        "File &name:", 
+        "&Folders:", 
+        "List files of &type:", 
+        "Dri&ves:", 
+        "Cancel", 
+        "&Read only", 
+        "MS Shell Dlg", 
+        "Printer", 
+        "&Name:", 
+        "&Properties...", 
+        "Status:", 
+        "Where:", 
+        "Comment:", 
+        "Print to fi&le", 
+        "Print range", 
+        "Pa&ges", 
+        "&Selection", 
+        "&from:", 
+        "Copies", 
+        "Number of &copies:", 
+        "C&ollate", 
+        "Cancel", 
+        "Print Setup", 
+        "MS Shell Dlg", 
+        "Printer", 
+        "&Name:", 
+        "&Properties...", 
+        "Status:", 
+        "Where:", 
+        "Comment:", 
+        "Si&ze:", 
+        "&Source:", 
+        "Orientation", 
+        "P&ortrait", 
+        "L&andscape", 
+        "Cancel", 
+        "MS Shell Dlg", 
+        "Fi&nd what:", 
+        "Match &whole word only", 
+        "Match &case", 
+        "Direction", 
+        "&Find Next", 
+        "Cancel", 
+        "Replace", 
+        "MS Shell Dlg", 
+        "Fi&nd what:", 
+        "Re&place with:", 
+        "Match &whole word only", 
+        "Match &case", 
+        "&Find Next", 
+        "&Replace", 
+        "Replace &All", 
+        "Cancel", 
+        "MS Shell Dlg", 
+        "&Font:", 
+        "Font st&yle:", 
+        "&Size:", 
+        "Effects", 
+        "Stri&keout", 
+        "&Underline", 
+        "&Color:", 
+        "Sample", 
+        "AaBbYyZz", 
+        "Sc&ript:", 
+        "Cancel", 
+        "&Apply", 
+        "Page Setup", 
+        "MS Shell Dlg", 
+        "Si&ze:", 
+        "&Source:", 
+        "Orientation", 
+        "P&ortrait", 
+        "L&andscape", 
+        "Margins", 
+        "&Left:", 
+        "&Right:", 
+        "&Bottom:", 
+        "Cancel", 
+        "MS Shell Dlg", 
+        "Look &in:", 
+        "File &name:", 
+        "ComboBoxEx32", 
+        "Files of &type:", 
+        "Open as &read-only", 
+        "Cancel", 
+        "MS Shell Dlg", 
+        "Look &in:", 
+        "ToolbarWindow32", 
+        "File &name:", 
+        "ComboBoxEx32", 
+        "Files of &type:", 
+        "Open as &read-only", 
+        "Cancel", 
+        "MS Shell Dlg", 
+        "Page Range", 
+        "Selec&tion", 
+        "C&urrent Page", 
+        "Pa&ges:", 
+        "Page range", 
+        "Enter page numbers and/or page ranges separated by commas.  For example, 1,5-12", 
+        "Enter either a single page number or a single page range.  For example, 5-12", 
+        "Number of &copies:", 
+        "C&ollate", 
+        "Segoe UI", 
+        "File &name:", 
+        "ComboBoxEx32", 
+        "Files of &type:", 
+        "Cancel", 
+        "Segoe UI", 
+        "Segoe UI", 
+        "&Font:", 
+        "Font st&yle:", 
+        "&Size:", 
+        "Effects", 
+        "Stri&keout", 
+        "&Underline", 
+        "&Color:", 
+        "Sample", 
+        "AaBbYyZz", 
+        "Sc&ript:", 
+        "SysLink", 
+        "Cancel", 
+        "&Apply", 
+        "Segoe UI", 
+        "&Font:", 
+        "Font st&yle:", 
+        "&Size:", 
+        "Effects", 
+        "Stri&keout", 
+        "&Underline", 
+        "&Color:", 
+        "Sample", 
+        "AaBbYyZz", 
+        "Sc&ript:", 
+        "Cancel", 
+        "&Apply", 
+        "Segoe UI", 
+        "SysLink", 
+        " %1!c!: ", 
+        ".xWindows ", 
+        " %1!c!: ", 
+        " Windows.", 
+        " %1!c!: ", 
+        " %1!c!: : ", 
+        "Windows ", 
+        " %1!c!:. ", 
+        " '%1'.", 
+        ".\\'%s' ", 
+        " %2?0%1", 
+        " D:\\files\\.", 
+        "FileOpen", 
+        "FileSave", 
+        "ExitChanges", 
+        "ChooseColor", 
+        "FindText", 
+        "ReplaceText", 
+        "FormatChar", 
+        "FontInfo", 
+        "PrintDlg", 
+        "PrintSetupDlg", 
+        "MultiFileOpen", 
+        "ChooseColorFlipped", 
+        " TrueType ", 
+        " 5-12.", 
+        " 1,3,5-12.", 
+        "...\", ", 
+        " OpenType ", 
+        " OpenType ", 
+        " PostScript ", 
+        "AaBbYyZz", 
+        "AaBbYyZz", 
+        "Symbol", 
+        "AaBbYyZz", 
+        "AaBbYyZz", 
+        "AaBbYyZz", 
+        "AaBbYyZz", 
+        " GB2312", 
+        "OEM/DOS", 
+        " ComDlg32", 
+        "ChooseFont Entered", 
+        "ChooseFont Exited", 
+        "ChooseFont start building enumerator", 
+        "ChooseFont finished building enumerator", 
+        "ChooseFont create dialog", 
+        "ChooseFont start WM_INITDIALOG", 
+        "ChooseFont end WM_INITDIALOG", 
+        "ChooseFont get families 1 start", 
+        "ChooseFont get families 1 end", 
+        "ChooseFont get families 2 start", 
+        "ChooseFont get families 2 end", 
+        "ChooseFont insert family start", 
+        "ChooseFont insert family end", 
+        "ChooseFont GetFontStylesAndSizes start", 
+        "ChooseFont GetFontStylesAndSizes end", 
+        "Microsoft-Windows-ComDlg32", 
+        "Analytical", 
+        "VS_VERSION_INFO", 
+        "StringFileInfo", 
+        "040204B0", 
+        "CompanyName", 
+        "Microsoft Corporation", 
+        "FileDescription", 
+        "FileVersion", 
+        "6.1.7600.16385 (win7_rtm.090713-1255)", 
+        "InternalName", 
+        "comdlg32", 
+        "LegalCopyright", 
+        " Microsoft Corporation. ", 
+        "OriginalFilename", 
+        "comdlg32.dll.mui", 
+        "ProductName", 
+        " Microsoft", 
+        " Windows", 
+        "ProductVersion", 
+        "6.1.7600.16385", 
+        "VarFileInfo", 
+        "Translation"
+    ], 
+    "metadata": {
+        "output": {
+            "pcap": {
+                "basename": "dump.pcap", 
+                "sha256": "ed9cb725a6a821e3cd6ec2a0dee07318d2cf8aaabfc26207e74203049ce28a67", 
+                "dirname": ""
+            }
+        }
+    }
+}

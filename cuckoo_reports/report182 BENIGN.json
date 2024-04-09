@@ -1,0 +1,3904 @@
+{
+    "info": {
+        "added": 1612093990.382991, 
+        "started": 1612093990.95274, 
+        "duration": 11, 
+        "ended": 1612094002.508041, 
+        "owner": "", 
+        "score": 0.8, 
+        "id": 182, 
+        "category": "file", 
+        "git": {
+            "head": "13cbe0d9e457be3673304533043e992ead1ea9b2", 
+            "fetch_head": "13cbe0d9e457be3673304533043e992ead1ea9b2"
+        }, 
+        "monitor": "2deb9ccd75d5a7a3fe05b2625b03a8639d6ee36b", 
+        "package": "", 
+        "route": "none", 
+        "custom": "", 
+        "machine": {
+            "status": "stopped", 
+            "name": "192.168.56.1011", 
+            "label": "192.168.56.1011", 
+            "manager": "VirtualBox", 
+            "started_on": "2021-01-31 11:53:11", 
+            "shutdown_on": "2021-01-31 11:53:22"
+        }, 
+        "platform": "", 
+        "version": "2.0.7", 
+        "options": ""
+    }, 
+    "signatures": [
+        {
+            "families": [], 
+            "description": "This executable has a PDB path", 
+            "severity": 1, 
+            "ttp": {}, 
+            "markcount": 1, 
+            "references": [], 
+            "marks": [
+                {
+                    "category": "pdb_path", 
+                    "ioc": "ImSCTip.pdb", 
+                    "type": "ioc", 
+                    "description": null
+                }
+            ], 
+            "name": "has_pdb"
+        }, 
+        {
+            "families": [], 
+            "description": "The file contains an unknown PE resource name possibly indicative of a packer", 
+            "severity": 1, 
+            "ttp": {
+                "T1045": {
+                    "short": "Software Packing", 
+                    "long": "Software packing is a method of compressing or encrypting an executable. Packing an executable changes the file signature in an attempt to avoid signature-based detection. Most decompression techniques decompress the executable code in memory."
+                }
+            }, 
+            "markcount": 2, 
+            "references": [], 
+            "marks": [
+                {
+                    "category": "resource name", 
+                    "ioc": "RESFILE", 
+                    "type": "ioc", 
+                    "description": null
+                }, 
+                {
+                    "category": "resource name", 
+                    "ioc": "SKDFILE", 
+                    "type": "ioc", 
+                    "description": null
+                }
+            ], 
+            "name": "pe_unknown_resource_name"
+        }, 
+        {
+            "families": [], 
+            "description": "Foreign language identified in PE resource", 
+            "severity": 2, 
+            "ttp": {}, 
+            "markcount": 59, 
+            "references": [], 
+            "marks": [
+                {
+                    "name": "RT_DIALOG", 
+                    "language": "LANG_CHINESE", 
+                    "offset": "0x0005b070", 
+                    "filetype": "data", 
+                    "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                    "type": "generic", 
+                    "size": "0x00000158"
+                }, 
+                {
+                    "name": "RT_DIALOG", 
+                    "language": "LANG_CHINESE", 
+                    "offset": "0x0005b070", 
+                    "filetype": "data", 
+                    "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                    "type": "generic", 
+                    "size": "0x00000158"
+                }, 
+                {
+                    "name": "RT_DIALOG", 
+                    "language": "LANG_CHINESE", 
+                    "offset": "0x0005b070", 
+                    "filetype": "data", 
+                    "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                    "type": "generic", 
+                    "size": "0x00000158"
+                }, 
+                {
+                    "name": "RT_STRING", 
+                    "language": "LANG_CHINESE", 
+                    "offset": "0x0006ba88", 
+                    "filetype": "data", 
+                    "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                    "type": "generic", 
+                    "size": "0x00000056"
+                }, 
+                {
+                    "name": "RT_STRING", 
+                    "language": "LANG_CHINESE", 
+                    "offset": "0x0006ba88", 
+                    "filetype": "data", 
+                    "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                    "type": "generic", 
+                    "size": "0x00000056"
+                }, 
+                {
+                    "name": "RT_STRING", 
+                    "language": "LANG_CHINESE", 
+                    "offset": "0x0006ba88", 
+                    "filetype": "data", 
+                    "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                    "type": "generic", 
+                    "size": "0x00000056"
+                }, 
+                {
+                    "name": "RT_STRING", 
+                    "language": "LANG_CHINESE", 
+                    "offset": "0x0006ba88", 
+                    "filetype": "data", 
+                    "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                    "type": "generic", 
+                    "size": "0x00000056"
+                }, 
+                {
+                    "name": "RT_STRING", 
+                    "language": "LANG_CHINESE", 
+                    "offset": "0x0006ba88", 
+                    "filetype": "data", 
+                    "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                    "type": "generic", 
+                    "size": "0x00000056"
+                }, 
+                {
+                    "name": "RT_STRING", 
+                    "language": "LANG_CHINESE", 
+                    "offset": "0x0006ba88", 
+                    "filetype": "data", 
+                    "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                    "type": "generic", 
+                    "size": "0x00000056"
+                }, 
+                {
+                    "name": "RT_STRING", 
+                    "language": "LANG_CHINESE", 
+                    "offset": "0x0006ba88", 
+                    "filetype": "data", 
+                    "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                    "type": "generic", 
+                    "size": "0x00000056"
+                }, 
+                {
+                    "name": "RT_STRING", 
+                    "language": "LANG_CHINESE", 
+                    "offset": "0x0006ba88", 
+                    "filetype": "data", 
+                    "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                    "type": "generic", 
+                    "size": "0x00000056"
+                }, 
+                {
+                    "name": "RT_STRING", 
+                    "language": "LANG_CHINESE", 
+                    "offset": "0x0006ba88", 
+                    "filetype": "data", 
+                    "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                    "type": "generic", 
+                    "size": "0x00000056"
+                }, 
+                {
+                    "name": "RT_STRING", 
+                    "language": "LANG_CHINESE", 
+                    "offset": "0x0006ba88", 
+                    "filetype": "data", 
+                    "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                    "type": "generic", 
+                    "size": "0x00000056"
+                }, 
+                {
+                    "name": "RT_STRING", 
+                    "language": "LANG_CHINESE", 
+                    "offset": "0x0006ba88", 
+                    "filetype": "data", 
+                    "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                    "type": "generic", 
+                    "size": "0x00000056"
+                }, 
+                {
+                    "name": "RT_STRING", 
+                    "language": "LANG_CHINESE", 
+                    "offset": "0x0006ba88", 
+                    "filetype": "data", 
+                    "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                    "type": "generic", 
+                    "size": "0x00000056"
+                }, 
+                {
+                    "name": "RT_STRING", 
+                    "language": "LANG_CHINESE", 
+                    "offset": "0x0006ba88", 
+                    "filetype": "data", 
+                    "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                    "type": "generic", 
+                    "size": "0x00000056"
+                }, 
+                {
+                    "name": "RT_STRING", 
+                    "language": "LANG_CHINESE", 
+                    "offset": "0x0006ba88", 
+                    "filetype": "data", 
+                    "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                    "type": "generic", 
+                    "size": "0x00000056"
+                }, 
+                {
+                    "name": "RT_STRING", 
+                    "language": "LANG_CHINESE", 
+                    "offset": "0x0006ba88", 
+                    "filetype": "data", 
+                    "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                    "type": "generic", 
+                    "size": "0x00000056"
+                }, 
+                {
+                    "name": "RT_STRING", 
+                    "language": "LANG_CHINESE", 
+                    "offset": "0x0006ba88", 
+                    "filetype": "data", 
+                    "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                    "type": "generic", 
+                    "size": "0x00000056"
+                }, 
+                {
+                    "name": "RT_STRING", 
+                    "language": "LANG_CHINESE", 
+                    "offset": "0x0006ba88", 
+                    "filetype": "data", 
+                    "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                    "type": "generic", 
+                    "size": "0x00000056"
+                }, 
+                {
+                    "name": "RT_STRING", 
+                    "language": "LANG_CHINESE", 
+                    "offset": "0x0006ba88", 
+                    "filetype": "data", 
+                    "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                    "type": "generic", 
+                    "size": "0x00000056"
+                }, 
+                {
+                    "name": "RT_STRING", 
+                    "language": "LANG_CHINESE", 
+                    "offset": "0x0006ba88", 
+                    "filetype": "data", 
+                    "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                    "type": "generic", 
+                    "size": "0x00000056"
+                }, 
+                {
+                    "name": "RT_STRING", 
+                    "language": "LANG_CHINESE", 
+                    "offset": "0x0006ba88", 
+                    "filetype": "data", 
+                    "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                    "type": "generic", 
+                    "size": "0x00000056"
+                }, 
+                {
+                    "name": "RT_STRING", 
+                    "language": "LANG_CHINESE", 
+                    "offset": "0x0006ba88", 
+                    "filetype": "data", 
+                    "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                    "type": "generic", 
+                    "size": "0x00000056"
+                }, 
+                {
+                    "name": "RT_STRING", 
+                    "language": "LANG_CHINESE", 
+                    "offset": "0x0006ba88", 
+                    "filetype": "data", 
+                    "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                    "type": "generic", 
+                    "size": "0x00000056"
+                }, 
+                {
+                    "name": "RT_STRING", 
+                    "language": "LANG_CHINESE", 
+                    "offset": "0x0006ba88", 
+                    "filetype": "data", 
+                    "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                    "type": "generic", 
+                    "size": "0x00000056"
+                }, 
+                {
+                    "name": "RT_STRING", 
+                    "language": "LANG_CHINESE", 
+                    "offset": "0x0006ba88", 
+                    "filetype": "data", 
+                    "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                    "type": "generic", 
+                    "size": "0x00000056"
+                }, 
+                {
+                    "name": "RT_STRING", 
+                    "language": "LANG_CHINESE", 
+                    "offset": "0x0006ba88", 
+                    "filetype": "data", 
+                    "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                    "type": "generic", 
+                    "size": "0x00000056"
+                }, 
+                {
+                    "name": "RT_STRING", 
+                    "language": "LANG_CHINESE", 
+                    "offset": "0x0006ba88", 
+                    "filetype": "data", 
+                    "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                    "type": "generic", 
+                    "size": "0x00000056"
+                }, 
+                {
+                    "name": "RT_STRING", 
+                    "language": "LANG_CHINESE", 
+                    "offset": "0x0006ba88", 
+                    "filetype": "data", 
+                    "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                    "type": "generic", 
+                    "size": "0x00000056"
+                }, 
+                {
+                    "name": "RT_STRING", 
+                    "language": "LANG_CHINESE", 
+                    "offset": "0x0006ba88", 
+                    "filetype": "data", 
+                    "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                    "type": "generic", 
+                    "size": "0x00000056"
+                }, 
+                {
+                    "name": "RT_STRING", 
+                    "language": "LANG_CHINESE", 
+                    "offset": "0x0006ba88", 
+                    "filetype": "data", 
+                    "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                    "type": "generic", 
+                    "size": "0x00000056"
+                }, 
+                {
+                    "name": "RT_STRING", 
+                    "language": "LANG_CHINESE", 
+                    "offset": "0x0006ba88", 
+                    "filetype": "data", 
+                    "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                    "type": "generic", 
+                    "size": "0x00000056"
+                }, 
+                {
+                    "name": "RT_STRING", 
+                    "language": "LANG_CHINESE", 
+                    "offset": "0x0006ba88", 
+                    "filetype": "data", 
+                    "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                    "type": "generic", 
+                    "size": "0x00000056"
+                }, 
+                {
+                    "name": "RT_STRING", 
+                    "language": "LANG_CHINESE", 
+                    "offset": "0x0006ba88", 
+                    "filetype": "data", 
+                    "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                    "type": "generic", 
+                    "size": "0x00000056"
+                }, 
+                {
+                    "name": "RT_STRING", 
+                    "language": "LANG_CHINESE", 
+                    "offset": "0x0006ba88", 
+                    "filetype": "data", 
+                    "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                    "type": "generic", 
+                    "size": "0x00000056"
+                }, 
+                {
+                    "name": "RT_STRING", 
+                    "language": "LANG_CHINESE", 
+                    "offset": "0x0006ba88", 
+                    "filetype": "data", 
+                    "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                    "type": "generic", 
+                    "size": "0x00000056"
+                }, 
+                {
+                    "name": "RT_STRING", 
+                    "language": "LANG_CHINESE", 
+                    "offset": "0x0006ba88", 
+                    "filetype": "data", 
+                    "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                    "type": "generic", 
+                    "size": "0x00000056"
+                }, 
+                {
+                    "name": "RT_STRING", 
+                    "language": "LANG_CHINESE", 
+                    "offset": "0x0006ba88", 
+                    "filetype": "data", 
+                    "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                    "type": "generic", 
+                    "size": "0x00000056"
+                }, 
+                {
+                    "name": "RT_STRING", 
+                    "language": "LANG_CHINESE", 
+                    "offset": "0x0006ba88", 
+                    "filetype": "data", 
+                    "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                    "type": "generic", 
+                    "size": "0x00000056"
+                }, 
+                {
+                    "name": "RT_STRING", 
+                    "language": "LANG_CHINESE", 
+                    "offset": "0x0006ba88", 
+                    "filetype": "data", 
+                    "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                    "type": "generic", 
+                    "size": "0x00000056"
+                }, 
+                {
+                    "name": "RT_STRING", 
+                    "language": "LANG_CHINESE", 
+                    "offset": "0x0006ba88", 
+                    "filetype": "data", 
+                    "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                    "type": "generic", 
+                    "size": "0x00000056"
+                }, 
+                {
+                    "name": "RT_STRING", 
+                    "language": "LANG_CHINESE", 
+                    "offset": "0x0006ba88", 
+                    "filetype": "data", 
+                    "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                    "type": "generic", 
+                    "size": "0x00000056"
+                }, 
+                {
+                    "name": "RT_STRING", 
+                    "language": "LANG_CHINESE", 
+                    "offset": "0x0006ba88", 
+                    "filetype": "data", 
+                    "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                    "type": "generic", 
+                    "size": "0x00000056"
+                }, 
+                {
+                    "name": "RT_STRING", 
+                    "language": "LANG_CHINESE", 
+                    "offset": "0x0006ba88", 
+                    "filetype": "data", 
+                    "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                    "type": "generic", 
+                    "size": "0x00000056"
+                }, 
+                {
+                    "name": "RT_STRING", 
+                    "language": "LANG_CHINESE", 
+                    "offset": "0x0006ba88", 
+                    "filetype": "data", 
+                    "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                    "type": "generic", 
+                    "size": "0x00000056"
+                }, 
+                {
+                    "name": "RT_STRING", 
+                    "language": "LANG_CHINESE", 
+                    "offset": "0x0006ba88", 
+                    "filetype": "data", 
+                    "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                    "type": "generic", 
+                    "size": "0x00000056"
+                }, 
+                {
+                    "name": "RT_STRING", 
+                    "language": "LANG_CHINESE", 
+                    "offset": "0x0006ba88", 
+                    "filetype": "data", 
+                    "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                    "type": "generic", 
+                    "size": "0x00000056"
+                }, 
+                {
+                    "name": "RT_STRING", 
+                    "language": "LANG_CHINESE", 
+                    "offset": "0x0006ba88", 
+                    "filetype": "data", 
+                    "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                    "type": "generic", 
+                    "size": "0x00000056"
+                }, 
+                {
+                    "name": "RT_STRING", 
+                    "language": "LANG_CHINESE", 
+                    "offset": "0x0006ba88", 
+                    "filetype": "data", 
+                    "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                    "type": "generic", 
+                    "size": "0x00000056"
+                }
+            ], 
+            "name": "origin_langid"
+        }
+    ], 
+    "target": {
+        "category": "file", 
+        "file": {
+            "yara": [], 
+            "sha1": "a726458f22ef0a1d36c147d698c54552577b341a", 
+            "name": "Sample 19", 
+            "type": "PE32+ executable (DLL) (GUI) x86-64, for MS Windows", 
+            "sha256": "5ae3cb1a58757f005e3839f6b40283262ea0616d5d922338eb2e0270a72bc1ee", 
+            "urls": [], 
+            "crc32": "AAD2D5DD", 
+            "path": "/home/eric/.cuckoo/storage/binaries/5ae3cb1a58757f005e3839f6b40283262ea0616d5d922338eb2e0270a72bc1ee", 
+            "ssdeep": null, 
+            "size": 440320, 
+            "sha512": "21f2c74552a0b9156ff1588e0c7464d9f7531974beb13b50875535930749ca9477b8e9dc523004ed2e463239964c21e411bafc0470c87f9176e1a65fe79565c9", 
+            "md5": "bc1e47c5170f09b50476dbd08e7ce5e4"
+        }
+    }, 
+    "network": {
+        "tls": [], 
+        "udp": [
+            {
+                "src": "192.168.56.101", 
+                "dst": "224.0.0.252", 
+                "offset": 1290, 
+                "time": 5.427721977233887, 
+                "dport": 5355, 
+                "sport": 56682
+            }, 
+            {
+                "src": "192.168.56.101", 
+                "dst": "224.0.0.252", 
+                "offset": 1610, 
+                "time": 4.638462066650391, 
+                "dport": 5355, 
+                "sport": 62007
+            }, 
+            {
+                "src": "192.168.56.101", 
+                "dst": "224.0.0.252", 
+                "offset": 1938, 
+                "time": 6.144155025482178, 
+                "dport": 5355, 
+                "sport": 62121
+            }, 
+            {
+                "src": "192.168.56.101", 
+                "dst": "224.0.0.252", 
+                "offset": 2266, 
+                "time": 5.987167119979858, 
+                "dport": 5355, 
+                "sport": 62726
+            }, 
+            {
+                "src": "192.168.56.101", 
+                "dst": "8.8.8.8", 
+                "offset": 3586, 
+                "time": 6.311313152313232, 
+                "dport": 53, 
+                "sport": 49955
+            }, 
+            {
+                "src": "192.168.56.101", 
+                "dst": "8.8.8.8", 
+                "offset": 3860, 
+                "time": 5.417780160903931, 
+                "dport": 53, 
+                "sport": 63207
+            }
+        ], 
+        "dns_servers": [
+            "8.8.8.8"
+        ], 
+        "http": [
+            {
+                "count": 1, 
+                "body": "", 
+                "uri": "http://www.msftncsi.com/ncsi.txt", 
+                "user-agent": "Microsoft NCSI", 
+                "method": "GET", 
+                "host": "www.msftncsi.com", 
+                "version": "1.1", 
+                "path": "/ncsi.txt", 
+                "data": "GET /ncsi.txt HTTP/1.1\r\nConnection: Close\r\nUser-Agent: Microsoft NCSI\r\nHost: www.msftncsi.com\r\n\r\n", 
+                "port": 80
+            }
+        ], 
+        "icmp": [], 
+        "smtp": [], 
+        "tcp": [
+            {
+                "src": "192.168.56.101", 
+                "dst": "23.197.193.16", 
+                "offset": 2820, 
+                "time": 6.359208106994629, 
+                "dport": 80, 
+                "sport": 49161
+            }
+        ], 
+        "smtp_ex": [], 
+        "mitm": [], 
+        "hosts": [
+            "23.197.193.16", 
+            "8.8.8.8"
+        ], 
+        "pcap_sha256": "49fdb17ca213c59e1297dd17b604e90d5366c591fe32c47bb9cc29917d6fe3ba", 
+        "dns": [
+            {
+                "type": "A", 
+                "request": "www.msftncsi.com", 
+                "answers": [
+                    {
+                        "data": "www.msftncsi.com.edgesuite.net", 
+                        "type": "CNAME"
+                    }, 
+                    {
+                        "data": "23.197.193.16", 
+                        "type": "A"
+                    }, 
+                    {
+                        "data": "a1961.g2.akamai.net", 
+                        "type": "CNAME"
+                    }
+                ]
+            }, 
+            {
+                "type": "A", 
+                "request": "teredo.ipv6.microsoft.com", 
+                "answers": []
+            }
+        ], 
+        "http_ex": [
+            {
+                "status": 200, 
+                "src": "192.168.56.101", 
+                "resp": {
+                    "path": "/home/eric/.cuckoo/storage/analyses/182/network/33bf88d5b82df3723d5863c7d23445e345828904", 
+                    "sha1": "33bf88d5b82df3723d5863c7d23445e345828904", 
+                    "md5": "cd5a4d3fdd5bffc16bf959ef75cf37bc"
+                }, 
+                "sha1": "33bf88d5b82df3723d5863c7d23445e345828904", 
+                "protocol": "http", 
+                "dst": "23.197.193.16", 
+                "req": {
+                    "path": "/home/eric/.cuckoo/storage/analyses/182/network/da39a3ee5e6b4b0d3255bfef95601890afd80709", 
+                    "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709", 
+                    "md5": "d41d8cd98f00b204e9800998ecf8427e"
+                }, 
+                "request": "GET /ncsi.txt HTTP/1.1\r\nConnection: Close\r\nUser-Agent: Microsoft NCSI\r\nHost: www.msftncsi.com", 
+                "uri": "/ncsi.txt", 
+                "response": "HTTP/1.1 200 OK\r\nContent-Length: 14\r\nDate: Sun, 31 Jan 2021 16:53:19 GMT\r\nConnection: close\r\nContent-Type: text/plain\r\nCache-Control: max-age=30, must-revalidate", 
+                "host": "www.msftncsi.com", 
+                "dport": 80, 
+                "path": "/home/eric/.cuckoo/storage/analyses/182/network/33bf88d5b82df3723d5863c7d23445e345828904", 
+                "sport": 49161, 
+                "method": "GET", 
+                "md5": "cd5a4d3fdd5bffc16bf959ef75cf37bc"
+            }
+        ], 
+        "domains": [
+            {
+                "ip": "104.123.65.24", 
+                "domain": "www.msftncsi.com"
+            }, 
+            {
+                "ip": "", 
+                "domain": "teredo.ipv6.microsoft.com"
+            }
+        ], 
+        "dead_hosts": [], 
+        "sorted_pcap_sha256": "6a3c3ce251e4322007f0ea35653a9cc868fc1294b40efdc8bf334396c1a58566", 
+        "irc": [], 
+        "https_ex": []
+    }, 
+    "static": {
+        "pdb_path": "ImSCTip.pdb", 
+        "pe_imports": [
+            {
+                "imports": [
+                    {
+                        "name": "??0exception@@QEAA@AEBV0@@Z", 
+                        "address": "0x7ff3a4013a8"
+                    }, 
+                    {
+                        "name": "memcpy_s", 
+                        "address": "0x7ff3a4013b0"
+                    }, 
+                    {
+                        "name": "?what@exception@@UEBAPEBDXZ", 
+                        "address": "0x7ff3a4013b8"
+                    }, 
+                    {
+                        "name": "??1exception@@UEAA@XZ", 
+                        "address": "0x7ff3a4013c0"
+                    }, 
+                    {
+                        "name": "??0exception@@QEAA@AEBQEBD@Z", 
+                        "address": "0x7ff3a4013c8"
+                    }, 
+                    {
+                        "name": "memmove_s", 
+                        "address": "0x7ff3a4013d0"
+                    }, 
+                    {
+                        "name": "memmove", 
+                        "address": "0x7ff3a4013d8"
+                    }, 
+                    {
+                        "name": "??0exception@@QEAA@XZ", 
+                        "address": "0x7ff3a4013e0"
+                    }, 
+                    {
+                        "name": "wcsstr", 
+                        "address": "0x7ff3a4013e8"
+                    }, 
+                    {
+                        "name": "wcscat_s", 
+                        "address": "0x7ff3a4013f0"
+                    }, 
+                    {
+                        "name": "wcscpy_s", 
+                        "address": "0x7ff3a4013f8"
+                    }, 
+                    {
+                        "name": "_vsnwprintf", 
+                        "address": "0x7ff3a401400"
+                    }, 
+                    {
+                        "name": "_onexit", 
+                        "address": "0x7ff3a401408"
+                    }, 
+                    {
+                        "name": "_lock", 
+                        "address": "0x7ff3a401410"
+                    }, 
+                    {
+                        "name": "__dllonexit", 
+                        "address": "0x7ff3a401418"
+                    }, 
+                    {
+                        "name": "_unlock", 
+                        "address": "0x7ff3a401420"
+                    }, 
+                    {
+                        "name": "__C_specific_handler", 
+                        "address": "0x7ff3a401428"
+                    }, 
+                    {
+                        "name": "_amsg_exit", 
+                        "address": "0x7ff3a401430"
+                    }, 
+                    {
+                        "name": "free", 
+                        "address": "0x7ff3a401438"
+                    }, 
+                    {
+                        "name": "_initterm", 
+                        "address": "0x7ff3a401440"
+                    }, 
+                    {
+                        "name": "malloc", 
+                        "address": "0x7ff3a401448"
+                    }, 
+                    {
+                        "name": "memset", 
+                        "address": "0x7ff3a401450"
+                    }, 
+                    {
+                        "name": "memcpy", 
+                        "address": "0x7ff3a401458"
+                    }, 
+                    {
+                        "name": "??0exception@@QEAA@AEBQEBDH@Z", 
+                        "address": "0x7ff3a401460"
+                    }, 
+                    {
+                        "name": "_CxxThrowException", 
+                        "address": "0x7ff3a401468"
+                    }, 
+                    {
+                        "name": "_callnewh", 
+                        "address": "0x7ff3a401470"
+                    }, 
+                    {
+                        "name": "__CxxFrameHandler3", 
+                        "address": "0x7ff3a401478"
+                    }, 
+                    {
+                        "name": "??1type_info@@UEAA@XZ", 
+                        "address": "0x7ff3a401480"
+                    }, 
+                    {
+                        "name": "_XcptFilter", 
+                        "address": "0x7ff3a401488"
+                    }, 
+                    {
+                        "name": "memcmp", 
+                        "address": "0x7ff3a401490"
+                    }
+                ], 
+                "dll": "msvcrt.dll"
+            }, 
+            {
+                "imports": [
+                    {
+                        "name": "ConvertStringSecurityDescriptorToSecurityDescriptorW", 
+                        "address": "0x7ff3a401000"
+                    }, 
+                    {
+                        "name": "RegDeleteValueW", 
+                        "address": "0x7ff3a401008"
+                    }, 
+                    {
+                        "name": "RegDeleteKeyW", 
+                        "address": "0x7ff3a401010"
+                    }, 
+                    {
+                        "name": "RegEnumKeyExW", 
+                        "address": "0x7ff3a401018"
+                    }, 
+                    {
+                        "name": "RegCloseKey", 
+                        "address": "0x7ff3a401020"
+                    }, 
+                    {
+                        "name": "RegSetValueExW", 
+                        "address": "0x7ff3a401028"
+                    }, 
+                    {
+                        "name": "ConvertSidToStringSidW", 
+                        "address": "0x7ff3a401030"
+                    }, 
+                    {
+                        "name": "IsValidSid", 
+                        "address": "0x7ff3a401038"
+                    }, 
+                    {
+                        "name": "GetTokenInformation", 
+                        "address": "0x7ff3a401040"
+                    }, 
+                    {
+                        "name": "TraceMessage", 
+                        "address": "0x7ff3a401048"
+                    }, 
+                    {
+                        "name": "GetTraceLoggerHandle", 
+                        "address": "0x7ff3a401050"
+                    }, 
+                    {
+                        "name": "GetTraceEnableLevel", 
+                        "address": "0x7ff3a401058"
+                    }, 
+                    {
+                        "name": "GetTraceEnableFlags", 
+                        "address": "0x7ff3a401060"
+                    }, 
+                    {
+                        "name": "RegisterTraceGuidsW", 
+                        "address": "0x7ff3a401068"
+                    }, 
+                    {
+                        "name": "UnregisterTraceGuids", 
+                        "address": "0x7ff3a401070"
+                    }, 
+                    {
+                        "name": "RegCreateKeyExW", 
+                        "address": "0x7ff3a401078"
+                    }, 
+                    {
+                        "name": "RegOpenKeyExW", 
+                        "address": "0x7ff3a401080"
+                    }, 
+                    {
+                        "name": "OpenProcessToken", 
+                        "address": "0x7ff3a401088"
+                    }, 
+                    {
+                        "name": "GetSidSubAuthority", 
+                        "address": "0x7ff3a401090"
+                    }, 
+                    {
+                        "name": "GetSidSubAuthorityCount", 
+                        "address": "0x7ff3a401098"
+                    }, 
+                    {
+                        "name": "RegQueryValueExW", 
+                        "address": "0x7ff3a4010a0"
+                    }
+                ], 
+                "dll": "ADVAPI32.dll"
+            }, 
+            {
+                "imports": [
+                    {
+                        "name": "LeaveCriticalSection", 
+                        "address": "0x7ff3a401128"
+                    }, 
+                    {
+                        "name": "GetModuleFileNameW", 
+                        "address": "0x7ff3a401130"
+                    }, 
+                    {
+                        "name": "RtlCaptureContext", 
+                        "address": "0x7ff3a401138"
+                    }, 
+                    {
+                        "name": "QueryPerformanceCounter", 
+                        "address": "0x7ff3a401140"
+                    }, 
+                    {
+                        "name": "RtlLookupFunctionEntry", 
+                        "address": "0x7ff3a401148"
+                    }, 
+                    {
+                        "name": "RtlVirtualUnwind", 
+                        "address": "0x7ff3a401150"
+                    }, 
+                    {
+                        "name": "SetUnhandledExceptionFilter", 
+                        "address": "0x7ff3a401158"
+                    }, 
+                    {
+                        "name": "Sleep", 
+                        "address": "0x7ff3a401160"
+                    }, 
+                    {
+                        "name": "GetCurrentProcess", 
+                        "address": "0x7ff3a401168"
+                    }, 
+                    {
+                        "name": "TerminateProcess", 
+                        "address": "0x7ff3a401170"
+                    }, 
+                    {
+                        "name": "GetSystemTimeAsFileTime", 
+                        "address": "0x7ff3a401178"
+                    }, 
+                    {
+                        "name": "GetCurrentProcessId", 
+                        "address": "0x7ff3a401180"
+                    }, 
+                    {
+                        "name": "GetCurrentThreadId", 
+                        "address": "0x7ff3a401188"
+                    }, 
+                    {
+                        "name": "GetTickCount", 
+                        "address": "0x7ff3a401190"
+                    }, 
+                    {
+                        "name": "EnterCriticalSection", 
+                        "address": "0x7ff3a401198"
+                    }, 
+                    {
+                        "name": "DeleteCriticalSection", 
+                        "address": "0x7ff3a4011a0"
+                    }, 
+                    {
+                        "name": "InitializeCriticalSection", 
+                        "address": "0x7ff3a4011a8"
+                    }, 
+                    {
+                        "name": "GetLastError", 
+                        "address": "0x7ff3a4011b0"
+                    }, 
+                    {
+                        "name": "ExpandEnvironmentStringsW", 
+                        "address": "0x7ff3a4011b8"
+                    }, 
+                    {
+                        "name": "UnhandledExceptionFilter", 
+                        "address": "0x7ff3a4011c0"
+                    }, 
+                    {
+                        "name": "SizeofResource", 
+                        "address": "0x7ff3a4011c8"
+                    }, 
+                    {
+                        "name": "lstrlenW", 
+                        "address": "0x7ff3a4011d0"
+                    }, 
+                    {
+                        "name": "FreeLibrary", 
+                        "address": "0x7ff3a4011d8"
+                    }, 
+                    {
+                        "name": "LoadLibraryW", 
+                        "address": "0x7ff3a4011e0"
+                    }, 
+                    {
+                        "name": "GetProcAddress", 
+                        "address": "0x7ff3a4011e8"
+                    }, 
+                    {
+                        "name": "LocalFree", 
+                        "address": "0x7ff3a4011f0"
+                    }, 
+                    {
+                        "name": "GetFullPathNameW", 
+                        "address": "0x7ff3a4011f8"
+                    }, 
+                    {
+                        "name": "CompareStringW", 
+                        "address": "0x7ff3a401200"
+                    }, 
+                    {
+                        "name": "CreateProcessW", 
+                        "address": "0x7ff3a401208"
+                    }, 
+                    {
+                        "name": "CloseHandle", 
+                        "address": "0x7ff3a401210"
+                    }, 
+                    {
+                        "name": "GetWindowsDirectoryW", 
+                        "address": "0x7ff3a401218"
+                    }, 
+                    {
+                        "name": "GetUserDefaultUILanguage", 
+                        "address": "0x7ff3a401220"
+                    }, 
+                    {
+                        "name": "FindResourceExW", 
+                        "address": "0x7ff3a401228"
+                    }, 
+                    {
+                        "name": "LoadResource", 
+                        "address": "0x7ff3a401230"
+                    }, 
+                    {
+                        "name": "LockResource", 
+                        "address": "0x7ff3a401238"
+                    }, 
+                    {
+                        "name": "GetEnvironmentVariableW", 
+                        "address": "0x7ff3a401240"
+                    }, 
+                    {
+                        "name": "GetTempPathW", 
+                        "address": "0x7ff3a401248"
+                    }, 
+                    {
+                        "name": "SetEnvironmentVariableW", 
+                        "address": "0x7ff3a401250"
+                    }, 
+                    {
+                        "name": "FindResourceW", 
+                        "address": "0x7ff3a401258"
+                    }, 
+                    {
+                        "name": "EndUpdateResourceW", 
+                        "address": "0x7ff3a401260"
+                    }, 
+                    {
+                        "name": "UpdateResourceW", 
+                        "address": "0x7ff3a401268"
+                    }, 
+                    {
+                        "name": "DeleteFileW", 
+                        "address": "0x7ff3a401270"
+                    }, 
+                    {
+                        "name": "CreateFileW", 
+                        "address": "0x7ff3a401278"
+                    }, 
+                    {
+                        "name": "WriteFile", 
+                        "address": "0x7ff3a401280"
+                    }, 
+                    {
+                        "name": "BeginUpdateResourceW", 
+                        "address": "0x7ff3a401288"
+                    }
+                ], 
+                "dll": "KERNEL32.dll"
+            }, 
+            {
+                "imports": [
+                    {
+                        "name": "DeleteObject", 
+                        "address": "0x7ff3a4010c0"
+                    }, 
+                    {
+                        "name": "CreateFontIndirectW", 
+                        "address": "0x7ff3a4010c8"
+                    }, 
+                    {
+                        "name": "CreateDIBSection", 
+                        "address": "0x7ff3a4010d0"
+                    }, 
+                    {
+                        "name": "SelectObject", 
+                        "address": "0x7ff3a4010d8"
+                    }, 
+                    {
+                        "name": "EnumFontFamiliesExW", 
+                        "address": "0x7ff3a4010e0"
+                    }, 
+                    {
+                        "name": "SetTextColor", 
+                        "address": "0x7ff3a4010e8"
+                    }, 
+                    {
+                        "name": "TextOutW", 
+                        "address": "0x7ff3a4010f0"
+                    }, 
+                    {
+                        "name": "GetDIBits", 
+                        "address": "0x7ff3a4010f8"
+                    }, 
+                    {
+                        "name": "CreateCompatibleDC", 
+                        "address": "0x7ff3a401100"
+                    }, 
+                    {
+                        "name": "SetBkColor", 
+                        "address": "0x7ff3a401108"
+                    }, 
+                    {
+                        "name": "DeleteDC", 
+                        "address": "0x7ff3a401110"
+                    }, 
+                    {
+                        "name": "GetDeviceCaps", 
+                        "address": "0x7ff3a401118"
+                    }
+                ], 
+                "dll": "GDI32.dll"
+            }, 
+            {
+                "imports": [
+                    {
+                        "name": "EnableWindow", 
+                        "address": "0x7ff3a4012b0"
+                    }, 
+                    {
+                        "name": "GetDlgItem", 
+                        "address": "0x7ff3a4012b8"
+                    }, 
+                    {
+                        "name": "SetFocus", 
+                        "address": "0x7ff3a4012c0"
+                    }, 
+                    {
+                        "name": "SetDlgItemTextW", 
+                        "address": "0x7ff3a4012c8"
+                    }, 
+                    {
+                        "name": "keybd_event", 
+                        "address": "0x7ff3a4012d0"
+                    }, 
+                    {
+                        "name": "GetIconInfo", 
+                        "address": "0x7ff3a4012d8"
+                    }, 
+                    {
+                        "name": "ToUnicode", 
+                        "address": "0x7ff3a4012e0"
+                    }, 
+                    {
+                        "name": "DialogBoxIndirectParamW", 
+                        "address": "0x7ff3a4012e8"
+                    }, 
+                    {
+                        "name": "GetDC", 
+                        "address": "0x7ff3a4012f0"
+                    }, 
+                    {
+                        "name": "ReleaseDC", 
+                        "address": "0x7ff3a4012f8"
+                    }, 
+                    {
+                        "name": "SendMessageW", 
+                        "address": "0x7ff3a401300"
+                    }, 
+                    {
+                        "name": "GetFocus", 
+                        "address": "0x7ff3a401308"
+                    }, 
+                    {
+                        "name": "MapVirtualKeyW", 
+                        "address": "0x7ff3a401310"
+                    }, 
+                    {
+                        "name": "PtInRect", 
+                        "address": "0x7ff3a401318"
+                    }, 
+                    {
+                        "name": "IntersectRect", 
+                        "address": "0x7ff3a401320"
+                    }, 
+                    {
+                        "name": "SetRect", 
+                        "address": "0x7ff3a401328"
+                    }, 
+                    {
+                        "name": "OffsetRect", 
+                        "address": "0x7ff3a401330"
+                    }, 
+                    {
+                        "name": "GetMonitorInfoW", 
+                        "address": "0x7ff3a401338"
+                    }, 
+                    {
+                        "name": "SystemParametersInfoW", 
+                        "address": "0x7ff3a401340"
+                    }, 
+                    {
+                        "name": "IsWindow", 
+                        "address": "0x7ff3a401348"
+                    }, 
+                    {
+                        "name": "MonitorFromWindow", 
+                        "address": "0x7ff3a401350"
+                    }, 
+                    {
+                        "name": "LoadImageW", 
+                        "address": "0x7ff3a401358"
+                    }, 
+                    {
+                        "name": "DestroyIcon", 
+                        "address": "0x7ff3a401360"
+                    }, 
+                    {
+                        "name": "EndDialog", 
+                        "address": "0x7ff3a401368"
+                    }, 
+                    {
+                        "name": "SetWindowLongPtrW", 
+                        "address": "0x7ff3a401370"
+                    }, 
+                    {
+                        "name": "GetWindowLongPtrW", 
+                        "address": "0x7ff3a401378"
+                    }, 
+                    {
+                        "name": "GetWindowTextW", 
+                        "address": "0x7ff3a401380"
+                    }, 
+                    {
+                        "name": "SetWindowTextW", 
+                        "address": "0x7ff3a401388"
+                    }, 
+                    {
+                        "name": "SendDlgItemMessageW", 
+                        "address": "0x7ff3a401390"
+                    }, 
+                    {
+                        "name": "GetDlgItemTextW", 
+                        "address": "0x7ff3a401398"
+                    }
+                ], 
+                "dll": "USER32.dll"
+            }, 
+            {
+                "imports": [
+                    {
+                        "name": null, 
+                        "address": "0x7ff3a4010b0"
+                    }
+                ], 
+                "dll": "COMCTL32.dll"
+            }, 
+            {
+                "imports": [
+                    {
+                        "name": "TF_CreateInputProcessorProfiles", 
+                        "address": "0x7ff3a401298"
+                    }, 
+                    {
+                        "name": "TF_GetThreadMgr", 
+                        "address": "0x7ff3a4012a0"
+                    }
+                ], 
+                "dll": "MSCTF.dll"
+            }, 
+            {
+                "imports": [
+                    {
+                        "name": "CoCreateInstance", 
+                        "address": "0x7ff3a4014a0"
+                    }
+                ], 
+                "dll": "ole32.dll"
+            }
+        ], 
+        "peid_signatures": null, 
+        "keys": [], 
+        "signature": [], 
+        "pe_timestamp": "2009-07-13 21:28:59", 
+        "pe_exports": [
+            {
+                "ordinal": 1, 
+                "name": "DllCanUnloadNow", 
+                "address": "0x7ff3a40a370"
+            }, 
+            {
+                "ordinal": 2, 
+                "name": "DllGetClassObject", 
+                "address": "0x7ff3a40a29c"
+            }, 
+            {
+                "ordinal": 3, 
+                "name": "DllRegisterServer", 
+                "address": "0x7ff3a40a384"
+            }, 
+            {
+                "ordinal": 4, 
+                "name": "DllUnregisterServer", 
+                "address": "0x7ff3a40a58c"
+            }
+        ], 
+        "imported_dll_count": 8, 
+        "pe_imphash": "e1e9b6a3d03af389032b46f5de1a1fbb", 
+        "pe_resources": [
+            {
+                "name": "RESFILE", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "PE32 executable (DLL) (GUI) Intel 80386, for MS Windows", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x00056d40", 
+                "size": "0x00004000"
+            }, 
+            {
+                "name": "SKDFILE", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x00055d58", 
+                "size": "0x00000fe8"
+            }, 
+            {
+                "name": "RT_BITMAP", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "Device independent bitmap graphic, 27 x 26 x 4, image size 416, resolution 3780 x 3780 px/m", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0005ad40", 
+                "size": "0x00000208"
+            }, 
+            {
+                "name": "RT_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "Device independent bitmap graphic, 16 x 32 x 4, image size 128, 16 important colors", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b6c0", 
+                "size": "0x00000128"
+            }, 
+            {
+                "name": "RT_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "Device independent bitmap graphic, 16 x 32 x 4, image size 128, 16 important colors", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b6c0", 
+                "size": "0x00000128"
+            }, 
+            {
+                "name": "RT_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "Device independent bitmap graphic, 16 x 32 x 4, image size 128, 16 important colors", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b6c0", 
+                "size": "0x00000128"
+            }, 
+            {
+                "name": "RT_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "Device independent bitmap graphic, 16 x 32 x 4, image size 128, 16 important colors", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b6c0", 
+                "size": "0x00000128"
+            }, 
+            {
+                "name": "RT_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "Device independent bitmap graphic, 16 x 32 x 4, image size 128, 16 important colors", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b6c0", 
+                "size": "0x00000128"
+            }, 
+            {
+                "name": "RT_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "Device independent bitmap graphic, 16 x 32 x 4, image size 128, 16 important colors", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b6c0", 
+                "size": "0x00000128"
+            }, 
+            {
+                "name": "RT_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "Device independent bitmap graphic, 16 x 32 x 4, image size 128, 16 important colors", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b6c0", 
+                "size": "0x00000128"
+            }, 
+            {
+                "name": "RT_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "Device independent bitmap graphic, 16 x 32 x 4, image size 128, 16 important colors", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b6c0", 
+                "size": "0x00000128"
+            }, 
+            {
+                "name": "RT_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "Device independent bitmap graphic, 16 x 32 x 4, image size 128, 16 important colors", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b6c0", 
+                "size": "0x00000128"
+            }, 
+            {
+                "name": "RT_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "Device independent bitmap graphic, 16 x 32 x 4, image size 128, 16 important colors", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b6c0", 
+                "size": "0x00000128"
+            }, 
+            {
+                "name": "RT_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "Device independent bitmap graphic, 16 x 32 x 4, image size 128, 16 important colors", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b6c0", 
+                "size": "0x00000128"
+            }, 
+            {
+                "name": "RT_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "Device independent bitmap graphic, 16 x 32 x 4, image size 128, 16 important colors", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b6c0", 
+                "size": "0x00000128"
+            }, 
+            {
+                "name": "RT_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "Device independent bitmap graphic, 16 x 32 x 4, image size 128, 16 important colors", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b6c0", 
+                "size": "0x00000128"
+            }, 
+            {
+                "name": "RT_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "Device independent bitmap graphic, 16 x 32 x 4, image size 128, 16 important colors", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b6c0", 
+                "size": "0x00000128"
+            }, 
+            {
+                "name": "RT_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "Device independent bitmap graphic, 16 x 32 x 4, image size 128, 16 important colors", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b6c0", 
+                "size": "0x00000128"
+            }, 
+            {
+                "name": "RT_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "Device independent bitmap graphic, 16 x 32 x 4, image size 128, 16 important colors", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b6c0", 
+                "size": "0x00000128"
+            }, 
+            {
+                "name": "RT_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "Device independent bitmap graphic, 16 x 32 x 4, image size 128, 16 important colors", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b6c0", 
+                "size": "0x00000128"
+            }, 
+            {
+                "name": "RT_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "Device independent bitmap graphic, 16 x 32 x 4, image size 128, 16 important colors", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b6c0", 
+                "size": "0x00000128"
+            }, 
+            {
+                "name": "RT_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "Device independent bitmap graphic, 16 x 32 x 4, image size 128, 16 important colors", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b6c0", 
+                "size": "0x00000128"
+            }, 
+            {
+                "name": "RT_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "Device independent bitmap graphic, 16 x 32 x 4, image size 128, 16 important colors", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b6c0", 
+                "size": "0x00000128"
+            }, 
+            {
+                "name": "RT_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "Device independent bitmap graphic, 16 x 32 x 4, image size 128, 16 important colors", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b6c0", 
+                "size": "0x00000128"
+            }, 
+            {
+                "name": "RT_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "Device independent bitmap graphic, 16 x 32 x 4, image size 128, 16 important colors", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b6c0", 
+                "size": "0x00000128"
+            }, 
+            {
+                "name": "RT_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "Device independent bitmap graphic, 16 x 32 x 4, image size 128, 16 important colors", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b6c0", 
+                "size": "0x00000128"
+            }, 
+            {
+                "name": "RT_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "Device independent bitmap graphic, 16 x 32 x 4, image size 128, 16 important colors", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b6c0", 
+                "size": "0x00000128"
+            }, 
+            {
+                "name": "RT_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "Device independent bitmap graphic, 16 x 32 x 4, image size 128, 16 important colors", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b6c0", 
+                "size": "0x00000128"
+            }, 
+            {
+                "name": "RT_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "Device independent bitmap graphic, 16 x 32 x 4, image size 128, 16 important colors", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b6c0", 
+                "size": "0x00000128"
+            }, 
+            {
+                "name": "RT_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "Device independent bitmap graphic, 16 x 32 x 4, image size 128, 16 important colors", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b6c0", 
+                "size": "0x00000128"
+            }, 
+            {
+                "name": "RT_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "Device independent bitmap graphic, 16 x 32 x 4, image size 128, 16 important colors", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b6c0", 
+                "size": "0x00000128"
+            }, 
+            {
+                "name": "RT_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "Device independent bitmap graphic, 16 x 32 x 4, image size 128, 16 important colors", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b6c0", 
+                "size": "0x00000128"
+            }, 
+            {
+                "name": "RT_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "Device independent bitmap graphic, 16 x 32 x 4, image size 128, 16 important colors", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b6c0", 
+                "size": "0x00000128"
+            }, 
+            {
+                "name": "RT_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "Device independent bitmap graphic, 16 x 32 x 4, image size 128, 16 important colors", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b6c0", 
+                "size": "0x00000128"
+            }, 
+            {
+                "name": "RT_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "Device independent bitmap graphic, 16 x 32 x 4, image size 128, 16 important colors", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b6c0", 
+                "size": "0x00000128"
+            }, 
+            {
+                "name": "RT_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "Device independent bitmap graphic, 16 x 32 x 4, image size 128, 16 important colors", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b6c0", 
+                "size": "0x00000128"
+            }, 
+            {
+                "name": "RT_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "Device independent bitmap graphic, 16 x 32 x 4, image size 128, 16 important colors", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b6c0", 
+                "size": "0x00000128"
+            }, 
+            {
+                "name": "RT_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "Device independent bitmap graphic, 16 x 32 x 4, image size 128, 16 important colors", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b6c0", 
+                "size": "0x00000128"
+            }, 
+            {
+                "name": "RT_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "Device independent bitmap graphic, 16 x 32 x 4, image size 128, 16 important colors", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b6c0", 
+                "size": "0x00000128"
+            }, 
+            {
+                "name": "RT_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "Device independent bitmap graphic, 16 x 32 x 4, image size 128, 16 important colors", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b6c0", 
+                "size": "0x00000128"
+            }, 
+            {
+                "name": "RT_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "Device independent bitmap graphic, 16 x 32 x 4, image size 128, 16 important colors", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b6c0", 
+                "size": "0x00000128"
+            }, 
+            {
+                "name": "RT_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "Device independent bitmap graphic, 16 x 32 x 4, image size 128, 16 important colors", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b6c0", 
+                "size": "0x00000128"
+            }, 
+            {
+                "name": "RT_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "Device independent bitmap graphic, 16 x 32 x 4, image size 128, 16 important colors", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b6c0", 
+                "size": "0x00000128"
+            }, 
+            {
+                "name": "RT_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "Device independent bitmap graphic, 16 x 32 x 4, image size 128, 16 important colors", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b6c0", 
+                "size": "0x00000128"
+            }, 
+            {
+                "name": "RT_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "Device independent bitmap graphic, 16 x 32 x 4, image size 128, 16 important colors", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b6c0", 
+                "size": "0x00000128"
+            }, 
+            {
+                "name": "RT_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "Device independent bitmap graphic, 16 x 32 x 4, image size 128, 16 important colors", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b6c0", 
+                "size": "0x00000128"
+            }, 
+            {
+                "name": "RT_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "Device independent bitmap graphic, 16 x 32 x 4, image size 128, 16 important colors", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b6c0", 
+                "size": "0x00000128"
+            }, 
+            {
+                "name": "RT_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "Device independent bitmap graphic, 16 x 32 x 4, image size 128, 16 important colors", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b6c0", 
+                "size": "0x00000128"
+            }, 
+            {
+                "name": "RT_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "Device independent bitmap graphic, 16 x 32 x 4, image size 128, 16 important colors", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b6c0", 
+                "size": "0x00000128"
+            }, 
+            {
+                "name": "RT_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "Device independent bitmap graphic, 16 x 32 x 4, image size 128, 16 important colors", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b6c0", 
+                "size": "0x00000128"
+            }, 
+            {
+                "name": "RT_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "Device independent bitmap graphic, 16 x 32 x 4, image size 128, 16 important colors", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b6c0", 
+                "size": "0x00000128"
+            }, 
+            {
+                "name": "RT_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "Device independent bitmap graphic, 16 x 32 x 4, image size 128, 16 important colors", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b6c0", 
+                "size": "0x00000128"
+            }, 
+            {
+                "name": "RT_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "Device independent bitmap graphic, 16 x 32 x 4, image size 128, 16 important colors", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b6c0", 
+                "size": "0x00000128"
+            }, 
+            {
+                "name": "RT_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "Device independent bitmap graphic, 16 x 32 x 4, image size 128, 16 important colors", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b6c0", 
+                "size": "0x00000128"
+            }, 
+            {
+                "name": "RT_DIALOG", 
+                "language": "LANG_CHINESE", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                "offset": "0x0005b070", 
+                "size": "0x00000158"
+            }, 
+            {
+                "name": "RT_DIALOG", 
+                "language": "LANG_CHINESE", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                "offset": "0x0005b070", 
+                "size": "0x00000158"
+            }, 
+            {
+                "name": "RT_DIALOG", 
+                "language": "LANG_CHINESE", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                "offset": "0x0005b070", 
+                "size": "0x00000158"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_CHINESE", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                "offset": "0x0006ba88", 
+                "size": "0x00000056"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_CHINESE", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                "offset": "0x0006ba88", 
+                "size": "0x00000056"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_CHINESE", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                "offset": "0x0006ba88", 
+                "size": "0x00000056"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_CHINESE", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                "offset": "0x0006ba88", 
+                "size": "0x00000056"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_CHINESE", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                "offset": "0x0006ba88", 
+                "size": "0x00000056"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_CHINESE", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                "offset": "0x0006ba88", 
+                "size": "0x00000056"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_CHINESE", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                "offset": "0x0006ba88", 
+                "size": "0x00000056"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_CHINESE", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                "offset": "0x0006ba88", 
+                "size": "0x00000056"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_CHINESE", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                "offset": "0x0006ba88", 
+                "size": "0x00000056"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_CHINESE", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                "offset": "0x0006ba88", 
+                "size": "0x00000056"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_CHINESE", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                "offset": "0x0006ba88", 
+                "size": "0x00000056"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_CHINESE", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                "offset": "0x0006ba88", 
+                "size": "0x00000056"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_CHINESE", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                "offset": "0x0006ba88", 
+                "size": "0x00000056"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_CHINESE", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                "offset": "0x0006ba88", 
+                "size": "0x00000056"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_CHINESE", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                "offset": "0x0006ba88", 
+                "size": "0x00000056"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_CHINESE", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                "offset": "0x0006ba88", 
+                "size": "0x00000056"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_CHINESE", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                "offset": "0x0006ba88", 
+                "size": "0x00000056"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_CHINESE", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                "offset": "0x0006ba88", 
+                "size": "0x00000056"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_CHINESE", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                "offset": "0x0006ba88", 
+                "size": "0x00000056"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_CHINESE", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                "offset": "0x0006ba88", 
+                "size": "0x00000056"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_CHINESE", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                "offset": "0x0006ba88", 
+                "size": "0x00000056"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_CHINESE", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                "offset": "0x0006ba88", 
+                "size": "0x00000056"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_CHINESE", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                "offset": "0x0006ba88", 
+                "size": "0x00000056"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_CHINESE", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                "offset": "0x0006ba88", 
+                "size": "0x00000056"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_CHINESE", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                "offset": "0x0006ba88", 
+                "size": "0x00000056"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_CHINESE", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                "offset": "0x0006ba88", 
+                "size": "0x00000056"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_CHINESE", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                "offset": "0x0006ba88", 
+                "size": "0x00000056"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_CHINESE", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                "offset": "0x0006ba88", 
+                "size": "0x00000056"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_CHINESE", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                "offset": "0x0006ba88", 
+                "size": "0x00000056"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_CHINESE", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                "offset": "0x0006ba88", 
+                "size": "0x00000056"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_CHINESE", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                "offset": "0x0006ba88", 
+                "size": "0x00000056"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_CHINESE", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                "offset": "0x0006ba88", 
+                "size": "0x00000056"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_CHINESE", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                "offset": "0x0006ba88", 
+                "size": "0x00000056"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_CHINESE", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                "offset": "0x0006ba88", 
+                "size": "0x00000056"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_CHINESE", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                "offset": "0x0006ba88", 
+                "size": "0x00000056"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_CHINESE", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                "offset": "0x0006ba88", 
+                "size": "0x00000056"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_CHINESE", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                "offset": "0x0006ba88", 
+                "size": "0x00000056"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_CHINESE", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                "offset": "0x0006ba88", 
+                "size": "0x00000056"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_CHINESE", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                "offset": "0x0006ba88", 
+                "size": "0x00000056"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_CHINESE", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                "offset": "0x0006ba88", 
+                "size": "0x00000056"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_CHINESE", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                "offset": "0x0006ba88", 
+                "size": "0x00000056"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_CHINESE", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                "offset": "0x0006ba88", 
+                "size": "0x00000056"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_CHINESE", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                "offset": "0x0006ba88", 
+                "size": "0x00000056"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_CHINESE", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                "offset": "0x0006ba88", 
+                "size": "0x00000056"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_CHINESE", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                "offset": "0x0006ba88", 
+                "size": "0x00000056"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_CHINESE", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                "offset": "0x0006ba88", 
+                "size": "0x00000056"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_CHINESE", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                "offset": "0x0006ba88", 
+                "size": "0x00000056"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_CHINESE", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                "offset": "0x0006ba88", 
+                "size": "0x00000056"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_CHINESE", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                "offset": "0x0006ba88", 
+                "size": "0x00000056"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_CHINESE", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                "offset": "0x0006ba88", 
+                "size": "0x00000056"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_CHINESE", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                "offset": "0x0006ba88", 
+                "size": "0x00000056"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_CHINESE", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                "offset": "0x0006ba88", 
+                "size": "0x00000056"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_CHINESE", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                "offset": "0x0006ba88", 
+                "size": "0x00000056"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_CHINESE", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                "offset": "0x0006ba88", 
+                "size": "0x00000056"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_CHINESE", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                "offset": "0x0006ba88", 
+                "size": "0x00000056"
+            }, 
+            {
+                "name": "RT_STRING", 
+                "language": "LANG_CHINESE", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_CHINESE_SIMPLIFIED", 
+                "offset": "0x0006ba88", 
+                "size": "0x00000056"
+            }, 
+            {
+                "name": "RT_GROUP_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b7e8", 
+                "size": "0x00000014"
+            }, 
+            {
+                "name": "RT_GROUP_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b7e8", 
+                "size": "0x00000014"
+            }, 
+            {
+                "name": "RT_GROUP_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b7e8", 
+                "size": "0x00000014"
+            }, 
+            {
+                "name": "RT_GROUP_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b7e8", 
+                "size": "0x00000014"
+            }, 
+            {
+                "name": "RT_GROUP_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b7e8", 
+                "size": "0x00000014"
+            }, 
+            {
+                "name": "RT_GROUP_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b7e8", 
+                "size": "0x00000014"
+            }, 
+            {
+                "name": "RT_GROUP_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b7e8", 
+                "size": "0x00000014"
+            }, 
+            {
+                "name": "RT_GROUP_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b7e8", 
+                "size": "0x00000014"
+            }, 
+            {
+                "name": "RT_GROUP_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b7e8", 
+                "size": "0x00000014"
+            }, 
+            {
+                "name": "RT_GROUP_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b7e8", 
+                "size": "0x00000014"
+            }, 
+            {
+                "name": "RT_GROUP_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b7e8", 
+                "size": "0x00000014"
+            }, 
+            {
+                "name": "RT_GROUP_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b7e8", 
+                "size": "0x00000014"
+            }, 
+            {
+                "name": "RT_GROUP_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b7e8", 
+                "size": "0x00000014"
+            }, 
+            {
+                "name": "RT_GROUP_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b7e8", 
+                "size": "0x00000014"
+            }, 
+            {
+                "name": "RT_GROUP_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b7e8", 
+                "size": "0x00000014"
+            }, 
+            {
+                "name": "RT_GROUP_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b7e8", 
+                "size": "0x00000014"
+            }, 
+            {
+                "name": "RT_GROUP_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b7e8", 
+                "size": "0x00000014"
+            }, 
+            {
+                "name": "RT_GROUP_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b7e8", 
+                "size": "0x00000014"
+            }, 
+            {
+                "name": "RT_GROUP_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b7e8", 
+                "size": "0x00000014"
+            }, 
+            {
+                "name": "RT_GROUP_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b7e8", 
+                "size": "0x00000014"
+            }, 
+            {
+                "name": "RT_GROUP_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b7e8", 
+                "size": "0x00000014"
+            }, 
+            {
+                "name": "RT_GROUP_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b7e8", 
+                "size": "0x00000014"
+            }, 
+            {
+                "name": "RT_GROUP_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b7e8", 
+                "size": "0x00000014"
+            }, 
+            {
+                "name": "RT_GROUP_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b7e8", 
+                "size": "0x00000014"
+            }, 
+            {
+                "name": "RT_GROUP_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b7e8", 
+                "size": "0x00000014"
+            }, 
+            {
+                "name": "RT_GROUP_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b7e8", 
+                "size": "0x00000014"
+            }, 
+            {
+                "name": "RT_GROUP_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b7e8", 
+                "size": "0x00000014"
+            }, 
+            {
+                "name": "RT_GROUP_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b7e8", 
+                "size": "0x00000014"
+            }, 
+            {
+                "name": "RT_GROUP_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b7e8", 
+                "size": "0x00000014"
+            }, 
+            {
+                "name": "RT_GROUP_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b7e8", 
+                "size": "0x00000014"
+            }, 
+            {
+                "name": "RT_GROUP_ICON", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x0006b7e8", 
+                "size": "0x00000014"
+            }, 
+            {
+                "name": "RT_VERSION", 
+                "language": "LANG_ENGLISH", 
+                "filetype": "data", 
+                "sublanguage": "SUBLANG_ENGLISH_US", 
+                "offset": "0x000559c0", 
+                "size": "0x00000394"
+            }
+        ], 
+        "pe_versioninfo": [
+            {
+                "name": "LegalCopyright", 
+                "value": "\\xa9 Microsoft Corporation. All rights reserved."
+            }, 
+            {
+                "name": "InternalName", 
+                "value": "IMSCTIP"
+            }, 
+            {
+                "name": "FileVersion", 
+                "value": "10.1.7600.16385 (win7_rtm.090713-1255)"
+            }, 
+            {
+                "name": "CompanyName", 
+                "value": "Microsoft Corporation"
+            }, 
+            {
+                "name": "ProductName", 
+                "value": "Microsoft\\xae Windows\\xae Operating System"
+            }, 
+            {
+                "name": "ProductVersion", 
+                "value": "10.1.7600.16385"
+            }, 
+            {
+                "name": "FileDescription", 
+                "value": "Microsoft Pinyin IME TIP"
+            }, 
+            {
+                "name": "OriginalFilename", 
+                "value": "IMSCTIP.DLL"
+            }, 
+            {
+                "name": "Translation", 
+                "value": "0x0409 0x04b0"
+            }
+        ], 
+        "pe_sections": [
+            {
+                "size_of_data": "0x00046a00", 
+                "virtual_address": "0x00001000", 
+                "entropy": 6.034532016629543, 
+                "name": ".text", 
+                "virtual_size": "0x00046922"
+            }, 
+            {
+                "size_of_data": "0x00006600", 
+                "virtual_address": "0x00048000", 
+                "entropy": 1.233955245810092, 
+                "name": ".data", 
+                "virtual_size": "0x000074d8"
+            }, 
+            {
+                "size_of_data": "0x00004000", 
+                "virtual_address": "0x00050000", 
+                "entropy": 5.339067415589638, 
+                "name": ".pdata", 
+                "virtual_size": "0x00003e4c"
+            }, 
+            {
+                "size_of_data": "0x00019800", 
+                "virtual_address": "0x00054000", 
+                "entropy": 4.509199732836825, 
+                "name": ".rsrc", 
+                "virtual_size": "0x000197d8"
+            }, 
+            {
+                "size_of_data": "0x00000c00", 
+                "virtual_address": "0x0006e000", 
+                "entropy": 3.1043841536212335, 
+                "name": ".reloc", 
+                "virtual_size": "0x00000acc"
+            }
+        ]
+    }, 
+    "behavior": {
+        "generic": [
+            {
+                "process_path": "C:\\Windows\\System32\\rundll32.exe", 
+                "process_name": "rundll32.exe", 
+                "pid": 2296, 
+                "summary": {
+                    "regkey_read": [
+                        "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\GRE_Initialize\\DisableMetaFiles"
+                    ]
+                }, 
+                "first_seen": 1612072390.828125, 
+                "ppid": 2272
+            }
+        ], 
+        "apistats": {
+            "2296": {
+                "LdrUnloadDll": 1, 
+                "NtOpenKey": 1, 
+                "SetUnhandledExceptionFilter": 1, 
+                "NtTerminateProcess": 3, 
+                "NtClose": 2, 
+                "GetSystemTimeAsFileTime": 1, 
+                "NtQueryValueKey": 1
+            }
+        }, 
+        "processes": [
+            {
+                "process_path": "C:\\Windows\\System32\\rundll32.exe", 
+                "calls": [
+                    {
+                        "category": "synchronisation", 
+                        "status": 1, 
+                        "stacktrace": [], 
+                        "api": "GetSystemTimeAsFileTime", 
+                        "return_value": 0, 
+                        "arguments": {}, 
+                        "time": 1612072390.969125, 
+                        "tid": 2300, 
+                        "flags": {}
+                    }, 
+                    {
+                        "category": "exception", 
+                        "status": 0, 
+                        "stacktrace": [], 
+                        "last_error": 0, 
+                        "nt_status": -1073741515, 
+                        "api": "SetUnhandledExceptionFilter", 
+                        "return_value": 0, 
+                        "arguments": {}, 
+                        "time": 1612072390.969125, 
+                        "tid": 2300, 
+                        "flags": {}
+                    }, 
+                    {
+                        "category": "process", 
+                        "status": 0, 
+                        "stacktrace": [], 
+                        "last_error": 0, 
+                        "nt_status": -1073741515, 
+                        "api": "NtTerminateProcess", 
+                        "return_value": 0, 
+                        "arguments": {
+                            "status_code": "0x00000000", 
+                            "process_identifier": 0, 
+                            "process_handle": "0x0000000000000000"
+                        }, 
+                        "time": 1612072390.969125, 
+                        "tid": 2300, 
+                        "flags": {}
+                    }, 
+                    {
+                        "category": "process", 
+                        "status": 1, 
+                        "stacktrace": [], 
+                        "api": "NtTerminateProcess", 
+                        "return_value": 0, 
+                        "arguments": {
+                            "status_code": "0x00000000", 
+                            "process_identifier": 0, 
+                            "process_handle": "0x0000000000000000"
+                        }, 
+                        "time": 1612072390.969125, 
+                        "tid": 2300, 
+                        "flags": {}
+                    }, 
+                    {
+                        "category": "system", 
+                        "status": 1, 
+                        "stacktrace": [], 
+                        "api": "NtClose", 
+                        "return_value": 0, 
+                        "arguments": {
+                            "handle": "0x000000000000001c"
+                        }, 
+                        "time": 1612072390.969125, 
+                        "tid": 2300, 
+                        "flags": {}
+                    }, 
+                    {
+                        "category": "system", 
+                        "status": 1, 
+                        "stacktrace": [], 
+                        "api": "LdrUnloadDll", 
+                        "return_value": 0, 
+                        "arguments": {
+                            "library": "IMM32", 
+                            "module_address": "0x000007fefdab0000"
+                        }, 
+                        "time": 1612072390.969125, 
+                        "tid": 2300, 
+                        "flags": {}
+                    }, 
+                    {
+                        "category": "registry", 
+                        "status": 1, 
+                        "stacktrace": [], 
+                        "api": "NtOpenKey", 
+                        "return_value": 0, 
+                        "arguments": {
+                            "key_handle": "0x000000000000001c", 
+                            "desired_access": "0x00020019", 
+                            "regkey": "HKEY_LOCAL_MACHINE\\Software\\Microsoft\\Windows NT\\CurrentVersion\\GRE_Initialize"
+                        }, 
+                        "time": 1612072390.969125, 
+                        "tid": 2300, 
+                        "flags": {
+                            "desired_access": "READ_CONTROL"
+                        }
+                    }, 
+                    {
+                        "category": "registry", 
+                        "status": 0, 
+                        "stacktrace": [], 
+                        "last_error": 0, 
+                        "nt_status": -1073741515, 
+                        "api": "NtQueryValueKey", 
+                        "return_value": -1073741772, 
+                        "arguments": {
+                            "key_handle": "0x000000000000001c", 
+                            "key_name": "", 
+                            "value": "", 
+                            "reg_type": 0, 
+                            "information_class": 2, 
+                            "regkey": "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\GRE_Initialize\\DisableMetaFiles"
+                        }, 
+                        "time": 1612072390.969125, 
+                        "tid": 2300, 
+                        "flags": {
+                            "reg_type": "REG_NONE", 
+                            "information_class": "KeyValuePartialInformation"
+                        }
+                    }, 
+                    {
+                        "category": "system", 
+                        "status": 1, 
+                        "stacktrace": [], 
+                        "api": "NtClose", 
+                        "return_value": 0, 
+                        "arguments": {
+                            "handle": "0x000000000000001c"
+                        }, 
+                        "time": 1612072390.969125, 
+                        "tid": 2300, 
+                        "flags": {}
+                    }, 
+                    {
+                        "category": "process", 
+                        "status": 0, 
+                        "stacktrace": [], 
+                        "last_error": 0, 
+                        "nt_status": -1073741515, 
+                        "api": "NtTerminateProcess", 
+                        "return_value": 0, 
+                        "arguments": {
+                            "status_code": "0x00000000", 
+                            "process_identifier": 2296, 
+                            "process_handle": "0xffffffffffffffff"
+                        }, 
+                        "time": 1612072390.969125, 
+                        "tid": 2300, 
+                        "flags": {}
+                    }
+                ], 
+                "track": true, 
+                "pid": 2296, 
+                "process_name": "rundll32.exe", 
+                "command_line": "\"C:\\Windows\\System32\\rundll32.exe\" \"C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\Sample 19.dll,DllMain\"", 
+                "modules": [
+                    {
+                        "basename": "rundll32.exe", 
+                        "imgsize": 61440, 
+                        "baseaddr": "0xff880000", 
+                        "filepath": "C:\\Windows\\System32\\rundll32.exe"
+                    }, 
+                    {
+                        "basename": "ntdll.dll", 
+                        "imgsize": 1740800, 
+                        "baseaddr": "0x773d0000", 
+                        "filepath": "C:\\Windows\\SYSTEM32\\ntdll.dll"
+                    }, 
+                    {
+                        "basename": "kernel32.dll", 
+                        "imgsize": 1175552, 
+                        "baseaddr": "0x771b0000", 
+                        "filepath": "C:\\Windows\\system32\\kernel32.dll"
+                    }, 
+                    {
+                        "basename": "KERNELBASE.dll", 
+                        "imgsize": 438272, 
+                        "baseaddr": "0x7fefd490000", 
+                        "filepath": "C:\\Windows\\system32\\KERNELBASE.dll"
+                    }, 
+                    {
+                        "basename": "USER32.dll", 
+                        "imgsize": 1024000, 
+                        "baseaddr": "0x772d0000", 
+                        "filepath": "C:\\Windows\\system32\\USER32.dll"
+                    }, 
+                    {
+                        "basename": "GDI32.dll", 
+                        "imgsize": 421888, 
+                        "baseaddr": "0x7fefee40000", 
+                        "filepath": "C:\\Windows\\system32\\GDI32.dll"
+                    }, 
+                    {
+                        "basename": "LPK.dll", 
+                        "imgsize": 57344, 
+                        "baseaddr": "0x7fefef30000", 
+                        "filepath": "C:\\Windows\\system32\\LPK.dll"
+                    }, 
+                    {
+                        "basename": "USP10.dll", 
+                        "imgsize": 823296, 
+                        "baseaddr": "0x7feff610000", 
+                        "filepath": "C:\\Windows\\system32\\USP10.dll"
+                    }, 
+                    {
+                        "basename": "msvcrt.dll", 
+                        "imgsize": 651264, 
+                        "baseaddr": "0x7feff1f0000", 
+                        "filepath": "C:\\Windows\\system32\\msvcrt.dll"
+                    }, 
+                    {
+                        "basename": "imagehlp.dll", 
+                        "imgsize": 94208, 
+                        "baseaddr": "0x7feff5f0000", 
+                        "filepath": "C:\\Windows\\system32\\imagehlp.dll"
+                    }, 
+                    {
+                        "basename": "IMM32.DLL", 
+                        "imgsize": 188416, 
+                        "baseaddr": "0x7fefdab0000", 
+                        "filepath": "C:\\Windows\\system32\\IMM32.DLL"
+                    }, 
+                    {
+                        "basename": "MSCTF.dll", 
+                        "imgsize": 1085440, 
+                        "baseaddr": "0x7fefd9a0000", 
+                        "filepath": "C:\\Windows\\system32\\MSCTF.dll"
+                    }, 
+                    {
+                        "basename": "monitor-x64.dll", 
+                        "imgsize": 2269184, 
+                        "baseaddr": "0x74a70000", 
+                        "filepath": "C:\\tmp_yfnpc\\bin\\monitor-x64.dll"
+                    }
+                ], 
+                "time": 0, 
+                "tid": 2300, 
+                "first_seen": 1612072390.828125, 
+                "ppid": 2272, 
+                "type": "process"
+            }
+        ], 
+        "processtree": [
+            {
+                "track": true, 
+                "pid": 2296, 
+                "process_name": "rundll32.exe", 
+                "command_line": "\"C:\\Windows\\System32\\rundll32.exe\" \"C:\\Users\\ADMINI~1\\AppData\\Local\\Temp\\Sample 19.dll,DllMain\"", 
+                "first_seen": 1612072390.828125, 
+                "ppid": 2272, 
+                "children": []
+            }
+        ], 
+        "summary": {
+            "regkey_read": [
+                "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows NT\\CurrentVersion\\GRE_Initialize\\DisableMetaFiles"
+            ]
+        }
+    }, 
+    "debug": {
+        "action": [], 
+        "dbgview": [], 
+        "errors": [], 
+        "log": [
+            "2021-01-31 11:53:10,015 [analyzer] DEBUG: Starting analyzer from: C:\\tmp_yfnpc\n", 
+            "2021-01-31 11:53:10,015 [analyzer] DEBUG: Pipe server name: \\??\\PIPE\\xFKZaFxkYRuVMScq\n", 
+            "2021-01-31 11:53:10,015 [analyzer] DEBUG: Log pipe server name: \\??\\PIPE\\tCqvavSSfbfOBQqtowhnfJq\n", 
+            "2021-01-31 11:53:10,015 [analyzer] DEBUG: No analysis package specified, trying to detect it automagically.\n", 
+            "2021-01-31 11:53:10,015 [analyzer] INFO: Automatically selected analysis package \"dll\"\n", 
+            "2021-01-31 11:53:10,108 [analyzer] DEBUG: Started auxiliary module DbgView\n", 
+            "2021-01-31 11:53:10,405 [analyzer] DEBUG: Started auxiliary module Disguise\n", 
+            "2021-01-31 11:53:10,562 [analyzer] DEBUG: Loaded monitor into process with pid 484\n", 
+            "2021-01-31 11:53:10,562 [analyzer] DEBUG: Started auxiliary module DumpTLSMasterSecrets\n", 
+            "2021-01-31 11:53:10,562 [analyzer] DEBUG: Started auxiliary module Human\n", 
+            "2021-01-31 11:53:10,578 [analyzer] DEBUG: Started auxiliary module InstallCertificate\n", 
+            "2021-01-31 11:53:10,578 [analyzer] DEBUG: Started auxiliary module Reboot\n", 
+            "2021-01-31 11:53:10,733 [analyzer] DEBUG: Started auxiliary module RecentFiles\n", 
+            "2021-01-31 11:53:10,733 [modules.auxiliary.screenshots] INFO: Python Image Library (either PIL or Pillow) is not installed, screenshots are disabled.\n", 
+            "2021-01-31 11:53:10,733 [analyzer] DEBUG: Started auxiliary module Screenshots\n", 
+            "2021-01-31 11:53:10,733 [analyzer] DEBUG: Started auxiliary module LoadZer0m0n\n", 
+            "2021-01-31 11:53:10,765 [lib.api.process] INFO: Successfully executed process from path 'C:\\\\Windows\\\\System32\\\\rundll32.exe' with arguments [u'C:\\\\Users\\\\ADMINI~1\\\\AppData\\\\Local\\\\Temp\\\\Sample 19.dll,DllMain'] and pid 2296\n", 
+            "2021-01-31 11:53:10,967 [analyzer] DEBUG: Loaded monitor into process with pid 2296\n", 
+            "2021-01-31 11:53:11,765 [analyzer] INFO: Process with pid 2296 has terminated\n", 
+            "2021-01-31 11:53:11,765 [analyzer] INFO: Process list is empty, terminating analysis.\n", 
+            "2021-01-31 11:53:12,765 [analyzer] INFO: Analysis completed.\n"
+        ], 
+        "cuckoo": [
+            "2021-01-31 11:53:11,019 [cuckoo.core.scheduler] INFO: Task #182: acquired machine 192.168.56.1011 (label=192.168.56.1011)\n", 
+            "2021-01-31 11:53:11,019 [cuckoo.core.resultserver] DEBUG: Now tracking machine 192.168.56.101 for task #182\n", 
+            "2021-01-31 11:53:11,019 [cuckoo.core.plugins] DEBUG: Started auxiliary module: Replay\n", 
+            "2021-01-31 11:53:11,028 [cuckoo.auxiliary.sniffer] INFO: Started sniffer with PID 935987 (interface=vboxnet0, host=192.168.56.101)\n", 
+            "2021-01-31 11:53:11,028 [cuckoo.core.plugins] DEBUG: Started auxiliary module: Sniffer\n", 
+            "2021-01-31 11:53:11,118 [cuckoo.machinery.virtualbox] DEBUG: Starting vm 192.168.56.1011\n", 
+            "2021-01-31 11:53:11,399 [cuckoo.machinery.virtualbox] DEBUG: Restoring virtual machine 192.168.56.1011 to its current snapshot\n", 
+            "2021-01-31 11:53:14,654 [cuckoo.core.guest] INFO: Starting analysis #182 on guest (id=192.168.56.1011, ip=192.168.56.101)\n", 
+            "2021-01-31 11:53:15,658 [cuckoo.core.guest] DEBUG: 192.168.56.1011: not ready yet\n", 
+            "2021-01-31 11:53:16,197 [cuckoo.core.guest] DEBUG: 192.168.56.1011: not ready yet\n", 
+            "2021-01-31 11:53:17,780 [cuckoo.core.guest] INFO: Guest is running Cuckoo Agent 0.10 (id=192.168.56.1011, ip=192.168.56.101)\n", 
+            "2021-01-31 11:53:17,838 [cuckoo.core.guest] DEBUG: Uploading analyzer to guest (id=192.168.56.1011, ip=192.168.56.101, monitor=latest, size=3884763)\n", 
+            "2021-01-31 11:53:18,199 [cuckoo.core.resultserver] DEBUG: Task #182: live log analysis.log initialized.\n", 
+            "2021-01-31 11:53:19,045 [cuckoo.core.resultserver] DEBUG: Task #182 is sending a BSON stream\n", 
+            "2021-01-31 11:53:21,082 [cuckoo.core.guest] INFO: 192.168.56.1011: analysis completed successfully\n", 
+            "2021-01-31 11:53:21,097 [cuckoo.core.plugins] DEBUG: Stopped auxiliary module: Replay\n", 
+            "2021-01-31 11:53:21,142 [cuckoo.core.plugins] DEBUG: Stopped auxiliary module: Sniffer\n", 
+            "2021-01-31 11:53:21,143 [cuckoo.machinery.virtualbox] DEBUG: Stopping vm 192.168.56.1011\n", 
+            "2021-01-31 11:53:22,448 [cuckoo.core.resultserver] DEBUG: Stopped tracking machine 192.168.56.101 for task #182\n", 
+            "2021-01-31 11:53:22,449 [cuckoo.core.resultserver] DEBUG: Cancel <Context for LOG> for task 182\n", 
+            "2021-01-31 11:53:22,477 [cuckoo.core.scheduler] DEBUG: Released database task #182\n", 
+            "2021-01-31 11:53:22,523 [cuckoo.core.plugins] DEBUG: Executed processing module \"AnalysisInfo\" for task #182\n", 
+            "2021-01-31 11:53:22,526 [cuckoo.core.plugins] DEBUG: Executed processing module \"BehaviorAnalysis\" for task #182\n", 
+            "2021-01-31 11:53:22,526 [cuckoo.core.plugins] DEBUG: Executed processing module \"Dropped\" for task #182\n", 
+            "2021-01-31 11:53:22,526 [cuckoo.core.plugins] DEBUG: Executed processing module \"DroppedBuffer\" for task #182\n", 
+            "2021-01-31 11:53:22,527 [cuckoo.core.plugins] DEBUG: Executed processing module \"MetaInfo\" for task #182\n", 
+            "2021-01-31 11:53:22,527 [cuckoo.core.plugins] DEBUG: Executed processing module \"ProcessMemory\" for task #182\n", 
+            "2021-01-31 11:53:22,527 [cuckoo.core.plugins] DEBUG: Executed processing module \"Procmon\" for task #182\n", 
+            "2021-01-31 11:53:22,527 [cuckoo.core.plugins] DEBUG: Executed processing module \"Screenshots\" for task #182\n", 
+            "2021-01-31 11:53:23,015 [cuckoo.core.plugins] DEBUG: Executed processing module \"Static\" for task #182\n", 
+            "2021-01-31 11:53:23,038 [cuckoo.core.plugins] DEBUG: Executed processing module \"Strings\" for task #182\n", 
+            "2021-01-31 11:53:23,051 [cuckoo.core.plugins] DEBUG: Executed processing module \"TargetInfo\" for task #182\n", 
+            "2021-01-31 11:53:23,160 [cuckoo.core.plugins] DEBUG: Executed processing module \"NetworkAnalysis\" for task #182\n", 
+            "2021-01-31 11:53:23,161 [cuckoo.core.plugins] DEBUG: Executed processing module \"Extracted\" for task #182\n", 
+            "2021-01-31 11:53:23,161 [cuckoo.core.plugins] DEBUG: Executed processing module \"TLSMasterSecrets\" for task #182\n", 
+            "2021-01-31 11:53:23,168 [cuckoo.core.plugins] DEBUG: Executed processing module \"Debug\" for task #182\n", 
+            "2021-01-31 11:53:23,211 [cuckoo.core.plugins] DEBUG: Running 542 signatures\n", 
+            "2021-01-31 11:53:23,341 [cuckoo.core.plugins] DEBUG: Analysis matched signature: origin_langid\n", 
+            "2021-01-31 11:53:23,341 [cuckoo.core.plugins] DEBUG: Analysis matched signature: has_pdb\n", 
+            "2021-01-31 11:53:23,342 [cuckoo.core.plugins] DEBUG: Analysis match"
+        ]
+    }, 
+    "strings": [
+        "!This program cannot be run in DOS mode.", 
+        "`.data", 
+        ".pdata", 
+        "@.rsrc", 
+        "@.reloc", 
+        "msvcrt.dll", 
+        "NTDLL.DLL", 
+        "ADVAPI32.dll", 
+        "KERNEL32.dll", 
+        "GDI32.dll", 
+        "USER32.dll", 
+        "COMCTL32.dll", 
+        "MSCTF.dll", 
+        "ole32.dll", 
+        "}h><PE", 
+        "eFlv!@r", 
+        "string too long", 
+        "invalid string position", 
+        "Fc?u(5", 
+        "k;9{Op\u001f", 
+        "E05_jw", 
+        "bad allocation", 
+        "%Q5s^''A|Z", 
+        "g|&e@N", 
+        "iJ#,iD", 
+        "VariantClear", 
+        "SysAllocString", 
+        "SysFreeString", 
+        "2osx]m", 
+        "CreateUDicProxy", 
+        "vector<T> too long", 
+        "map/set<T> too long", 
+        "DllGetClassObject", 
+        "DllCanUnloadNow", 
+        "CrJGqK", 
+        "ImSCTip.pdb", 
+        "VWATAUAVH", 
+        "A^A]A\\_^", 
+        "WATAUH", 
+        "L$ SUVWH", 
+        "WATAUAVAWH", 
+        "A_A^A]A\\_", 
+        "l$ VWATAUAVH", 
+        "A^A]A\\_^", 
+        "WATAUAVAWH", 
+        "P(L9l$P", 
+        "A_A^A]A\\_", 
+        "VWATAUAVH", 
+        "A^A]A\\_^", 
+        "UVWATAUAVAWH", 
+        "A_A^A]A\\_^]", 
+        "WATAUH", 
+        "@SUVWH", 
+        "WATAUH", 
+        "WATAUAVAWH", 
+        "A_A^A]A\\_", 
+        "WATAUAVAWH", 
+        "A_A^A]A\\_", 
+        "VWATAUAVH", 
+        "A^A]A\\_^", 
+        "WATAUH", 
+        "WATAUH", 
+        "pA]A\\_", 
+        "WATAUH", 
+        "0A]A\\_", 
+        "SUVWATAUAVAWH", 
+        "D;\\$Ts", 
+        "\u001fD9\\$H|}A", 
+        "9D$L|sA", 
+        "\u001fD9\\$H|yA", 
+        "9D$L|oA", 
+        "A_A^A]A\\_^][", 
+        "UVWATAUAVAWH", 
+        "D9|$htVH", 
+        "D9|$Pv{H", 
+        "D9D$PuaA", 
+        "A_A^A]A\\_^]", 
+        "WATAUH", 
+        "WATAUH", 
+        "UVWATAUAVAWH", 
+        "A_A^A]A\\_^]", 
+        "VWATAUAVH", 
+        "A^A]A\\_^", 
+        "VWATAUAWH", 
+        "A_A]A\\_^", 
+        "WATAUAVAWH", 
+        "A_A^A]A\\_", 
+        "P@9\\$xt", 
+        "UVWATAUH", 
+        "A]A\\_^]", 
+        "WATAUH", 
+        "9{Ht5H", 
+        "ATAUAVH", 
+        "A^A]A\\", 
+        "WATAUAVAWH", 
+        "A_A^A]A\\_", 
+        "WATAUAVAWH", 
+        "P(H9l$8t'H", 
+        "\\$P9l$Ht", 
+        "A_A^A]A\\_", 
+        "UVWATAUH", 
+        "A]A\\_^]", 
+        "WATAUAVAWH", 
+        "A_A^A]A\\_", 
+        "VWATAUAVH", 
+        "A^A]A\\_^", 
+        "UVWATAUAVAWH", 
+        "L9w0u1", 
+        "A_A^A]A\\_^]", 
+        "l$ VWATH", 
+        "fD9L$htV", 
+        "WATAUH", 
+        "fD9L$`t", 
+        " A]A\\_", 
+        "WATAUAVAWH", 
+        "\\9t$Du", 
+        "OD9t$pt%A;", 
+        "A_A^A]A\\_", 
+        "WATAUH", 
+        "\\$ UVWATAUH", 
+        "A]A\\_^]", 
+        "@WATAVH", 
+        "@A^A\\_", 
+        "SVWATAUAVAWH", 
+        "A_A^A]A\\_^[", 
+        "SVWATH", 
+        "xA\\_^[", 
+        "WATAWH", 
+        "t~fD9#txH", 
+        "tcfD9d$`t[H", 
+        "WATAUAVAWH", 
+        "A_A^A]A\\_", 
+        "UVWATAUAVAWH", 
+        "A_A^A]A\\_^]", 
+        "WATAUAVAWH", 
+        "A_A^A]A\\_", 
+        "WAUAVH", 
+        "ATAUAWH", 
+        "A_A]A\\", 
+        "WATAUAVAWH", 
+        "A_A^A]A\\_", 
+        "WAUAVH", 
+        "VWATAUAVH", 
+        "A^A]A\\_^", 
+        "AUAVAWH", 
+        "P(H9l$Pt)H", 
+        "A_A^A]", 
+        "ATAUAWH", 
+        "A_A]A\\", 
+        "WATAUAVAWH", 
+        "A_A^A]A\\_", 
+        "VWATAUAVH", 
+        "A^A]A\\_^", 
+        "WATAUAVAWH", 
+        "P(H9l$pt#H", 
+        "l$H9l$<t", 
+        "D9d$0t", 
+        "l$P9l$<t", 
+        "d$PD9d$0u", 
+        "A_A^A]A\\_", 
+        "WATAUAVAWH", 
+        "A_A^A]A\\_", 
+        "UVWATAUH", 
+        "`A]A\\_^]", 
+        "VWATAUAWH", 
+        "A_A]A\\_^", 
+        "VWATAUAVH", 
+        "P(H9l$8t)H", 
+        "A^A]A\\_^", 
+        "UVWATAUH", 
+        "A]A\\_^]", 
+        "ATAUAWH", 
+        "A_A]A\\", 
+        "WATAUAVAWH", 
+        "A_A^A]A\\_", 
+        "WAUAVH", 
+        "WATAUAVAWH", 
+        "P(H9l$pt#H", 
+        "l$\\D9d$Du-", 
+        "t&9l$Pu", 
+        "A_A^A]A\\_", 
+        "WATAUH", 
+        "ATAVAWH", 
+        "A_A^A\\", 
+        "WATAUH", 
+        "WATAUAVAWH", 
+        "P(H9l$`t\"H", 
+        "l$@9\\$ t", 
+        "l$89l$,tO", 
+        "rG9\\$ t", 
+        "A_A^A]A\\_", 
+        "ATAUAWH", 
+        "A_A]A\\", 
+        "WATAUH", 
+        "WATAUAVAWH", 
+        "P(H9l$8t)H", 
+        "\\$|9\\$du", 
+        "A_A^A]A\\_", 
+        "ATAUAWH", 
+        "A_A]A\\", 
+        "WATAUH", 
+        "ATAUAWH", 
+        "A_A]A\\", 
+        "WATAUAVAWH", 
+        "A_A^A]A\\_", 
+        "ATAUAWH", 
+        "A_A]A\\", 
+        "WATAUH", 
+        "ATAUAWH", 
+        "A_A]A\\", 
+        "WATAUH", 
+        "VWATAUAVH", 
+        "A^A]A\\_^", 
+        "WATAVH", 
+        "WATAUH", 
+        "ATAUAWH", 
+        "A_A]A\\", 
+        "WATAUAVAWH", 
+        "A_A^A]A\\_", 
+        "ATAUAVH", 
+        "A^A]A\\", 
+        "ATAUAVH", 
+        "P(H9t$@t$H", 
+        "A^A]A\\", 
+        "VWATAUAVH", 
+        "A^A]A\\_^", 
+        "yE8Y!t", 
+        "D8Y!u3H", 
+        "A8Y u\u001f", 
+        "A8Y u\u001f", 
+        "WATAUH", 
+        " A]A\\_", 
+        "@SUVWATH", 
+        "@A\\_^][", 
+        "SVWATAUH", 
+        "A]A\\_^[", 
+        "@SUVWATAVH", 
+        "H!D$(H", 
+        "A^A\\_^][", 
+        "l$ VWATH", 
+        "H;Y s$H", 
+        "D9d$Pt", 
+        "SVWATAUAVAWH", 
+        "A_A^A]A\\_^[", 
+        "ATAUAVH", 
+        "@A^A]A\\", 
+        "WATAUH", 
+        " A]A\\_", 
+        "VWATAUAVH", 
+        "0A^A]A\\_^", 
+        "H9yHtYH", 
+        "APH+AHH", 
+        "H;YPsPH", 
+        "WATAUH", 
+        "@SUVWATH", 
+        "0A\\_^][", 
+        "VWATAUAVH", 
+        " A^A]A\\_^", 
+        "LcA<E3", 
+        "EP=csm", 
+        "Ep=csm", 
+        "E`=csm", 
+        "E(=csm", 
+        "E@=csm", 
+        "EX=csm", 
+        "Ex=csm", 
+        "]hH;]`t", 
+        "]HH;]@t", 
+        "]PH;]`t", 
+        "]@H;]Pt", 
+        "_XcptFilter", 
+        "malloc", 
+        "_initterm", 
+        "_amsg_exit", 
+        "__C_specific_handler", 
+        "msvcrt.dll", 
+        "_unlock", 
+        "__dllonexit", 
+        "_onexit", 
+        "TraceMessage", 
+        "GetTraceLoggerHandle", 
+        "GetTraceEnableLevel", 
+        "GetTraceEnableFlags", 
+        "RegisterTraceGuidsW", 
+        "UnregisterTraceGuids", 
+        "ADVAPI32.dll", 
+        "InitializeCriticalSection", 
+        "DeleteCriticalSection", 
+        "EnterCriticalSection", 
+        "LeaveCriticalSection", 
+        "GetModuleFileNameW", 
+        "QueryPerformanceCounter", 
+        "GetTickCount", 
+        "GetCurrentThreadId", 
+        "GetCurrentProcessId", 
+        "GetSystemTimeAsFileTime", 
+        "TerminateProcess", 
+        "GetCurrentProcess", 
+        "UnhandledExceptionFilter", 
+        "SetUnhandledExceptionFilter", 
+        "RtlVirtualUnwind", 
+        "RtlLookupFunctionEntry", 
+        "RtlCaptureContext", 
+        "KERNEL32.dll", 
+        "_vsnwprintf", 
+        "wcscpy_s", 
+        "wcscat_s", 
+        "memmove", 
+        "??0exception@@QEAA@AEBV0@@Z", 
+        "memcpy_s", 
+        "?what@exception@@UEBAPEBDXZ", 
+        "??1exception@@UEAA@XZ", 
+        "??0exception@@QEAA@AEBQEBD@Z", 
+        "memmove_s", 
+        "??0exception@@QEAA@XZ", 
+        "wcsstr", 
+        "??0exception@@QEAA@AEBQEBDH@Z", 
+        "_CxxThrowException", 
+        "_callnewh", 
+        "__CxxFrameHandler3", 
+        "??1type_info@@UEAA@XZ", 
+        "RegOpenKeyExW", 
+        "RegCreateKeyExW", 
+        "RegSetValueExW", 
+        "RegCloseKey", 
+        "RegEnumKeyExW", 
+        "RegDeleteKeyW", 
+        "RegDeleteValueW", 
+        "RegQueryValueExW", 
+        "ConvertStringSecurityDescriptorToSecurityDescriptorW", 
+        "lstrlenW", 
+        "FreeLibrary", 
+        "LoadLibraryW", 
+        "GetProcAddress", 
+        "LocalFree", 
+        "GetFullPathNameW", 
+        "CompareStringW", 
+        "CreateProcessW", 
+        "CloseHandle", 
+        "GetWindowsDirectoryW", 
+        "GetUserDefaultUILanguage", 
+        "FindResourceExW", 
+        "LoadResource", 
+        "LockResource", 
+        "GetEnvironmentVariableW", 
+        "GetTempPathW", 
+        "SetEnvironmentVariableW", 
+        "FindResourceW", 
+        "SizeofResource", 
+        "UpdateResourceW", 
+        "DeleteFileW", 
+        "CreateFileW", 
+        "WriteFile", 
+        "BeginUpdateResourceW", 
+        "EndUpdateResourceW", 
+        "GetDeviceCaps", 
+        "EnumFontFamiliesExW", 
+        "DeleteObject", 
+        "CreateFontIndirectW", 
+        "CreateDIBSection", 
+        "SelectObject", 
+        "SetBkColor", 
+        "SetTextColor", 
+        "TextOutW", 
+        "GetDIBits", 
+        "CreateCompatibleDC", 
+        "DeleteDC", 
+        "GDI32.dll", 
+        "ReleaseDC", 
+        "SendMessageW", 
+        "GetFocus", 
+        "MapVirtualKeyW", 
+        "PtInRect", 
+        "IntersectRect", 
+        "SetRect", 
+        "OffsetRect", 
+        "GetMonitorInfoW", 
+        "SystemParametersInfoW", 
+        "IsWindow", 
+        "MonitorFromWindow", 
+        "LoadImageW", 
+        "DestroyIcon", 
+        "EndDialog", 
+        "SetWindowLongPtrW", 
+        "GetWindowLongPtrW", 
+        "GetWindowTextW", 
+        "SetWindowTextW", 
+        "SetDlgItemTextW", 
+        "SendDlgItemMessageW", 
+        "EnableWindow", 
+        "GetDlgItem", 
+        "SetFocus", 
+        "GetDlgItemTextW", 
+        "DialogBoxIndirectParamW", 
+        "ToUnicode", 
+        "GetIconInfo", 
+        "keybd_event", 
+        "USER32.dll", 
+        "COMCTL32.dll", 
+        "TF_GetThreadMgr", 
+        "MSCTF.dll", 
+        "OpenProcessToken", 
+        "GetSidSubAuthority", 
+        "GetSidSubAuthorityCount", 
+        "GetTokenInformation", 
+        "IsValidSid", 
+        "ConvertSidToStringSidW", 
+        "GetLastError", 
+        "ExpandEnvironmentStringsW", 
+        "CoCreateInstance", 
+        "ole32.dll", 
+        "TF_CreateInputProcessorProfiles", 
+        "memcpy", 
+        "memset", 
+        "memcmp", 
+        "cctip.dll", 
+        "DllCanUnloadNow", 
+        "DllGetClassObject", 
+        "DllRegisterServer", 
+        "DllUnregisterServer", 
+        "1 1)1%1\u001f1#1", 
+        "1&1!1%1", 
+        "C0E0G0I0K0M0O0Q0S0", 
+        "0l0Y0m0n0o0d0r0u0x0", 
+        "0c0f0U0[0k0]0a0", 
+        "D0F0H0J0L0N0P0R0T0", 
+        "0w0Z0z0}0p0e0s0v0y0", 
+        "g0V0\\0t0^0b0", 
+        "j!a!b!c!d!e!f!g!h!i!", 
+        " 2x$v$\"2", 
+        "$#2$2%2", 
+        "$&2'2(2z$y$", 
+        "{$k!|$}$`!", 
+        "$c$d$e$", 
+        "$f$g$h$", 
+        "\"*\")\"+\"", 
+        "5\"=\"L\".\"", 
+        ",%@%>%.%", 
+        "%/%0%1%#%2%3%", 
+        "%\u001f%-% %\"%?%", 
+        "%=%!%<%", 
+        "4%H%F%6%&%7%8%9%+%:%;%", 
+        "%$%'%5%(%*%G%%%E%)%D%", 
+        "1 1)1%1\u001f1#1", 
+        ".?AVexception@@", 
+        ".?AVbad_alloc@std@@", 
+        ".?AVlogic_error@std@@", 
+        ".?AVlength_error@std@@", 
+        ".?AVout_of_range@std@@", 
+        "!This program cannot be run in DOS mode.", 
+        "@.reloc", 
+        "wwwwww", 
+        "wwwwww", 
+        "wwwwww", 
+        "wwwwww", 
+        "wwwwwwwwwwwwwwp", 
+        "|wwwwp{", 
+        "tDDDDDDDDDDDDDD@tDDDDDDDDDDDDDD@tDDDDDDDDDDDDDD@wwwwwwwwwwwwwwww", 
+        "tDDDDDDDDDD@tDDDDDDDDDD@wwwwwwwwwwww", 
+        "tDDDDDD@tDDDDDD@wwwwwwww", 
+        "|wwwwp{", 
+        ");'&MM", 
+        ";;;&MM", 
+        "))pDMM", 
+        ">\"c33:", 
+        "q7E/MM", 
+        "cc3: );&&M", 
+        "il41#S,", 
+        "33:);&DM", 
+        "jW9999", 
+        "b41#S,", 
+        "`N1#S,", 
+        "AZ(VVVVVVVVVVX", 
+        "(VVVVVVVVV/&5", 
+        "TVV<-<(VVVVVVVVZC\"", 
+        "N(VVVVVVVVS", 
+        "TVVVVV44-N(VVVVVVV", 
+        "VVVV<zd", 
+        "((VVVVVV", 
+        "VVVVzZ", 
+        "u(VVVVVV", 
+        "|%OzXd", 
+        "uVVVVV<", 
+        "zX-N(VVV ", 
+        "HP:VVVVV?+\"", 
+        "WzX-N(VVV", 
+        "*:VVVV", 
+        "WzX-N(VVz\u001f", 
+        "*\\VVVQ&5", 
+        "sWzT-N(V", 
+        "((Vzsmg=", 
+        "SSS%QQQQQQQOSSSSSSSQ", 
+        "QNSSSS%Q", 
+        "%%%.QOSSS%Q", 
+        "QNSSQ<", 
+        "%%CQOSSQ.", 
+        "%0$PJ-%!QOSOQ", 
+        "@KLPJ%%", 
+        "C=%PKLPJC.QOS", 
+        "QPKLPJQ.(SNQ3\"", 
+        "Q(SPKLPJSSSSOQ", 
+        "SSSPKLPJSSSNQQ(SSSSSPKLBASSSSSSSSSSSSP ", 
+        "6SSSSSSSSSSSSSF>SSSSSSSSSSSSSSSSS", 
+        "pZ83{]6", 
+        "r[8'z]7", 
+        "r[8E}]4", 
+        "r\\9,z]6", 
+        "r]:%~\\3", 
+        "jU2~lS2~h_9}O", 
+        "jW5yw\\8", 
+        "pZ8*~]4", 
+        "rZ65)!", 
+        "wwwwwx", 
+        "wwwwwx", 
+        "NNN(g\"", 
+        "xNAA&$85$=4ax", 
+        "AAw&&&]*55*&", 
+        "Oy&^^$$*{5", 
+        "8*$]y=4>", 
+        "w&\"*8W", 
+        "W8*$]w>4", 
+        "ZxNA&,", 
+        "5{$]=4", 
+        "FFF&\".", 
+        "Y;d;K;", 
+        "Y;Y;K;", 
+        "dKLM\"\",^bRROO", 
+        "dKLMB\",^bRROO", 
+        "p..BB,,", 
+        "p..B\"\", ", 
+        "::J0g0Jg!5", 
+        "JCff%%%%", 
+        "gff%%'", 
+        "(111(<ssD6m", 
+        "H99eh_vDm#", 
+        "07`7/k", 
+        "n<H-33", 
+        "I%%+6^", 
+        "C+;I%i", 
+        "22.$,Pl", 
+        "\u001f#33nq", 
+        "('7>Gt?T<V", 
+        "7HH-''(K", 
+        "7|Y9::P", 
+        "l\\\\\\*+Z9Y", 
+        "r\\\\\\\\\\\\", 
+        "c]V~v_,S", 
+        "'YW[&{", 
+        "'YW[&{", 
+        "A~SO-N", 
+        "pef[&{", 
+        "epeW[/", 
+        "N'Yf[T", 
+        "HrCg@b", 
+        "Software\\Microsoft\\Tip Shared\\3.0\\AppCompat\\%s", 
+        "ProductVersionMS", 
+        "ProductVersionLS", 
+        "UpToProductVersionMS", 
+        "UpToProductVersionLS", 
+        "SOFTWARE\\Microsoft\\CTF\\TIP\\", 
+        "Enable", 
+        "LanguageProfile\\", 
+        "Description", 
+        "IconFile", 
+        "IconIndex", 
+        "Category\\", 
+        "Category\\", 
+        "ImSCTip", 
+        "ImSCTip", 
+        "Microsoft Pinyin IME ", 
+        "ImSCTip.DLL", 
+        "Microsoft ABC IME ", 
+        "ImSCTip.DLL", 
+        "Apartment", 
+        "InProcServer32", 
+        "ThreadingModel", 
+        "{%08X-%04X-%04X-%02X%02X-%02X%02X%02X%02X%02X%02X}", 
+        "0x%08x", 
+        "OLEAUT32.DLL", 
+        "O:%sD:(A;;GA;;;BA)(A;;GA;;;SY)(A;;GA;;;%s)(A;;GA;;;RC)", 
+        "O:%sD:(A;;GA;;;BA)(A;;GA;;;SY)(A;;GA;;;%s)S:(ML;;0x1;;;LW)", 
+        "O:%sD:(A;;GA;;;BA)(A;;GA;;;SY)(A;;GA;;;%s)S:(ML;;0x1;;;ME)", 
+        "O:%sD:(A;;GA;;;BA)(A;;GA;;;SY)(A;;GA;;;%s)S:(ML;;0x1;;;HI)", 
+        "%s /MSPY", 
+        "%s /ABCP", 
+        "%s /PH", 
+        "%s /NPH", 
+        "%s /CJ", 
+        "%s /NCJ", 
+        "%s /QK", 
+        "%s /NQK", 
+        "%s /CT", 
+        "%s /MSPY /V", 
+        "%s /MSPY /ABCV", 
+        "%s /PH /V", 
+        "%s /NPH /V", 
+        "%s /CJ /V", 
+        "%s /NCJ /V", 
+        "%s /QK /V", 
+        "%s /NQK /V", 
+        "%s /CT /V", 
+        "%s 936", 
+        "%s 950", 
+        "/PHRUI", 
+        "/DWDLG", 
+        "/WDDLG", 
+        "/EUDCDLG", 
+        "%s %s %s /HWND%Id /TIP%s /PROF%s /TERM%s", 
+        "HH.exe", 
+        "\" \"mk:@MSITStore:", 
+        "%s%08x", 
+        "(Shift+Space)", 
+        "(Ctrl+.)", 
+        "Tip Property Object Mgr", 
+        "CandidateUI", 
+        "Chs Candidate List", 
+        "CandidateUI Customizer", 
+        "Product Customizer", 
+        "Mouse operation", 
+        "key trace event handler", 
+        "Soft Keyboard Layout UI", 
+        "GetReconversion Customizer", 
+        "CommandUIObjectMgr", 
+        "CIMX Input String", 
+        "CIMX Converted String", 
+        "CIMX Fixed Converted String", 
+        "CIMX Highlight String", 
+        "CIMX Target NotConverted String", 
+        "MSFTEDIT.DLL", 
+        " - %04X", 
+        "CHS CandUIKeyHandler", 
+        "IDB_SOFTKBD", 
+        "RESFILE", 
+        "IDBIN_RESDLL", 
+        "SKDFILE", 
+        "IDSKD_SYMLAYOUT", 
+        "Input Style UI", 
+        "Virtual IME UI", 
+        "Conversion Mode UI", 
+        "Charset UI", 
+        "ImePad UI", 
+        "Eudp UI", 
+        "Property UI", 
+        "Tool UI", 
+        "Dr.Watson UI", 
+        "Version UI", 
+        "Help UI", 
+        "::html\\ABCInputMode.htm", 
+        "Debug Function UI", 
+        "CLSID\\%s\\InprocServer32", 
+        "zt.exe", 
+        "ole32.dll", 
+        "IDB_SOFTKBD_VK_0", 
+        "IDB_SOFTKBD_VK_1", 
+        "IDB_SOFTKBD_VK_2", 
+        "IDB_SOFTKBD_VK_3", 
+        "IDB_SOFTKBD_VK_4", 
+        "IDB_SOFTKBD_VK_5", 
+        "IDB_SOFTKBD_VK_6", 
+        "IDB_SOFTKBD_VK_7", 
+        "IDB_SOFTKBD_VK_8", 
+        "IDB_SOFTKBD_VK_9", 
+        "IDB_SOFTKBD_VK_A", 
+        "IDB_SOFTKBD_VK_B", 
+        "IDB_SOFTKBD_VK_C", 
+        "IDB_SOFTKBD_VK_D", 
+        "IDB_SOFTKBD_VK_E", 
+        "IDB_SOFTKBD_VK_F", 
+        "IDB_SOFTKBD_VK_G", 
+        "IDB_SOFTKBD_VK_H", 
+        "IDB_SOFTKBD_VK_I", 
+        "IDB_SOFTKBD_VK_J", 
+        "IDB_SOFTKBD_VK_K", 
+        "IDB_SOFTKBD_VK_L", 
+        "IDB_SOFTKBD_VK_M", 
+        "IDB_SOFTKBD_VK_N", 
+        "IDB_SOFTKBD_VK_O", 
+        "IDB_SOFTKBD_VK_P", 
+        "IDB_SOFTKBD_VK_Q", 
+        "IDB_SOFTKBD_VK_R", 
+        "IDB_SOFTKBD_VK_S", 
+        "IDB_SOFTKBD_VK_T", 
+        "IDB_SOFTKBD_VK_U", 
+        "IDB_SOFTKBD_VK_V", 
+        "IDB_SOFTKBD_VK_W", 
+        "IDB_SOFTKBD_VK_X", 
+        "IDB_SOFTKBD_VK_Y", 
+        "IDB_SOFTKBD_VK_Z", 
+        "IDB_SOFTKBD_VK_OEM_1", 
+        "IDB_SOFTKBD_VK_OEM_2", 
+        "IDB_SOFTKBD_VK_OEM_3", 
+        "IDB_SOFTKBD_VK_OEM_4", 
+        "IDB_SOFTKBD_VK_OEM_5", 
+        "IDB_SOFTKBD_VK_OEM_6", 
+        "IDB_SOFTKBD_VK_OEM_7", 
+        "IDB_SOFTKBD_VK_OEM_PLUS", 
+        "IDB_SOFTKBD_VK_OEM_MINUS", 
+        "IDB_SOFTKBD_VK_OEM_PERIOD", 
+        "IDB_SOFTKBD_VK_OEM_COMMA", 
+        "0123456789", 
+        "abcdefghijklmnopqrstuvwxyz", 
+        ";=,-./`", 
+        ")!@#$%^&*(", 
+        "ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}\"", 
+        ":+<_>?~", 
+        "conhost.exe", 
+        "Control Panel\\Input Method\\Hot Keys\\", 
+        "Key Modifiers", 
+        "Virtual Key", 
+        "SKDFILE", 
+        "IDSKD_SYMLAYOUT", 
+        "RESFILE", 
+        "IDBIN_RESDLL", 
+        "IDB_SOFTKBD", 
+        "VS_VERSION_INFO", 
+        "StringFileInfo", 
+        "040904B0", 
+        "CompanyName", 
+        "Microsoft Corporation", 
+        "FileDescription", 
+        "Microsoft Pinyin IME TIP", 
+        "FileVersion", 
+        "10.1.7600.16385 (win7_rtm.090713-1255)", 
+        "InternalName", 
+        "IMSCTIP", 
+        "LegalCopyright", 
+        " Microsoft Corporation. All rights reserved.", 
+        "OriginalFilename", 
+        "IMSCTIP.DLL", 
+        "ProductName", 
+        "Microsoft", 
+        " Windows", 
+        " Operating System", 
+        "ProductVersion", 
+        "10.1.7600.16385", 
+        "VarFileInfo", 
+        "Translation", 
+        ":imscskr.dll", 
+        "IDB_SOFTKBD_VK_OEM_3", 
+        "IDB_SOFTKBD_VK_1", 
+        "IDB_SOFTKBD_VK_2", 
+        "IDB_SOFTKBD_VK_3", 
+        "IDB_SOFTKBD_VK_4", 
+        "IDB_SOFTKBD_VK_5", 
+        "IDB_SOFTKBD_VK_6", 
+        "IDB_SOFTKBD_VK_7", 
+        "IDB_SOFTKBD_VK_8", 
+        "IDB_SOFTKBD_VK_9", 
+        "IDB_SOFTKBD_VK_0", 
+        "IDB_SOFTKBD_VK_OEM_MINUS", 
+        "IDB_SOFTKBD_VK_OEM_PLUS", 
+        "IDB_SOFTKBD_VK_OEM_5", 
+        "IDB_SOFTKBD_VK_BACK", 
+        "IDB_SOFTKBD_VK_TAB", 
+        "IDB_SOFTKBD_VK_Q", 
+        "IDB_SOFTKBD_VK_W", 
+        "IDB_SOFTKBD_VK_E", 
+        "IDB_SOFTKBD_VK_R", 
+        "IDB_SOFTKBD_VK_T", 
+        "IDB_SOFTKBD_VK_Y", 
+        "IDB_SOFTKBD_VK_U", 
+        "IDB_SOFTKBD_VK_I", 
+        "IDB_SOFTKBD_VK_O", 
+        "IDB_SOFTKBD_VK_P", 
+        "IDB_SOFTKBD_VK_OEM_4", 
+        "IDB_SOFTKBD_VK_OEM_6", 
+        "IDB_SOFTKBD_VK_ENTER", 
+        "IDB_SOFTKBD_VK_CAPITAL", 
+        "IDB_SOFTKBD_VK_A", 
+        "IDB_SOFTKBD_VK_S", 
+        "IDB_SOFTKBD_VK_D", 
+        "IDB_SOFTKBD_VK_F", 
+        "IDB_SOFTKBD_VK_G", 
+        "IDB_SOFTKBD_VK_H", 
+        "IDB_SOFTKBD_VK_J", 
+        "IDB_SOFTKBD_VK_K", 
+        "IDB_SOFTKBD_VK_L", 
+        "IDB_SOFTKBD_VK_OEM_1", 
+        "IDB_SOFTKBD_VK_OEM_7", 
+        "IDB_SOFTKBD_VK_SHIFT", 
+        "IDB_SOFTKBD_VK_Z", 
+        "IDB_SOFTKBD_VK_X", 
+        "IDB_SOFTKBD_VK_C", 
+        "IDB_SOFTKBD_VK_V", 
+        "IDB_SOFTKBD_VK_B", 
+        "IDB_SOFTKBD_VK_N", 
+        "IDB_SOFTKBD_VK_M", 
+        "IDB_SOFTKBD_VK_OEM_COMMA", 
+        "IDB_SOFTKBD_VK_OEM_PERIOD", 
+        "IDB_SOFTKBD_VK_OEM_2", 
+        "IDB_SOFTKBD_VK_CONTROL", 
+        "IDB_SOFTKBD_VK_ESCAPE", 
+        "IDB_SOFTKBD_VK_ALT", 
+        "IDB_SOFTKBD_VK_ALT", 
+        "IDB_SOFTKBD_VK_CONTROL", 
+        "IDB_SOFTKBD_VK_ALT", 
+        "IDB_SOFTKBD_VK_ESCAPE", 
+        "IDB_SOFTKBD_VK_CONTROL", 
+        "IDB_SOFTKBD_VK_TAB", 
+        "IDB_SOFTKBD_VK_BACK", 
+        "IDB_SOFTKBD_VK_CAPITAL", 
+        "IDB_SOFTKBD_VK_ENTER", 
+        "IDB_SOFTKBD_VK_SHIFT", 
+        "TextService ", 
+        "RICHEDIT50W", 
+        "TextService Link", 
+        "MS Shell Dlg", 
+        "&Register", 
+        "Cancel", 
+        "Please input pinyin for the user-defined character. A valid pinyin includes alphabetic characters and tone number. For example: \"wo3\"", 
+        "&Pinyin:", 
+        "RICHEDIT50W", 
+        "PageUp", 
+        "PageDown", 
+        "(&R)...", 
+        "(&A)...", 
+        "Unicode", 
+        "&1 PC ", 
+        "Dump Lattice", 
+        "Run Unit Testing", 
+        "Unicode ", 
+        " (Tab)", 
+        "Shift+", 
+        "MS Sans Serif", 
+        "Haettenschweiler", 
+        "Microsoft (R) ", 
+        " %d.%d.%04u.%u\"Microsoft Corporation ", 
+        " (C) 1996-%4u, Microsoft Corporation", 
+        "PageUp", 
+        "PageDown", 
+        "Microsoft Pinyin IME ", 
+        "NSimSun", 
+        "SimSun", 
+        "Simsun (Founder Extended)", 
+        "Input Mode", 
+        "Character Width", 
+        "IME Status", 
+        "Input Style", 
+        "Secondary Input", 
+        "Character Set", 
+        "Punctuation", 
+        "Soft Keyboard", 
+        "IME Pad", 
+        "Tool Menu", 
+        "Cancel", 
+        "Soft &Keyboards", 
+        "&User-defined Phrase Tool", 
+        "&Register New Word...", 
+        "&Mis-conversion Report...", 
+        "&Options...", 
+        "&About...", 
+        "&Report Conversion Error...", 
+        "&Secondary Inputs", 
+        "&Unicode Input", 
+        "&GB Code Input", 
+        "&Stroke Input", 
+        "&Radical Input", 
+        "Return &PinYin Input", 
+        "&Input Styles", 
+        "&New Experience Input Style", 
+        "&Classic Input Style", 
+        "&ABC Input Style", 
+        "Character Set", 
+        "&Simplified Chinese", 
+        "&Extended Character Set", 
+        "T&raditional Chinese", 
+        "Soft Keyboard", 
+        "&1 PC Keyboard", 
+        "&2 Greek Alphabet", 
+        "&3 Russian Alphabet", 
+        "&4 Phonetic", 
+        "&5 Pinyin Letters", 
+        "&6 Hiragana", 
+        "&7 Katakana", 
+        "&8 Punctuation Marks", 
+        "&9 Math Numbers", 
+        "&0 Math Symbols", 
+        "&A Table Symbols", 
+        "&B Chinese Numbers/Units", 
+        "&C Special Symbols", 
+        "&D Double Pinyin Scheme", 
+        "C&lose Soft Keyboard", 
+        "Sort by length &ascending", 
+        "Sort by length &descending", 
+        "&Debugging...", 
+        "Dump Lattice", 
+        "Run Unit Testing", 
+        "Status", 
+        "Status", 
+        "Status", 
+        "Input Mode", 
+        "Input Mode", 
+        "Character Width", 
+        "Character Width", 
+        "Punctuation", 
+        "Punctuation", 
+        "Soft Keyboard", 
+        "IME Pad", 
+        "Tool Menu", 
+        "Input Style", 
+        "Input Style", 
+        "Input Style", 
+        "Secondary Input", 
+        "Secondary Input", 
+        "Secondary Input", 
+        "Secondary Input", 
+        "Character Set", 
+        "Character Set", 
+        "Character Set", 
+        "Character Set", 
+        "IME is Disabled", 
+        "IME is Closed", 
+        "Link Private Character", 
+        "Chinese/English", 
+        "Chinese/English", 
+        "Full/Half Shape ", 
+        "Full/Half Shape ", 
+        "Chinese/Western Punctuation ", 
+        "Chinese/Western Punctuation ", 
+        "Open/Close Soft Keyboard", 
+        "Open/Close IME Pad", 
+        "Option Menu", 
+        "Input Style", 
+        "Input Style", 
+        "Microsoft Pinyin Input Style", 
+        "Secondary Input (Unicode)", 
+        "Secondary Input (GB)", 
+        "Secondary Input (Stroke)", 
+        "Secondary Input (Radical)", 
+        "Character Set (Unavailable)", 
+        "Character Set", 
+        "Character Set", 
+        "Character Set", 
+        "Sorting Menu", 
+        "Switch View (Tab)", 
+        "Shift+Number", 
+        "MS Sans Serif", 
+        "Haettenschweiler", 
+        "Microsoft Pinyin IME ", 
+        "Version %d.%d.%04u.%uMJointly developed by Microsoft Corporation and Harbin Institute of Technology", 
+        "BCopyright(C) 1996-%4u, Microsoft Corporation. All rights reserved."
+    ], 
+    "metadata": {
+        "output": {
+            "pcap": {
+                "basename": "dump.pcap", 
+                "sha256": "49fdb17ca213c59e1297dd17b604e90d5366c591fe32c47bb9cc29917d6fe3ba", 
+                "dirname": ""
+            }
+        }
+    }
+}
